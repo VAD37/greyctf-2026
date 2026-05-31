@@ -1,0 +1,6 @@
+F = (14, 14, 7) START = (7, 7, 7)
+BFS path len 18 moves: wdsdsdsodsdsddssls
+REACHED F at move s
+emit bytes: [68, 1, 168, 69, 67, 68, 165, 161, 1, 210, 53, 7, 178, 4, 79, 67]
+as chars: D..ECD....5...OC
+score 1366 final pos (14, 14, 7)

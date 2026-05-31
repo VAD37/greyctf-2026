@@ -1,0 +1,6 @@
+{
+  "name": "greyctf-2026",
+  "private": true,
+  "version": "0.0.1",
+  "description": "GreyCTF 2026 auto recon/scout/solve pipeline (MCP Playwright plugin, direct tool calls)"
+}

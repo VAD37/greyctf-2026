@@ -1,0 +1,18 @@
+[
+    {
+        "Config": "blobs/sha256/f6c606dad00c22a11158dea2d45a2d11c69174794f48a0d1155416294d1ef7dc",
+        "RepoTags": [
+            "greyhats_gallery:latest"
+        ],
+        "Layers": [
+            "blobs/sha256/836ba42e2c3bb643d4babe50a82dd1fed479a213307b473637f2437869f6287a"
+        ],
+        "LayerSources": {
+            "sha256:836ba42e2c3bb643d4babe50a82dd1fed479a213307b473637f2437869f6287a": {
+                "mediaType": "application/vnd.oci.image.layer.v1.tar",
+                "size": 237519360,
+                "digest": "sha256:836ba42e2c3bb643d4babe50a82dd1fed479a213307b473637f2437869f6287a"
+            }
+        }
+    }
+]

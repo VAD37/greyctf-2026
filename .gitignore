@@ -1,0 +1,30 @@
+# ── Secrets — the ONLY thing withheld from this public archive ──
+# Root creds only. Anchored with leading "/" so harmless challenge .env files
+# inside extracted docker rootfs (e.g. fort-knockies app/.env) still publish.
+/.env
+/.env.local
+
+# ── Local / machine state (not part of the challenge archive) ──
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/settings.local.json
+.playwright-mcp/
+.vscode/playwright-profile/
+
+# ── Files >100 MB — GitHub hard-rejects these, and we use no LFS ──
+# All regenerable; see CLAUDE.md "Published archive notes".
+# web/02 greyhats-gallery: docker image layer blobs — rebuild by unzipping files/dist-greyhats-gallery.zip
+/challenges/web/02_greyhats-gallery/files/extracted/dist-greyhats-gallery/img/blobs/sha256/836ba42e2c3bb643d4babe50a82dd1fed479a213307b473637f2437869f6287a
+/challenges/web/02_greyhats-gallery/files/extracted/dist-greyhats-gallery/layer/usr/local/bin/node
+# misc/04 training-shooting-flags: 188 MB Yosys decompiler dump — regenerate via solve/decomp (main_decomp.v kept)
+/challenges/misc/04_training-shooting-flags/solve/decomp/main_flat.v
+
+# ── Standard build scratch in OUR solve dirs (challenge binaries/.so kept on purpose) ──
+challenges/**/solve/**/build/
+challenges/**/solve/**/target/debug/
+challenges/**/solve/**/target/release/
+challenges/**/solve/**/*.o
+challenges/**/solve/**/*.obj

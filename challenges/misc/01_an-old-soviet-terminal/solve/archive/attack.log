@@ -1,0 +1,267 @@
+
+===== ts=1780135784 iter2 win[0:4] -> no-teletype (0.11s) =====
+(no output)
+
+===== ts=1780135814 iter3 win[0:4] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780135886 iter1 win[0:1] -> connfail: Connection refused (os error 111) (0.05s) =====
+(no output)
+
+===== ts=1780135902 iter2 win[0:1] -> connfail: Connection refused (os error 111) (0.05s) =====
+(no output)
+
+===== ts=1780135917 iter3 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780135932 iter4 win[0:1] -> connfail: Connection refused (os error 111) (0.05s) =====
+(no output)
+
+===== ts=1780135947 iter5 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780135962 iter6 win[0:1] -> connfail: Connection refused (os error 111) (0.04s) =====
+(no output)
+
+===== ts=1780135977 iter7 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780135992 iter8 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136007 iter9 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136022 iter10 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136037 iter11 win[0:1] -> connfail: Connection refused (os error 111) (0.06s) =====
+(no output)
+
+===== ts=1780136052 iter12 win[0:1] -> connfail: Connection refused (os error 111) (0.06s) =====
+(no output)
+
+===== ts=1780136067 iter13 win[0:1] -> connfail: Connection refused (os error 111) (0.04s) =====
+(no output)
+
+===== ts=1780136082 iter14 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136097 iter15 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136112 iter16 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136127 iter17 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136142 iter18 win[0:1] -> connfail: Connection refused (os error 111) (0.04s) =====
+(no output)
+
+===== ts=1780136157 iter19 win[0:1] -> connfail: Connection refused (os error 111) (0.04s) =====
+(no output)
+
+===== ts=1780136172 iter20 win[0:1] -> connfail: Connection refused (os error 111) (0.06s) =====
+(no output)
+
+===== ts=1780136187 iter21 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136202 iter22 win[0:1] -> connfail: Connection refused (os error 111) (0.04s) =====
+(no output)
+
+===== ts=1780136220 iter23 win[0:1] -> no-teletype (2.88s) =====
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   ██████╗ ██████╗       ███╗   ██╗███████╗████████╗          ║
+║  ██╔════╝ ██╔══██╗      ████╗  ██║██╔════╝╚════██╔╝          ║
+║  ██║  ███╗██████╔╝█████╗██╔██╗ ██║█████╗     ██╔═╝           ║
+║  ██║   ██║██╔══██╗╚════╝██║╚██╗██║██╔══╝     ██║             ║
+║  ╚██████╔╝██████╔╝      ██║ ╚████║███████╗   ██║             ║
+║   ╚═════╝ ╚═════╝       ╚═╝  ╚═══╝╚══════╝   ╚═╝             ║                                  
+║                                                              ║
+║  GREY BLOC INTELLIGENCE NETWORK — TERMINAL 7B (ACTIVE)       ║
+║  Last maintenance: 1989-11-09                                ║
+║  Uptime: 13351 days                                          ║
+║                                                              ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  Compartmentalization Protocol v2.6.6                        ║
+║  Clearance: PUBLIC                                           ║
+║  Status:    ACTIVE                                           ║
+║                                                              ║
+║  Добро пожаловать, товарищ!                                  ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════════════════╗
+║  AVAILABLE SERVICES                                          ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  [1] Archive            — Classified document storage        ║
+║  [2] Censorship Desk    — Document sanitization & release    ║
+║  [3] Index Clerk        — Document catalog & metadata        ║
+║  [4] Transmission       — Transmission decoding terminal     ║
+║  [5] Maintenance Log    — System maintenance records         ║
+║  [6] Self-Destruct      — Emergency data purge               ║
+║  [7] Exit                                                    ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+>> 
+╔══════════════════════════════════════════════════════════════╗
+║  TRANSMISSION DECODING TERMINAL                              ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  This terminal provides a scripting interface for            ║
+║  analyzing intercepted transmissions.                        ║
+║                                                              ║
+║  The compartmentalization protocol prevents classified       ║
+║  data from being output to uncleared channels.               ║
+║                                                              ║
+║  Submit your analysis program below.                         ║
+║  Terminate with 'EOF' on a new line.                         ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+>> 
+===== ts=1780136235 iter24 win[0:1] -> connfail: Connection refused (os error 111) (0.05s) =====
+(no output)
+
+===== ts=1780136250 iter25 win[0:1] -> connfail: Connection refused (os error 111) (0.05s) =====
+(no output)
+
+===== ts=1780136265 iter26 win[0:1] -> connfail: Connection refused (os error 111) (0.04s) =====
+(no output)
+
+===== ts=1780136280 iter27 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136295 iter28 win[0:1] -> connfail: Connection refused (os error 111) (0.04s) =====
+(no output)
+
+===== ts=1780136310 iter29 win[0:1] -> connfail: Connection refused (os error 111) (0.04s) =====
+(no output)
+
+===== ts=1780136325 iter30 win[0:1] -> connfail: Connection refused (os error 111) (0.05s) =====
+(no output)
+
+===== ts=1780136340 iter31 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136355 iter32 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)
+
+===== ts=1780136371 iter33 win[0:1] -> no-teletype (0.76s) =====
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   ██████╗ ██████╗       ███╗   ██╗███████╗████████╗          ║
+║  ██╔════╝ ██╔══██╗      ████╗  ██║██╔════╝╚════██╔╝          ║
+║  ██║  ███╗██████╔╝█████╗██╔██╗ ██║█████╗     ██╔═╝           ║
+║  ██║   ██║██╔══██╗╚════╝██║╚██╗██║██╔══╝     ██║             ║
+║  ╚██████╔╝██████╔╝      ██║ ╚████║███████╗   ██║             ║
+║   ╚═════╝ ╚═════╝       ╚═╝  ╚═══╝╚══════╝   ╚═╝             ║                                  
+║                                                              ║
+║  GREY BLOC INTELLIGENCE NETWORK — TERMINAL 7B (ACTIVE)       ║
+║  Last maintenance: 1989-11-09                                ║
+║  Uptime: 13351 days                                          ║
+║                                                              ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  Compartmentalization Protocol v2.6.6                        ║
+║  Clearance: PUBLIC                                           ║
+║  Status:    ACTIVE                                           ║
+║                                                              ║
+║  Добро пожаловать, товарищ!                                  ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════════════════╗
+║  AVAILABLE SERVICES                                          ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  [1] Archive            — Classified document storage        ║
+║  [2] Censorship Desk    — Document sanitization & release    ║
+║  [3] Index Clerk        — Document catalog & metadata        ║
+║  [4] Transmission       — Transmission decoding terminal     ║
+║  [5] Maintenance Log    — System maintenance records         ║
+║  [6] Self-Destruct      — Emergency data purge               ║
+║  [7] Exit                                                    ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+>> 
+╔══════════════════════════════════════════════════════════════╗
+║  TRANSMISSION DECODING TERMINAL                              ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  This terminal provides a scripting interface for            ║
+║  analyzing intercepted transmissions.                        ║
+║                                                              ║
+║  The compartmentalization protocol prevents classified       ║
+║  data from being output to uncleared channels.               ║
+║                                                              ║
+║  Submit your analysis program below.                         ║
+║  Terminate with 'EOF' on a new line.                         ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+>> 
+===== ts=1780136387 iter34 win[0:1] -> no-teletype (1.00s) =====
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   ██████╗ ██████╗       ███╗   ██╗███████╗████████╗          ║
+║  ██╔════╝ ██╔══██╗      ████╗  ██║██╔════╝╚════██╔╝          ║
+║  ██║  ███╗██████╔╝█████╗██╔██╗ ██║█████╗     ██╔═╝           ║
+║  ██║   ██║██╔══██╗╚════╝██║╚██╗██║██╔══╝     ██║             ║
+║  ╚██████╔╝██████╔╝      ██║ ╚████║███████╗   ██║             ║
+║   ╚═════╝ ╚═════╝       ╚═╝  ╚═══╝╚══════╝   ╚═╝             ║                                  
+║                                                              ║
+║  GREY BLOC INTELLIGENCE NETWORK — TERMINAL 7B (ACTIVE)       ║
+║  Last maintenance: 1989-11-09                                ║
+║  Uptime: 13351 days                                          ║
+║                                                              ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  Compartmentalization Protocol v2.6.6                        ║
+║  Clearance: PUBLIC                                           ║
+║  Status:    ACTIVE                                           ║
+║                                                              ║
+║  Добро пожаловать, товарищ!                                  ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════════════════╗
+║  AVAILABLE SERVICES                                          ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  [1] Archive            — Classified document storage        ║
+║  [2] Censorship Desk    — Document sanitization & release    ║
+║  [3] Index Clerk        — Document catalog & metadata        ║
+║  [4] Transmission       — Transmission decoding terminal     ║
+║  [5] Maintenance Log    — System maintenance records         ║
+║  [6] Self-Destruct      — Emergency data purge               ║
+║  [7] Exit                                                    ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+>> 
+╔══════════════════════════════════════════════════════════════╗
+║  TRANSMISSION DECODING TERMINAL                              ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  This terminal provides a scripting interface for            ║
+║  analyzing intercepted transmissions.                        ║
+║                                                              ║
+║  The compartmentalization protocol prevents classified       ║
+║  data from being output to uncleared channels.               ║
+║                                                              ║
+║  Submit your analysis program below.                         ║
+║  Terminate with 'EOF' on a new line.                         ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+>> 
+===== ts=1780136402 iter35 win[0:1] -> connfail: Connection refused (os error 111) (0.03s) =====
+(no output)

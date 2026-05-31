@@ -1,0 +1,2 @@
+href="/files/2b2cc3eb8b9e4905acf3d2d4f7ea0929/greyctf2026-logo-transparent.png"
+src="/files/5a0fdf85c63705cd3aea6279812b9b9d/greyctf2026-logo-transparent.svg"

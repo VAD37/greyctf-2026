@@ -1,0 +1,2617 @@
+{
+  "endpoints": {
+    "POST /awards": {
+      "opId": "post_award_list",
+      "desc": "Endpoint to create an Award object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /awards/{award_id}": {
+      "opId": "delete_award",
+      "desc": "Endpoint to delete an Award object",
+      "body": [],
+      "query": []
+    },
+    "POST /brackets": {
+      "opId": "post_bracket_list",
+      "body": [],
+      "query": []
+    },
+    "PATCH /brackets/{bracket_id}": {
+      "opId": "patch_bracket",
+      "body": [],
+      "query": []
+    },
+    "DELETE /brackets/{bracket_id}": {
+      "opId": "delete_bracket",
+      "body": [],
+      "query": []
+    },
+    "POST /challenges": {
+      "opId": "post_challenge_list",
+      "desc": "Endpoint to create a Challenge object",
+      "body": [],
+      "query": []
+    },
+    "POST /challenges/attempt": {
+      "opId": "post_challenge_attempt",
+      "body": [],
+      "query": []
+    },
+    "PATCH /challenges/{challenge_id}": {
+      "opId": "patch_challenge",
+      "desc": "Endpoint to edit a specific Challenge object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /challenges/{challenge_id}": {
+      "opId": "delete_challenge",
+      "desc": "Endpoint to delete a specific Challenge object",
+      "body": [],
+      "query": []
+    },
+    "PUT /challenges/{challenge_id}/ratings": {
+      "opId": "put_challenge_ratings",
+      "body": [],
+      "query": []
+    },
+    "POST /comments": {
+      "opId": "post_comment_list",
+      "desc": "Endpoint to create a Comment object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /comments/{comment_id}": {
+      "opId": "delete_comment",
+      "desc": "Endpoint to delete a specific Comment object",
+      "body": [],
+      "query": []
+    },
+    "POST /configs": {
+      "opId": "post_config_list",
+      "desc": "Endpoint to get create a Config object",
+      "body": [],
+      "query": []
+    },
+    "PATCH /configs": {
+      "opId": "patch_config_list",
+      "desc": "Endpoint to get patch Config objects in bulk",
+      "body": [],
+      "query": []
+    },
+    "POST /configs/fields": {
+      "opId": "post_field_list",
+      "body": [],
+      "query": []
+    },
+    "PATCH /configs/fields/{field_id}": {
+      "opId": "patch_field",
+      "body": [],
+      "query": []
+    },
+    "DELETE /configs/fields/{field_id}": {
+      "opId": "delete_field",
+      "body": [],
+      "query": []
+    },
+    "PATCH /configs/{config_key}": {
+      "opId": "patch_config",
+      "desc": "Endpoint to edit a specific Config object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /configs/{config_key}": {
+      "opId": "delete_config",
+      "desc": "Endpoint to delete a Config object",
+      "body": [],
+      "query": []
+    },
+    "POST /exports/raw": {
+      "opId": "post_export_list",
+      "body": [],
+      "query": []
+    },
+    "POST /files": {
+      "opId": "post_files_list",
+      "desc": "Endpoint to get file objects in bulk",
+      "body": [],
+      "query": []
+    },
+    "DELETE /files/{file_id}": {
+      "opId": "delete_files_detail",
+      "desc": "Endpoint to delete a file object",
+      "body": [],
+      "query": []
+    },
+    "POST /flags": {
+      "opId": "post_flag_list",
+      "desc": "Endpoint to create a Flag object",
+      "body": [],
+      "query": []
+    },
+    "PATCH /flags/{flag_id}": {
+      "opId": "patch_flag",
+      "desc": "Endpoint to edit a specific Flag object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /flags/{flag_id}": {
+      "opId": "delete_flag",
+      "desc": "Endpoint to delete a specific Flag object",
+      "body": [],
+      "query": []
+    },
+    "POST /hints": {
+      "opId": "post_hint_list",
+      "desc": "Endpoint to create a Hint object",
+      "body": [],
+      "query": []
+    },
+    "PATCH /hints/{hint_id}": {
+      "opId": "patch_hint",
+      "desc": "Endpoint to edit a specific Hint object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /hints/{hint_id}": {
+      "opId": "delete_hint",
+      "desc": "Endpoint to delete a specific Tag object",
+      "body": [],
+      "query": []
+    },
+    "POST /notifications": {
+      "opId": "post_notificantion_list",
+      "desc": "Endpoint to create a notification object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /notifications/{notification_id}": {
+      "opId": "delete_notification",
+      "desc": "Endpoint to delete a notification object",
+      "body": [],
+      "query": []
+    },
+    "POST /pages": {
+      "opId": "post_page_list",
+      "desc": "Endpoint to create a page object",
+      "body": [
+        {
+          "title": "Pages",
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "route": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            },
+            "draft": {
+              "type": "boolean"
+            },
+            "hidden": {
+              "type": "boolean"
+            },
+            "auth_required": {
+              "type": "boolean"
+            },
+            "format": {
+              "type": "string"
+            },
+            "link_target": {
+              "type": "string"
+            }
+          }
+        }
+      ],
+      "query": []
+    },
+    "PATCH /pages/{page_id}": {
+      "opId": "patch_page_detail",
+      "desc": "Endpoint to edit a page object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /pages/{page_id}": {
+      "opId": "delete_page_detail",
+      "desc": "Endpoint to delete a page object",
+      "body": [],
+      "query": []
+    },
+    "PATCH /plugins/ctfd-whale/admin/container": {
+      "opId": "patch_admin_containers",
+      "body": [],
+      "query": []
+    },
+    "DELETE /plugins/ctfd-whale/admin/container": {
+      "opId": "delete_admin_containers",
+      "body": [],
+      "query": []
+    },
+    "POST /plugins/ctfd-whale/container": {
+      "opId": "post_user_containers",
+      "body": [],
+      "query": []
+    },
+    "PATCH /plugins/ctfd-whale/container": {
+      "opId": "patch_user_containers",
+      "body": [],
+      "query": []
+    },
+    "DELETE /plugins/ctfd-whale/container": {
+      "opId": "delete_user_containers",
+      "body": [],
+      "query": []
+    },
+    "POST /shares": {
+      "opId": "post_share",
+      "body": [],
+      "query": []
+    },
+    "POST /solutions": {
+      "opId": "post_solution_list",
+      "desc": "Endpoint to create a solution object",
+      "body": [
+        {
+          "title": "Solutions",
+          "type": "object",
+          "properties": {
+            "challenge_id": {
+              "type": "integer"
+            },
+            "content": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            }
+          }
+        }
+      ],
+      "query": []
+    },
+    "PATCH /solutions/{solution_id}": {
+      "opId": "patch_solution",
+      "desc": "Endpoint to edit a solution object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /solutions/{solution_id}": {
+      "opId": "delete_solution",
+      "desc": "Endpoint to delete a solution object",
+      "body": [],
+      "query": []
+    },
+    "POST /submissions": {
+      "opId": "post_submissions_list",
+      "desc": "Endpoint to create a submission object. Users should interact with the attempt endpoint to submit flags.",
+      "body": [
+        {
+          "title": "Submissions",
+          "type": "object",
+          "properties": {
+            "challenge_id": {
+              "type": "integer"
+            },
+            "user_id": {
+              "type": "integer"
+            },
+            "team_id": {
+              "type": "integer"
+            },
+            "ip": {
+              "type": "string"
+            },
+            "provided": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      ],
+      "query": []
+    },
+    "PATCH /submissions/{submission_id}": {
+      "opId": "patch_submission",
+      "desc": "Endpoint to edit a submission object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /submissions/{submission_id}": {
+      "opId": "delete_submission",
+      "desc": "Endpoint to delete a submission object",
+      "body": [],
+      "query": []
+    },
+    "POST /tags": {
+      "opId": "post_tag_list",
+      "desc": "Endpoint to create a Tag object",
+      "body": [],
+      "query": []
+    },
+    "PATCH /tags/{tag_id}": {
+      "opId": "patch_tag",
+      "desc": "Endpoint to edit a specific Tag object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /tags/{tag_id}": {
+      "opId": "delete_tag",
+      "desc": "Endpoint to delete a specific Tag object",
+      "body": [],
+      "query": []
+    },
+    "POST /teams": {
+      "opId": "post_team_list",
+      "desc": "Endpoint to create a Team object",
+      "body": [],
+      "query": []
+    },
+    "PATCH /teams/me": {
+      "opId": "patch_team_private",
+      "desc": "Endpoint to edit the current user's Team object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /teams/me": {
+      "opId": "delete_team_private",
+      "desc": "Endpoint to disband your current team. Can only be used if the team has performed no actions in the CTF.",
+      "body": [],
+      "query": []
+    },
+    "POST /teams/me/members": {
+      "opId": "post_team_private_members",
+      "body": [],
+      "query": []
+    },
+    "PATCH /teams/{team_id}": {
+      "opId": "patch_team_public",
+      "desc": "Endpoint to edit a specific Team object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /teams/{team_id}": {
+      "opId": "delete_team_public",
+      "desc": "Endpoint to delete a specific Team object",
+      "body": [],
+      "query": []
+    },
+    "POST /teams/{team_id}/members": {
+      "opId": "post_team_members",
+      "body": [],
+      "query": []
+    },
+    "DELETE /teams/{team_id}/members": {
+      "opId": "delete_team_members",
+      "body": [],
+      "query": []
+    },
+    "POST /tokens": {
+      "opId": "post_token_list",
+      "desc": "Endpoint to create a token object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /tokens/{token_id}": {
+      "opId": "delete_token_detail",
+      "desc": "Endpoint to delete an existing token object",
+      "body": [],
+      "query": []
+    },
+    "POST /topics": {
+      "opId": "post_topic_list",
+      "desc": "Endpoint to create a Topic object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /topics": {
+      "opId": "delete_topic_list",
+      "desc": "Endpoint to delete a specific Topic object of a specific type",
+      "body": [],
+      "query": [
+        "type",
+        "target_id"
+      ]
+    },
+    "DELETE /topics/{topic_id}": {
+      "opId": "delete_topic",
+      "desc": "Endpoint to delete a specific Topic object",
+      "body": [],
+      "query": []
+    },
+    "POST /unlocks": {
+      "opId": "post_unlock_list",
+      "desc": "Endpoint to create an unlock object. Used to unlock hints.",
+      "body": [],
+      "query": []
+    },
+    "POST /users": {
+      "opId": "post_user_list",
+      "desc": "Endpoint to create a User object",
+      "body": [],
+      "query": [
+        "notify"
+      ]
+    },
+    "PATCH /users/me": {
+      "opId": "patch_user_private",
+      "desc": "Endpoint to edit the User object for the current user",
+      "body": [],
+      "query": []
+    },
+    "PATCH /users/{user_id}": {
+      "opId": "patch_user_public",
+      "desc": "Endpoint to edit a specific User object",
+      "body": [],
+      "query": []
+    },
+    "DELETE /users/{user_id}": {
+      "opId": "delete_user_public",
+      "desc": "Endpoint to delete a specific User object",
+      "body": [],
+      "query": []
+    },
+    "POST /users/{user_id}/email": {
+      "opId": "post_user_emails",
+      "desc": "Endpoint to email a User object",
+      "body": [],
+      "query": []
+    }
+  },
+  "definitions": {
+    "ChallengeDetailedSuccessResponse": {
+      "title": "ChallengeDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Challenges",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string"
+            },
+            "description": {
+              "title": "Description",
+              "type": "string"
+            },
+            "attribution": {
+              "title": "Attribution",
+              "type": "string"
+            },
+            "connection_info": {
+              "title": "Connection Info",
+              "type": "string"
+            },
+            "next_id": {
+              "title": "Next Id",
+              "type": "integer"
+            },
+            "max_attempts": {
+              "title": "Max Attempts",
+              "type": "integer"
+            },
+            "value": {
+              "title": "Value",
+              "type": "integer"
+            },
+            "category": {
+              "title": "Category",
+              "type": "string"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "state": {
+              "title": "State",
+              "type": "string"
+            },
+            "logic": {
+              "title": "Logic",
+              "type": "string"
+            },
+            "initial": {
+              "title": "Initial",
+              "type": "integer"
+            },
+            "minimum": {
+              "title": "Minimum",
+              "type": "integer"
+            },
+            "decay": {
+              "title": "Decay",
+              "type": "integer"
+            },
+            "position": {
+              "title": "Position",
+              "type": "integer"
+            },
+            "function": {
+              "title": "Function",
+              "type": "string"
+            },
+            "requirements": {
+              "title": "Requirements",
+              "type": "object"
+            },
+            "solves": {
+              "title": "Solves",
+              "type": "integer"
+            },
+            "solved_by_me": {
+              "title": "Solved By Me",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "APISimpleErrorResponse": {
+      "title": "APISimpleErrorResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": false,
+          "type": "boolean"
+        },
+        "errors": {
+          "title": "Errors",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ChallengeListSuccessResponse": {
+      "title": "ChallengeListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Challenges",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "name": {
+                "title": "Name",
+                "type": "string"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              },
+              "attribution": {
+                "title": "Attribution",
+                "type": "string"
+              },
+              "connection_info": {
+                "title": "Connection Info",
+                "type": "string"
+              },
+              "next_id": {
+                "title": "Next Id",
+                "type": "integer"
+              },
+              "max_attempts": {
+                "title": "Max Attempts",
+                "type": "integer"
+              },
+              "value": {
+                "title": "Value",
+                "type": "integer"
+              },
+              "category": {
+                "title": "Category",
+                "type": "string"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "state": {
+                "title": "State",
+                "type": "string"
+              },
+              "logic": {
+                "title": "Logic",
+                "type": "string"
+              },
+              "initial": {
+                "title": "Initial",
+                "type": "integer"
+              },
+              "minimum": {
+                "title": "Minimum",
+                "type": "integer"
+              },
+              "decay": {
+                "title": "Decay",
+                "type": "integer"
+              },
+              "position": {
+                "title": "Position",
+                "type": "integer"
+              },
+              "function": {
+                "title": "Function",
+                "type": "string"
+              },
+              "requirements": {
+                "title": "Requirements",
+                "type": "object"
+              },
+              "solves": {
+                "title": "Solves",
+                "type": "integer"
+              },
+              "solved_by_me": {
+                "title": "Solved By Me",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "APISimpleSuccessResponse": {
+      "title": "APISimpleSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        }
+      }
+    },
+    "TagDetailedSuccessResponse": {
+      "title": "TagDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Tags",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "challenge_id": {
+              "title": "Challenge Id",
+              "type": "integer"
+            },
+            "value": {
+              "title": "Value",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "TagListSuccessResponse": {
+      "title": "TagListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Tags",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "challenge_id": {
+                "title": "Challenge Id",
+                "type": "integer"
+              },
+              "value": {
+                "title": "Value",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "TopicDetailedSuccessResponse": {
+      "title": "TopicDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Topics",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "value": {
+              "title": "Value",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "TopicListSuccessResponse": {
+      "title": "TopicListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Topics",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "value": {
+                "title": "Value",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "AwardListSuccessResponse": {
+      "title": "AwardListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Awards",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "user_id": {
+                "title": "User Id",
+                "type": "integer"
+              },
+              "team_id": {
+                "title": "Team Id",
+                "type": "integer"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "name": {
+                "title": "Name",
+                "type": "string"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              },
+              "date": {
+                "title": "Date",
+                "type": "string",
+                "format": "date-time"
+              },
+              "value": {
+                "title": "Value",
+                "type": "integer"
+              },
+              "category": {
+                "title": "Category",
+                "type": "string"
+              },
+              "icon": {
+                "title": "Icon",
+                "type": "string"
+              },
+              "requirements": {
+                "title": "Requirements",
+                "type": "object"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "AwardDetailedSuccessResponse": {
+      "title": "AwardDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Awards",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "user_id": {
+              "title": "User Id",
+              "type": "integer"
+            },
+            "team_id": {
+              "title": "Team Id",
+              "type": "integer"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string"
+            },
+            "description": {
+              "title": "Description",
+              "type": "string"
+            },
+            "date": {
+              "title": "Date",
+              "type": "string",
+              "format": "date-time"
+            },
+            "value": {
+              "title": "Value",
+              "type": "integer"
+            },
+            "category": {
+              "title": "Category",
+              "type": "string"
+            },
+            "icon": {
+              "title": "Icon",
+              "type": "string"
+            },
+            "requirements": {
+              "title": "Requirements",
+              "type": "object"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "HintDetailedSuccessResponse": {
+      "title": "HintDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Hints",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "title": {
+              "title": "Title",
+              "type": "string"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "challenge_id": {
+              "title": "Challenge Id",
+              "type": "integer"
+            },
+            "content": {
+              "title": "Content",
+              "type": "string"
+            },
+            "cost": {
+              "title": "Cost",
+              "type": "integer"
+            },
+            "requirements": {
+              "title": "Requirements",
+              "type": "object"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "HintListSuccessResponse": {
+      "title": "HintListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Hints",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "title": {
+                "title": "Title",
+                "type": "string"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "challenge_id": {
+                "title": "Challenge Id",
+                "type": "integer"
+              },
+              "content": {
+                "title": "Content",
+                "type": "string"
+              },
+              "cost": {
+                "title": "Cost",
+                "type": "integer"
+              },
+              "requirements": {
+                "title": "Requirements",
+                "type": "object"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "FlagDetailedSuccessResponse": {
+      "title": "FlagDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Flags",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "challenge_id": {
+              "title": "Challenge Id",
+              "type": "integer"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "content": {
+              "title": "Content",
+              "type": "string"
+            },
+            "data": {
+              "title": "Data",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "FlagListSuccessResponse": {
+      "title": "FlagListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Flags",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "challenge_id": {
+                "title": "Challenge Id",
+                "type": "integer"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "content": {
+                "title": "Content",
+                "type": "string"
+              },
+              "data": {
+                "title": "Data",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "SubmissionListSuccessResponse": {
+      "title": "SubmissionListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Submissions",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "challenge_id": {
+                "title": "Challenge Id",
+                "type": "integer"
+              },
+              "user_id": {
+                "title": "User Id",
+                "type": "integer"
+              },
+              "team_id": {
+                "title": "Team Id",
+                "type": "integer"
+              },
+              "ip": {
+                "title": "Ip",
+                "type": "string"
+              },
+              "provided": {
+                "title": "Provided",
+                "type": "string"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "date": {
+                "title": "Date",
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        },
+        "meta": {
+          "title": "Meta",
+          "type": "object",
+          "properties": {
+            "pagination": {
+              "title": "Pagination",
+              "type": "object",
+              "properties": {
+                "page": {
+                  "title": "Page",
+                  "type": "integer"
+                },
+                "next": {
+                  "title": "Next",
+                  "type": "integer"
+                },
+                "prev": {
+                  "title": "Prev",
+                  "type": "integer"
+                },
+                "pages": {
+                  "title": "Pages",
+                  "type": "integer"
+                },
+                "per_page": {
+                  "title": "Per Page",
+                  "type": "integer"
+                },
+                "total": {
+                  "title": "Total",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "page",
+                "next",
+                "prev",
+                "pages",
+                "per_page",
+                "total"
+              ]
+            }
+          },
+          "required": [
+            "pagination"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "meta"
+      ]
+    },
+    "SubmissionDetailedSuccessResponse": {
+      "title": "SubmissionDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Submissions",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "challenge_id": {
+              "title": "Challenge Id",
+              "type": "integer"
+            },
+            "user_id": {
+              "title": "User Id",
+              "type": "integer"
+            },
+            "team_id": {
+              "title": "Team Id",
+              "type": "integer"
+            },
+            "ip": {
+              "title": "Ip",
+              "type": "string"
+            },
+            "provided": {
+              "title": "Provided",
+              "type": "string"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "date": {
+              "title": "Date",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "TeamDetailedSuccessResponse": {
+      "title": "TeamDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Teams",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "oauth_id": {
+              "title": "Oauth Id",
+              "type": "integer"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string"
+            },
+            "email": {
+              "title": "Email",
+              "type": "string"
+            },
+            "password": {
+              "title": "Password",
+              "type": "string"
+            },
+            "secret": {
+              "title": "Secret",
+              "type": "string"
+            },
+            "website": {
+              "title": "Website",
+              "type": "string"
+            },
+            "affiliation": {
+              "title": "Affiliation",
+              "type": "string"
+            },
+            "country": {
+              "title": "Country",
+              "type": "string"
+            },
+            "bracket_id": {
+              "title": "Bracket Id",
+              "type": "integer"
+            },
+            "hidden": {
+              "title": "Hidden",
+              "type": "boolean"
+            },
+            "banned": {
+              "title": "Banned",
+              "type": "boolean"
+            },
+            "captain_id": {
+              "title": "Captain Id",
+              "type": "integer"
+            },
+            "created": {
+              "title": "Created",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "TeamListSuccessResponse": {
+      "title": "TeamListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Teams",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "oauth_id": {
+                "title": "Oauth Id",
+                "type": "integer"
+              },
+              "name": {
+                "title": "Name",
+                "type": "string"
+              },
+              "email": {
+                "title": "Email",
+                "type": "string"
+              },
+              "password": {
+                "title": "Password",
+                "type": "string"
+              },
+              "secret": {
+                "title": "Secret",
+                "type": "string"
+              },
+              "website": {
+                "title": "Website",
+                "type": "string"
+              },
+              "affiliation": {
+                "title": "Affiliation",
+                "type": "string"
+              },
+              "country": {
+                "title": "Country",
+                "type": "string"
+              },
+              "bracket_id": {
+                "title": "Bracket Id",
+                "type": "integer"
+              },
+              "hidden": {
+                "title": "Hidden",
+                "type": "boolean"
+              },
+              "banned": {
+                "title": "Banned",
+                "type": "boolean"
+              },
+              "captain_id": {
+                "title": "Captain Id",
+                "type": "integer"
+              },
+              "created": {
+                "title": "Created",
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        },
+        "meta": {
+          "title": "Meta",
+          "type": "object",
+          "properties": {
+            "pagination": {
+              "title": "Pagination",
+              "type": "object",
+              "properties": {
+                "page": {
+                  "title": "Page",
+                  "type": "integer"
+                },
+                "next": {
+                  "title": "Next",
+                  "type": "integer"
+                },
+                "prev": {
+                  "title": "Prev",
+                  "type": "integer"
+                },
+                "pages": {
+                  "title": "Pages",
+                  "type": "integer"
+                },
+                "per_page": {
+                  "title": "Per Page",
+                  "type": "integer"
+                },
+                "total": {
+                  "title": "Total",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "page",
+                "next",
+                "prev",
+                "pages",
+                "per_page",
+                "total"
+              ]
+            }
+          },
+          "required": [
+            "pagination"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "meta"
+      ]
+    },
+    "UserDetailedSuccessResponse": {
+      "title": "UserDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Users",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "oauth_id": {
+              "title": "Oauth Id",
+              "type": "integer"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string"
+            },
+            "password": {
+              "title": "Password",
+              "type": "string"
+            },
+            "email": {
+              "title": "Email",
+              "type": "string"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "secret": {
+              "title": "Secret",
+              "type": "string"
+            },
+            "website": {
+              "title": "Website",
+              "type": "string"
+            },
+            "affiliation": {
+              "title": "Affiliation",
+              "type": "string"
+            },
+            "country": {
+              "title": "Country",
+              "type": "string"
+            },
+            "bracket_id": {
+              "title": "Bracket Id",
+              "type": "integer"
+            },
+            "hidden": {
+              "title": "Hidden",
+              "type": "boolean"
+            },
+            "banned": {
+              "title": "Banned",
+              "type": "boolean"
+            },
+            "verified": {
+              "title": "Verified",
+              "type": "boolean"
+            },
+            "language": {
+              "title": "Language",
+              "type": "string"
+            },
+            "change_password": {
+              "title": "Change Password",
+              "type": "boolean"
+            },
+            "team_id": {
+              "title": "Team Id",
+              "type": "integer"
+            },
+            "created": {
+              "title": "Created",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "UserListSuccessResponse": {
+      "title": "UserListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Users",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "oauth_id": {
+                "title": "Oauth Id",
+                "type": "integer"
+              },
+              "name": {
+                "title": "Name",
+                "type": "string"
+              },
+              "password": {
+                "title": "Password",
+                "type": "string"
+              },
+              "email": {
+                "title": "Email",
+                "type": "string"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "secret": {
+                "title": "Secret",
+                "type": "string"
+              },
+              "website": {
+                "title": "Website",
+                "type": "string"
+              },
+              "affiliation": {
+                "title": "Affiliation",
+                "type": "string"
+              },
+              "country": {
+                "title": "Country",
+                "type": "string"
+              },
+              "bracket_id": {
+                "title": "Bracket Id",
+                "type": "integer"
+              },
+              "hidden": {
+                "title": "Hidden",
+                "type": "boolean"
+              },
+              "banned": {
+                "title": "Banned",
+                "type": "boolean"
+              },
+              "verified": {
+                "title": "Verified",
+                "type": "boolean"
+              },
+              "language": {
+                "title": "Language",
+                "type": "string"
+              },
+              "change_password": {
+                "title": "Change Password",
+                "type": "boolean"
+              },
+              "team_id": {
+                "title": "Team Id",
+                "type": "integer"
+              },
+              "created": {
+                "title": "Created",
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        },
+        "meta": {
+          "title": "Meta",
+          "type": "object",
+          "properties": {
+            "pagination": {
+              "title": "Pagination",
+              "type": "object",
+              "properties": {
+                "page": {
+                  "title": "Page",
+                  "type": "integer"
+                },
+                "next": {
+                  "title": "Next",
+                  "type": "integer"
+                },
+                "prev": {
+                  "title": "Prev",
+                  "type": "integer"
+                },
+                "pages": {
+                  "title": "Pages",
+                  "type": "integer"
+                },
+                "per_page": {
+                  "title": "Per Page",
+                  "type": "integer"
+                },
+                "total": {
+                  "title": "Total",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "page",
+                "next",
+                "prev",
+                "pages",
+                "per_page",
+                "total"
+              ]
+            }
+          },
+          "required": [
+            "pagination"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "meta"
+      ]
+    },
+    "FileDetailedSuccessResponse": {
+      "title": "FileDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Files",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "location": {
+              "title": "Location",
+              "type": "string"
+            },
+            "sha1sum": {
+              "title": "Sha1Sum",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "FileListSuccessResponse": {
+      "title": "FileListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Files",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "location": {
+                "title": "Location",
+                "type": "string"
+              },
+              "sha1sum": {
+                "title": "Sha1Sum",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "NotificationDetailedSuccessResponse": {
+      "title": "NotificationDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Notifications",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "title": {
+              "title": "Title",
+              "type": "string"
+            },
+            "content": {
+              "title": "Content",
+              "type": "string"
+            },
+            "date": {
+              "title": "Date",
+              "type": "string",
+              "format": "date-time"
+            },
+            "user_id": {
+              "title": "User Id",
+              "type": "integer"
+            },
+            "team_id": {
+              "title": "Team Id",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "NotificationListSuccessResponse": {
+      "title": "NotificationListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Notifications",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "title": {
+                "title": "Title",
+                "type": "string"
+              },
+              "content": {
+                "title": "Content",
+                "type": "string"
+              },
+              "date": {
+                "title": "Date",
+                "type": "string",
+                "format": "date-time"
+              },
+              "user_id": {
+                "title": "User Id",
+                "type": "integer"
+              },
+              "team_id": {
+                "title": "Team Id",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "ConfigDetailedSuccessResponse": {
+      "title": "ConfigDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Configs",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "key": {
+              "title": "Key",
+              "type": "string"
+            },
+            "value": {
+              "title": "Value",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "ConfigListSuccessResponse": {
+      "title": "ConfigListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Configs",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "key": {
+                "title": "Key",
+                "type": "string"
+              },
+              "value": {
+                "title": "Value",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "PageDetailedSuccessResponse": {
+      "title": "PageDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Pages",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "title": {
+              "title": "Title",
+              "type": "string"
+            },
+            "route": {
+              "title": "Route",
+              "type": "string"
+            },
+            "content": {
+              "title": "Content",
+              "type": "string"
+            },
+            "draft": {
+              "title": "Draft",
+              "type": "boolean"
+            },
+            "hidden": {
+              "title": "Hidden",
+              "type": "boolean"
+            },
+            "auth_required": {
+              "title": "Auth Required",
+              "type": "boolean"
+            },
+            "format": {
+              "title": "Format",
+              "type": "string"
+            },
+            "link_target": {
+              "title": "Link Target",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "PageListSuccessResponse": {
+      "title": "PageListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Pages",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "title": {
+                "title": "Title",
+                "type": "string"
+              },
+              "route": {
+                "title": "Route",
+                "type": "string"
+              },
+              "content": {
+                "title": "Content",
+                "type": "string"
+              },
+              "draft": {
+                "title": "Draft",
+                "type": "boolean"
+              },
+              "hidden": {
+                "title": "Hidden",
+                "type": "boolean"
+              },
+              "auth_required": {
+                "title": "Auth Required",
+                "type": "boolean"
+              },
+              "format": {
+                "title": "Format",
+                "type": "string"
+              },
+              "link_target": {
+                "title": "Link Target",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "UnlockDetailedSuccessResponse": {
+      "title": "UnlockDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Unlocks",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "user_id": {
+              "title": "User Id",
+              "type": "integer"
+            },
+            "team_id": {
+              "title": "Team Id",
+              "type": "integer"
+            },
+            "target": {
+              "title": "Target",
+              "type": "integer"
+            },
+            "date": {
+              "title": "Date",
+              "type": "string",
+              "format": "date-time"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "UnlockListSuccessResponse": {
+      "title": "UnlockListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Unlocks",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "user_id": {
+                "title": "User Id",
+                "type": "integer"
+              },
+              "team_id": {
+                "title": "Team Id",
+                "type": "integer"
+              },
+              "target": {
+                "title": "Target",
+                "type": "integer"
+              },
+              "date": {
+                "title": "Date",
+                "type": "string",
+                "format": "date-time"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "TokenDetailedSuccessResponse": {
+      "title": "TokenDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Tokens",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "user_id": {
+              "title": "User Id",
+              "type": "integer"
+            },
+            "created": {
+              "title": "Created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "expiration": {
+              "title": "Expiration",
+              "type": "string",
+              "format": "date-time"
+            },
+            "description": {
+              "title": "Description",
+              "type": "string"
+            },
+            "value": {
+              "title": "Value",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "TokenListSuccessResponse": {
+      "title": "TokenListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Tokens",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "user_id": {
+                "title": "User Id",
+                "type": "integer"
+              },
+              "created": {
+                "title": "Created",
+                "type": "string",
+                "format": "date-time"
+              },
+              "expiration": {
+                "title": "Expiration",
+                "type": "string",
+                "format": "date-time"
+              },
+              "description": {
+                "title": "Description",
+                "type": "string"
+              },
+              "value": {
+                "title": "Value",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "ValuelessTokenDetailedSuccessResponse": {
+      "title": "ValuelessTokenDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Tokens",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "user_id": {
+              "title": "User Id",
+              "type": "integer"
+            },
+            "created": {
+              "title": "Created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "expiration": {
+              "title": "Expiration",
+              "type": "string",
+              "format": "date-time"
+            },
+            "description": {
+              "title": "Description",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "CommentDetailedSuccessResponse": {
+      "title": "CommentDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Comments",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "content": {
+              "title": "Content",
+              "type": "string"
+            },
+            "date": {
+              "title": "Date",
+              "type": "string",
+              "format": "date-time"
+            },
+            "author_id": {
+              "title": "Author Id",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "CommentListSuccessResponse": {
+      "title": "CommentListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Comments",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "type": {
+                "title": "Type",
+                "type": "string"
+              },
+              "content": {
+                "title": "Content",
+                "type": "string"
+              },
+              "date": {
+                "title": "Date",
+                "type": "string",
+                "format": "date-time"
+              },
+              "author_id": {
+                "title": "Author Id",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "SolutionDetailedSuccessResponse": {
+      "title": "SolutionDetailedSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Solutions",
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "challenge_id": {
+              "title": "Challenge Id",
+              "type": "integer"
+            },
+            "content": {
+              "title": "Content",
+              "type": "string"
+            },
+            "state": {
+              "title": "State",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "SolutionListSuccessResponse": {
+      "title": "SolutionListSuccessResponse",
+      "type": "object",
+      "properties": {
+        "success": {
+          "title": "Success",
+          "default": true,
+          "type": "boolean"
+        },
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "items": {
+            "title": "Solutions",
+            "type": "object",
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "integer"
+              },
+              "challenge_id": {
+                "title": "Challenge Id",
+                "type": "integer"
+              },
+              "content": {
+                "title": "Content",
+                "type": "string"
+              },
+              "state": {
+                "title": "State",
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "data"
+      ]
+    }
+  }
+}

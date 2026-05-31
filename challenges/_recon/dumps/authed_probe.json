@@ -1,0 +1,175 @@
+{
+  "/plugins/ctfd-whale/container": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/plugins/ctfd-whale/container?challenge_id=1": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/plugins/ctfd-whale/container?challenge_id=999": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/plugins/ctfd-whale/containers": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/plugins/ctfd-whale/admin/containers": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/plugins/ctfd-whale/admin/settings": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/plugins/ctfd-whale/dynamic_challenges": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/plugins/ctfd-whale/dynamic_challenges": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/challenges/1": {
+    "status": 403,
+    "ctype": "application/json",
+    "body": {
+      "message": "GreyCTF Qualifiers 2026 has not started yet"
+    }
+  },
+  "/api/v1/challenges/types": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/challenges?view=hidden": {
+    "status": 403,
+    "ctype": "application/json",
+    "body": {
+      "message": "GreyCTF Qualifiers 2026 has not started yet"
+    }
+  },
+  "/api/v1/challenges?state=visible": {
+    "status": 403,
+    "ctype": "application/json",
+    "body": {
+      "message": "GreyCTF Qualifiers 2026 has not started yet"
+    }
+  },
+  "/api/v1/challenges/categories": {
+    "status": 403,
+    "ctype": "application/json",
+    "body": {
+      "message": "GreyCTF Qualifiers 2026 has not started yet"
+    }
+  },
+  "/api/v1/users/353/solves": {
+    "status": 200,
+    "ctype": "application/json",
+    "body": {
+      "success": true,
+      "data": [],
+      "meta": {
+        "count": 0
+      }
+    }
+  },
+  "/api/v1/teams/45/solves": {
+    "status": 200,
+    "ctype": "application/json",
+    "body": {
+      "success": true,
+      "data": [],
+      "meta": {
+        "count": 0
+      }
+    }
+  },
+  "/api/v1/scoreboard": {
+    "status": 200,
+    "ctype": "application/json",
+    "body": {
+      "success": true,
+      "data": []
+    }
+  },
+  "/api/v1/statistics/challenges": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/statistics/categories": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/statistics/users": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/statistics/teams": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/files": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/files?type=challenge": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/hints": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/tags": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/flags": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/submissions": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/topics": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/unlocks": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/solutions": {
+    "status": 200,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/shares": {
+    "status": 404,
+    "ctype": "text/html",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  }
+}

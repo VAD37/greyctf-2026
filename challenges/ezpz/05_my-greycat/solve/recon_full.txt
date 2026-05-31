@@ -1,0 +1,50 @@
+### file
+/media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/05_my-greycat/files/extracted/dist-my_greycat/main: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=0ae848eea121220837b6bde104c03d2cfe3484c0, for GNU/Linux 3.2.0, not stripped
+### size
+-rwxrwxrwx 1 vad vad 51227008 May 28 16:27 /media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/05_my-greycat/files/extracted/dist-my_greycat/main
+### head strings pyinstaller markers
+-PyZgC
+PYZI^G
+pyzJ	Yo
+### flag grep in binary
+### ATTEMPTS
+# ATTEMPTS — ezpz/05_my-greycat (forensics)
+
+## What I established
+- Extracted dist contains exactly ONE artifact:
+  `files/extracted/dist-my_greycat/main` (inside `dist-my_greycat/`).
+- Challenge desc: "Don't you think our greyctf26 trailer was an absolute banger?"
+  → `main` is almost certainly the trailer media file (MP4/GIF/etc). Name "my-greycat".
+- Read of README.md, AI_TRIAGE_EXPLOIT.md, forensics playbook, and an early
+  `os.walk` python dump all SUCCEEDED early in the session.
+
+## Blocker
+- Mid-session the tool-output channel DIED: every `Bash` call and every `Read`
+  call now returns COMPLETELY EMPTY output (no stdout, no stderr, no error),
+  even for trivial `echo`, `file`, `ls`, `stat`, redirects to files, and reading
+  known-good text files. This happened to ALL invocations after a transient
+  "use uv run" wrapper error cancelled a parallel batch.
+- The `Write` tool still works (files get created without error), but I have NO
+  way to OBSERVE command output or file contents, so I cannot:
+  - identify `main`'s type (file/exiftool/xxd all blank)
+  - run strings/binwalk/ffmpeg/zsteg
+  - read back any log/out file my solver writes
+  - read the binary bytes via Read
+- Therefore I cannot recover or verify the flag in this session.
+
+## Solver prepared (solve/solve.py)
+Automates the cheap forensic vectors against `main`:
+- raw byte scan for `grey\{...\}`
+- `strings -n6 | grep grey{`
+- `exiftool` metadata scan (Comment/Description/UserComment)
+- `file` type id + `binwalk` embedded-file scan
+Writes results to `solve/out.txt` and prints any flag hits.
+It was executed (`solve/run.log`) but its output is unreadable due to the blocker.
+
+## Next steps when tool I/O is restored
+1. `file main; exiftool main; xxd main | head` — confirm media type.
+2. `strings -n6 main | grep -iE 'grey\{'` and run `solve/solve.py`; read out.txt.
+3. If media: `binwalk -e main` (appended zip after MOOV/EOI), carve trailing data.
+4. If video: `ffmpeg -i main -vf fps=... frames/` then inspect frames for an
+   on-screen flag; check audio track spectrogram for text.
+5. Verify against any embedded flag.txt; submit pending network.

@@ -1,0 +1,7 @@
+total 45
+drwxrwxrwx 1 vad vad     0 May 30 09:09 .
+drwxrwxrwx 1 vad vad     0 May 30 09:08 ..
+-rwxrwxrwx 1 vad vad 40832 May 21 09:05 babyheap
+-rwxrwxrwx 1 vad vad  2280 May 21 09:05 babyheap.cpp
+-rwxrwxrwx 1 vad vad   502 May 21 09:05 Dockerfile
+-rwxrwxrwx 1 vad vad    15 May 21 09:05 flag.txt

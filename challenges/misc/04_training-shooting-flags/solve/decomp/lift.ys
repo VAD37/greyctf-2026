@@ -1,0 +1,11 @@
+read_verilog -I cells main_decomp.v
+hierarchy -top top
+proc
+flatten
+opt -full
+clean -purge
+opt -full
+clean -purge
+stat
+write_json main.json
+write_verilog -noattr -simple-lhs main_small.v

@@ -1,0 +1,79 @@
+baby-bof — debugged stack layout + attack analysis (2026-05-30)
+================================================================
+
+Binary: solve/index.cgi (copied from container). static, no-PIE, NX, canary
+(fstack-protector-strong). g++ -O0 (NOT -O2; validate_auth NOT inlined).
+Real symbols in anon ns: _ZN12_GLOBAL__N_113validate_authEPcPKc / decode_base64.
+(NOTE: addrs.py + layout.py query a std::string-mangled symbol that does NOT
+exist in this binary -> they fail. Dead scripts.)
+
+DYNAMIC LAYOUT (gdb, validate_auth frame, low->high addr)
+---------------------------------------------------------
+  rbp-0x140  flag ptr (arg2 spill)      = decoded-48   (BELOW buffer, unreachable)
+  rbp-0x138  authorization (arg1)
+  rbp-0x130  basic_auth
+  rbp-0x128  supplied_username (&decoded)
+  rbp-0x120  supplied_password (colon+1)
+  rbp-0x118  colon_pos
+  rbp-0x110  decoded[0x100]   <-- overflow source, writes UPWARD
+  rbp-0x008  CANARY    (LSB always 0x00, upper 7 random)
+  rbp+0x000  saved rbp
+  rbp+0x008  saved rip -> main 0x4025ac
+
+OFFSETS from decoded start:
+  decoded -> canary     = 264 (0x108)
+  decoded -> saved_rbp  = 272
+  decoded -> saved_rip  = 280 (0x118)
+  decoded -> flag STRING (main frame) = 320 (0x140)
+
+DECODER CONSTRAINT (new): rejects "==" double pad. plaintext len %3==1 -> throw
+("Invalid base64 encoding"). Payloads must have decoded len %3 in {0,2}.
+
+LIVE CONTAINER PROBE (port 32367) — confirms canary wall
+--------------------------------------------------------
+  L=200,260,264  http=200 "Invalid credentials."   (canary intact, returns)
+  L=272,280,288  http=500 (lighttpd)               (__stack_chk_fail abort)
+  => HARD WALL at offset 264. Any write >=272 corrupts canary -> 500, no flag.
+
+CANARY: changes every exec (3 gdb runs: 0x29d8.., 0x57dc.., 0xe7ff..).
+mod_cgi execve's fresh process per request -> fresh canary. Byte-brute across
+requests INFEASIBLE (no accumulation). Also decode's trailing '\0' clobbers the
+byte after last data -> complicates partial brute even if canary were stable.
+
+ATTACKS DEBUGGED & BLOCKED
+--------------------------
+1. ret2win / ROP (overwrite saved_rip @280): blocked — must cross canary @264,
+   canary fresh per request, no leak. LIVE-confirmed (500 at >=272).
+2. exploit.py "overwrite flag[] so strcmp passes": flawed — (a) assumes -O2
+   inlining (false, -O0, separate frames); (b) flag@decoded+320 is past canary
+   (unreachable); (c) even if reached, main would puts() OUR bytes not real flag.
+3. Redirect supplied_password ptr to flag (compare flag==flag): blocked — colon
+   pinned at offset 5 (username must be exactly "admin"), so password=decoded+6
+   fixed; cannot relocate. flag-ptr slot is BELOW buffer, unreachable.
+4. Leak flag via strcmp oracle: strcmp is EQUALITY-ONLY (no prefix/partial). flag
+   constant across requests but no per-byte oracle. Timing channel = ~1 strcmp
+   iter (~ns) under CGI fork jitter (~ms) -> not measurable. No memory ever
+   echoed (only fixed strings / flag / 500). NO in-band leak exists.
+
+CONCLUSION
+----------
+Overflow alone cannot win on standard infra (canary wall, fresh canary, no leak).
+Open avenues (in priority):
+ A. If contest live + remote reachable: empirically test REMOTE canary stability
+    (cheap). If remote ASLR off / different server model => canary stable =>
+    byte-brute canary (~1.8k req, handle trailing-null) => ret2win viable.
+ B. Re-examine for any disclosure primitive (none found in source/binary).
+ C. Park as hard; bank cheaper flags first.
+
+scratch: index_dbg.cgi (path-patched /flag.txt->flag.txt) + flag.txt = local
+debug harness; lay3.gdb in /tmp.
+
+REMOTE CONFIRMATION (challs.nusgreyhats.org:32367, live HTTP lighttpd/1.4.69)
+----------------------------------------------------------------------------
+wall:  L=200->200, L=264->200, L=266->500, L=272->500, L=282->500
+       => same canary wall at 264 as local build. offsets identical.
+stability: 256 byte-1 guesses (canary[0]=0x00) ALL 500, zero clean returns.
+       => canary FRESH per request (mod_cgi execve). brute accumulation impossible.
+VERDICT: overflow->ret2win conclusively blocked on real target. fresh canary +
+trailing-null anti-brute + no memory-disclosure output = no flag via the overflow.
+Need an info-leak primitive the code does not expose, or a non-overflow bug.

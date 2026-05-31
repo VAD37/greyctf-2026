@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--browser=chrome-canary",
+        "--viewport-size=1920,1080"
+      ]
+    }
+  }
+}

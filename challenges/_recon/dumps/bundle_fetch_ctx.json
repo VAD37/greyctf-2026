@@ -1,0 +1,102 @@
+[
+  {
+    "path": "/api/v1/challenges",
+    "ctx": "{n}, ${r}%, ${i}%)`}async function ko(e={}){let t=\"/api/v1/challenges\";if(Object.keys(e).length!==0){let o=new URLSearchParams(e).toString();t=`${t}?${o}`}let i=(await(await D.fetch(t,{method:\"GET\"})).json()).data;return D._functions.challenges.sortChallenges&&(i=D._functions.challenges.sortChallenges(i)),i}async function Po(e){return(await(await D.fetch(`/api/v1/challenges/${e}`,{method:\"GET\"})).json()).data}async function yu(){let e=await ko();D._functions.challenges.displayChallenges&&D._functions.challenges.displayChallenges(e)}const Ro=e=>"
+  },
+  {
+    "path": "/api/v1/challenges/${e}",
+    "ctx": "i}async function Po(e){return(await(await D.fetch(`/api/v1/challenges/${e}`,{method:\"GET\"})).json()).data}async function yu(){let e=await ko();D._functions.challenges.displayChallenges&&D._functions.challenges.displayChallenges(e)}const Ro=e=>new Promise((t,n)=>{const r=document.querySelector(`script[src='${e}']`);r&&r.remove();const i=document.createElement(\"script\");document.body.appendChild(i),i.onload=t,i.onerror=n,i.async=!0,i.src=e});async function bu(e,t){D._internal.challenge={};let n=D.config,r=await Po(e);D._functions.challenge.displa"
+  },
+  {
+    "path": "/api/v1/challenges/attempt",
+    "ctx": "tions.challenge.submitChallenge(e,t);return}let r=\"/api/v1/challenges/attempt\";(n===!0||D.config.preview===!0)&&(r+=\"?preview=true\");const o=await(await D.fetch(r,{method:\"POST\",body:JSON.stringify({challenge_id:e,submission:t})})).json();return D._functions.challenge.displaySubmissionResponse&&D._functions.challenge.displaySubmissionResponse(o),o}async function Ho(e){return await(await D.fetch(`/api/v1/hints/${e}`,{method:\"GET\"})).json()}async function gi(e,t=\"hints\"){return await(await D.fetch(\"/api/v1/unlocks\",{method:\"POST\",body:JSON.string"
+  },
+  {
+    "path": "/api/v1/hints/${e}",
+    "ctx": "o}async function Ho(e){return await(await D.fetch(`/api/v1/hints/${e}`,{method:\"GET\"})).json()}async function gi(e,t=\"hints\"){return await(await D.fetch(\"/api/v1/unlocks\",{method:\"POST\",body:JSON.stringify({target:e,type:t})})).json()}async function Bo(e){let n=(await Ho(e)).data;if(n.content){D._functions.challenge.displayHint(n);return}if(await Fo(n)){let i=await gi(e);i.success?await Bo(e):D._functions.challenge.displayUnlockError(i)}}async function wu(e){return D._functions.challenge.displayUnlock(e)}async function Fo(e){return D._functions"
+  },
+  {
+    "path": "/api/v1/unlocks",
+    "ctx": "nction gi(e,t=\"hints\"){return await(await D.fetch(\"/api/v1/unlocks\",{method:\"POST\",body:JSON.stringify({target:e,type:t})})).json()}async function Bo(e){let n=(await Ho(e)).data;if(n.content){D._functions.challenge.displayHint(n);return}if(await Fo(n)){let i=await gi(e);i.success?await Bo(e):D._functions.challenge.displayUnlockError(i)}}async function wu(e){return D._functions.challenge.displayUnlock(e)}async function Fo(e){return D._functions.challenge.displayHintUnlock(e)}async function Vo(e){return D._functions.challenge.displaySolutionUnloc"
+  },
+  {
+    "path": "/api/v1/challenges/${e}/solves",
+    "ctx": ")}async function jo(e){return(await(await D.fetch(`/api/v1/challenges/${e}/solves`,{method:\"GET\"})).json()).data}async function Au(e){let t=await jo(e);D._functions.challenge.displaySolves&&D._functions.challenge.displaySolves(t)}async function Tu(e){return(await(await D.fetch(`/api/v1/challenges/${e}/solution`,{method:\"GET\"})).json()).data}async function Su(e,t,n){return D._functions.challenge.checkSolution?D._functions.challenge.checkSolution(e,t,n):e==\"hidden\"||e==\"visible\"?!1:(e==\"solved\"&&n===\"correct\",!0)}async function Wo(e){return(await"
+  },
+  {
+    "path": "/api/v1/challenges/${e}/solution",
+    "ctx": ")}async function Tu(e){return(await(await D.fetch(`/api/v1/challenges/${e}/solution`,{method:\"GET\"})).json()).data}async function Su(e,t,n){return D._functions.challenge.checkSolution?D._functions.challenge.checkSolution(e,t,n):e==\"hidden\"||e==\"visible\"?!1:(e==\"solved\"&&n===\"correct\",!0)}async function Wo(e){return(await(await D.fetch(`/api/v1/solutions/${e}`,{method:\"GET\"})).json()).data}async function Yo(e){let t=await Wo(e);if(t.content&&D._functions.challenge.displaySolution){D._functions.challenge.displaySolution(t);return}if(await Vo(t)){"
+  },
+  {
+    "path": "/api/v1/solutions/${e}",
+    "ctx": ")}async function Wo(e){return(await(await D.fetch(`/api/v1/solutions/${e}`,{method:\"GET\"})).json()).data}async function Yo(e){let t=await Wo(e);if(t.content&&D._functions.challenge.displaySolution){D._functions.challenge.displaySolution(t);return}if(await Vo(t)){let r=await gi(t.id,\"solutions\");r.success?await Yo(e):D._functions.challenge.displayUnlockError(r)}}async function Ou(e,t,n){return(await(await D.fetch(`/api/v1/challenges/${e}/ratings`,{method:\"PUT\",body:JSON.stringify({value:t,review:n})})).json()).data}async function xu(e=null){let "
+  },
+  {
+    "path": "/api/v1/challenges/${e}/ratings",
+    "ctx": "ync function Ou(e,t,n){return(await(await D.fetch(`/api/v1/challenges/${e}/ratings`,{method:\"PUT\",body:JSON.stringify({value:t,review:n})})).json()).data}async function xu(e=null){let t=\"/api/v1/scoreboard\";return e&&(t=`${t}?bracket_id=${e}`),(await(await D.fetch(t,{method:\"GET\"})).json()).data}async function $u(e,t=null){let n=`/api/v1/scoreboard/top/${e}`;return t&&(n=`${n}?bracket_id=${t}`),(await(await D.fetch(n,{method:\"GET\"})).json()).data}async function Cu(e){return(await(await D.fetch(`/api/v1/brackets?type=${e}`,{method:\"GET\"})).json("
+  },
+  {
+    "path": "/api/v1/scoreboard",
+    "ctx": ")})).json()).data}async function xu(e=null){let t=\"/api/v1/scoreboard\";return e&&(t=`${t}?bracket_id=${e}`),(await(await D.fetch(t,{method:\"GET\"})).json()).data}async function $u(e,t=null){let n=`/api/v1/scoreboard/top/${e}`;return t&&(n=`${n}?bracket_id=${t}`),(await(await D.fetch(n,{method:\"GET\"})).json()).data}async function Cu(e){return(await(await D.fetch(`/api/v1/brackets?type=${e}`,{method:\"GET\"})).json()).data}async function Du(e){return await(await D.fetch(\"/api/v1/users/me\",{method:\"PATCH\",body:JSON.stringify(e)})).json()}async functi"
+  },
+  {
+    "path": "/api/v1/scoreboard/top/${e}",
+    "ctx": ")).json()).data}async function $u(e,t=null){let n=`/api/v1/scoreboard/top/${e}`;return t&&(n=`${n}?bracket_id=${t}`),(await(await D.fetch(n,{method:\"GET\"})).json()).data}async function Cu(e){return(await(await D.fetch(`/api/v1/brackets?type=${e}`,{method:\"GET\"})).json()).data}async function Du(e){return await(await D.fetch(\"/api/v1/users/me\",{method:\"PATCH\",body:JSON.stringify(e)})).json()}async function Nu(e){return await(await D.fetch(\"/api/v1/tokens\",{method:\"POST\",body:JSON.stringify(e)})).json()}async function Lu(e){return await(await D.fe"
+  },
+  {
+    "path": "/api/v1/brackets?type=${e}",
+    "ctx": "a}async function Cu(e){return(await(await D.fetch(`/api/v1/brackets?type=${e}`,{method:\"GET\"})).json()).data}async function Du(e){return await(await D.fetch(\"/api/v1/users/me\",{method:\"PATCH\",body:JSON.stringify(e)})).json()}async function Nu(e){return await(await D.fetch(\"/api/v1/tokens\",{method:\"POST\",body:JSON.stringify(e)})).json()}async function Lu(e){return await(await D.fetch(`/api/v1/tokens/${e}`,{method:\"DELETE\"})).json()}async function Mu(e=\"me\",t){return await(await D.fetch(`/api/v1/users/${e}/submissions?challenge_id=${t}`,{method:\""
+  },
+  {
+    "path": "/api/v1/users/me",
+    "ctx": "a}async function Du(e){return await(await D.fetch(\"/api/v1/users/me\",{method:\"PATCH\",body:JSON.stringify(e)})).json()}async function Nu(e){return await(await D.fetch(\"/api/v1/tokens\",{method:\"POST\",body:JSON.stringify(e)})).json()}async function Lu(e){return await(await D.fetch(`/api/v1/tokens/${e}`,{method:\"DELETE\"})).json()}async function Mu(e=\"me\",t){return await(await D.fetch(`/api/v1/users/${e}/submissions?challenge_id=${t}`,{method:\"GET\"})).json()}async function Iu(e){return await(await D.fetch(`/api/v1/users/${e}/solves`,{method:\"GET\"}))"
+  },
+  {
+    "path": "/api/v1/tokens",
+    "ctx": ")}async function Nu(e){return await(await D.fetch(\"/api/v1/tokens\",{method:\"POST\",body:JSON.stringify(e)})).json()}async function Lu(e){return await(await D.fetch(`/api/v1/tokens/${e}`,{method:\"DELETE\"})).json()}async function Mu(e=\"me\",t){return await(await D.fetch(`/api/v1/users/${e}/submissions?challenge_id=${t}`,{method:\"GET\"})).json()}async function Iu(e){return await(await D.fetch(`/api/v1/users/${e}/solves`,{method:\"GET\"})).json()}async function ku(e){return await(await D.fetch(`/api/v1/users/${e}/fails`,{method:\"GET\"})).json()}async fun"
+  },
+  {
+    "path": "/api/v1/tokens/${e}",
+    "ctx": ")}async function Lu(e){return await(await D.fetch(`/api/v1/tokens/${e}`,{method:\"DELETE\"})).json()}async function Mu(e=\"me\",t){return await(await D.fetch(`/api/v1/users/${e}/submissions?challenge_id=${t}`,{method:\"GET\"})).json()}async function Iu(e){return await(await D.fetch(`/api/v1/users/${e}/solves`,{method:\"GET\"})).json()}async function ku(e){return await(await D.fetch(`/api/v1/users/${e}/fails`,{method:\"GET\"})).json()}async function Pu(e){return await(await D.fetch(`/api/v1/users/${e}/awards`,{method:\"GET\"})).json()}async function Ru(){re"
+  },
+  {
+    "path": "/api/v1/users/${e}/submissions?challenge_id=${t}",
+    "ctx": " function Mu(e=\"me\",t){return await(await D.fetch(`/api/v1/users/${e}/submissions?challenge_id=${t}`,{method:\"GET\"})).json()}async function Iu(e){return await(await D.fetch(`/api/v1/users/${e}/solves`,{method:\"GET\"})).json()}async function ku(e){return await(await D.fetch(`/api/v1/users/${e}/fails`,{method:\"GET\"})).json()}async function Pu(e){return await(await D.fetch(`/api/v1/users/${e}/awards`,{method:\"GET\"})).json()}async function Ru(){return await(await D.fetch(\"/api/v1/teams/me/members\",{method:\"POST\",credentials:\"same-origin\",headers:{Ac"
+  },
+  {
+    "path": "/api/v1/users/${e}/solves",
+    "ctx": ")}async function Iu(e){return await(await D.fetch(`/api/v1/users/${e}/solves`,{method:\"GET\"})).json()}async function ku(e){return await(await D.fetch(`/api/v1/users/${e}/fails`,{method:\"GET\"})).json()}async function Pu(e){return await(await D.fetch(`/api/v1/users/${e}/awards`,{method:\"GET\"})).json()}async function Ru(){return await(await D.fetch(\"/api/v1/teams/me/members\",{method:\"POST\",credentials:\"same-origin\",headers:{Accept:\"application/json\",\"Content-Type\":\"application/json\"}})).json()}async function Hu(){return await(await D.fetch(\"/api/v"
+  },
+  {
+    "path": "/api/v1/users/${e}/fails",
+    "ctx": ")}async function ku(e){return await(await D.fetch(`/api/v1/users/${e}/fails`,{method:\"GET\"})).json()}async function Pu(e){return await(await D.fetch(`/api/v1/users/${e}/awards`,{method:\"GET\"})).json()}async function Ru(){return await(await D.fetch(\"/api/v1/teams/me/members\",{method:\"POST\",credentials:\"same-origin\",headers:{Accept:\"application/json\",\"Content-Type\":\"application/json\"}})).json()}async function Hu(){return await(await D.fetch(\"/api/v1/teams/me\",{method:\"DELETE\"})).json()}async function Bu(e){return await(await D.fetch(\"/api/v1/team"
+  },
+  {
+    "path": "/api/v1/users/${e}/awards",
+    "ctx": ")}async function Pu(e){return await(await D.fetch(`/api/v1/users/${e}/awards`,{method:\"GET\"})).json()}async function Ru(){return await(await D.fetch(\"/api/v1/teams/me/members\",{method:\"POST\",credentials:\"same-origin\",headers:{Accept:\"application/json\",\"Content-Type\":\"application/json\"}})).json()}async function Hu(){return await(await D.fetch(\"/api/v1/teams/me\",{method:\"DELETE\"})).json()}async function Bu(e){return await(await D.fetch(\"/api/v1/teams/me\",{method:\"PATCH\",body:JSON.stringify(e)})).json()}async function Fu(e){return await(await D.fe"
+  },
+  {
+    "path": "/api/v1/teams/me/members",
+    "ctx": "()}async function Ru(){return await(await D.fetch(\"/api/v1/teams/me/members\",{method:\"POST\",credentials:\"same-origin\",headers:{Accept:\"application/json\",\"Content-Type\":\"application/json\"}})).json()}async function Hu(){return await(await D.fetch(\"/api/v1/teams/me\",{method:\"DELETE\"})).json()}async function Bu(e){return await(await D.fetch(\"/api/v1/teams/me\",{method:\"PATCH\",body:JSON.stringify(e)})).json()}async function Fu(e){return await(await D.fetch(`/api/v1/teams/${e}/solves`,{method:\"GET\"})).json()}async function Vu(e){return await(await D.f"
+  },
+  {
+    "path": "/api/v1/teams/me",
+    "ctx": "()}async function Hu(){return await(await D.fetch(\"/api/v1/teams/me\",{method:\"DELETE\"})).json()}async function Bu(e){return await(await D.fetch(\"/api/v1/teams/me\",{method:\"PATCH\",body:JSON.stringify(e)})).json()}async function Fu(e){return await(await D.fetch(`/api/v1/teams/${e}/solves`,{method:\"GET\"})).json()}async function Vu(e){return await(await D.fetch(`/api/v1/teams/${e}/fails`,{method:\"GET\"})).json()}async function ju(e){return await(await D.fetch(`/api/v1/teams/${e}/awards`,{method:\"GET\"})).json()}function Wu(e){const t=document.createE"
+  },
+  {
+    "path": "/api/v1/teams/${e}/solves",
+    "ctx": ")}async function Fu(e){return await(await D.fetch(`/api/v1/teams/${e}/solves`,{method:\"GET\"})).json()}async function Vu(e){return await(await D.fetch(`/api/v1/teams/${e}/fails`,{method:\"GET\"})).json()}async function ju(e){return await(await D.fetch(`/api/v1/teams/${e}/awards`,{method:\"GET\"})).json()}function Wu(e){const t=document.createElement(\"template\");return t.innerHTML=e.trim(),t.content.firstChild}function Go(e){const t=document.createElement(\"div\");return t.innerText=e,t.innerHTML}class Yu{constructor(){this.id=Math.random(),this.isMast"
+  },
+  {
+    "path": "/api/v1/teams/${e}/fails",
+    "ctx": ")}async function Vu(e){return await(await D.fetch(`/api/v1/teams/${e}/fails`,{method:\"GET\"})).json()}async function ju(e){return await(await D.fetch(`/api/v1/teams/${e}/awards`,{method:\"GET\"})).json()}function Wu(e){const t=document.createElement(\"template\");return t.innerHTML=e.trim(),t.content.firstChild}function Go(e){const t=document.createElement(\"div\");return t.innerText=e,t.innerHTML}class Yu{constructor(){this.id=Math.random(),this.isMaster=!1,this.others={},window.addEventListener(\"storage\",this),window.addEventListener(\"unload\",this),"
+  },
+  {
+    "path": "/api/v1/teams/${e}/awards",
+    "ctx": ")}async function ju(e){return await(await D.fetch(`/api/v1/teams/${e}/awards`,{method:\"GET\"})).json()}function Wu(e){const t=document.createElement(\"template\");return t.innerHTML=e.trim(),t.content.firstChild}function Go(e){const t=document.createElement(\"div\");return t.innerText=e,t.innerHTML}class Yu{constructor(){this.id=Math.random(),this.isMaster=!1,this.others={},window.addEventListener(\"storage\",this),window.addEventListener(\"unload\",this),this.broadcast(\"hello\"),setTimeout(this.check.bind(this),500),this._checkInterval=setInterval(this."
+  },
+  {
+    "path": "/api/v1/notifications?since_id=${n}",
+    "ctx": "}`;q.howl=new Uo.Howl({src:t});let n=ys();D.fetch(`/api/v1/notifications?since_id=${n}`,{method:\"HEAD\"}).then(r=>{let i=r.headers.get(\"result-count\");i&&(q.controller.broadcast(\"counter\",{count:i}),D._functions.events.eventCount(i))})},controller:new Yu,source:null,howl:null,connect:()=>{q.source.addEventListener(\"notification\",function(e){let t=JSON.parse(e.data);q.controller.broadcast(\"notification\",t),D.events.counter.unread.add(t.id);let n=D.events.counter.unread.getAll().length;q.controller.broadcast(\"counter\",{count:n}),D._functions.event"
+  }
+]

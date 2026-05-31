@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "defaultMode": "auto",
+    "allow": ["Read(./.env)"]
+  },
+  "enabledPlugins": {
+    "workflow-skill-design@trailofbits": true,
+    "skill-improver@trailofbits": true,
+    "modern-python@trailofbits": true,
+    "static-analysis@trailofbits": false,
+    "dimensional-analysis@trailofbits": false,
+    "ask-questions-if-underspecified@trailofbits": true,
+    "caveman@caveman": true
+  },
+  "extraKnownMarketplaces": {
+    "trailofbits": {
+      "source": {
+        "source": "github",
+        "repo": "trailofbits/skills"
+      }
+    },
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    }
+  }
+}

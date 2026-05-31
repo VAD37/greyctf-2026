@@ -1,0 +1,3 @@
+FLAGS: []
+WINCTX: 'You win!\n\n\n\n\n'
+TAILRAW: '   #   #   #   # #   ##### # ### # # # # ### ## # #   # # # #   # ### # ### # # # ##### # ##   #   # # ##     #@## ### ### # # ### # ##   #     ##  F##w/a/s/d/o/lCurrent score: 1232 / 0\x1b>You win!\n\n\n\n\n'

@@ -1,0 +1,44 @@
+TOTAL 23977
+RAWBYTES 1103506
+PROTO UDP 21940
+PROTO TCP 1937
+PROTO OTHER 100
+LOPORT 443 22921
+LOPORT 53 616
+LOPORT 35294 127
+LOPORT 445 53
+LOPORT 1900 36
+LOPORT 80 34
+LOPORT 123 28
+LOPORT 35282 22
+LOPORT 57621 15
+LOPORT 5353 8
+CONV 241 (('172.253.144.93', 443), ('192.168.73.130', 50066))
+CONV 127 (('151.101.65.140', 443), ('192.168.73.130', 38670))
+CONV 127 (('192.168.73.130', 35294), ('35.187.240.51', 35667))
+CONV 100 (('192.168.73.130', 38184), ('74.125.24.97', 443))
+CONV 61 (('192.168.73.130', 41262), ('74.125.130.94', 443))
+CONV 53 (('143.198.94.124', 445), ('192.168.73.130', 37910))
+CONV 51 (('142.251.152.119', 443), ('192.168.73.130', 51828))
+CONV 42 (('151.101.129.91', 443), ('192.168.73.130', 41596))
+DNS 46 www.youtube.com.
+DNS 38 www.google.com.
+DNS 36 www.gstatic.com.
+DNS 36 fonts.gstatic.com.
+DNS 22 www.googletagmanager.com.
+DNS 20 csp.withgoogle.com.
+DNS 20 play.google.com.
+DNS 20 ssl.gstatic.com.
+DNS 18 googleads.g.doubleclick.net.
+DNS 16 waa-pa.clients6.google.com.
+DNS 16 ads-img.mozilla.org.
+DNS 14 lh3.google.com.
+DNS 14 lh3.googleusercontent.com.
+DNS 14 ogads-pa.clients6.google.com.
+DNS 14 accounts.google.com.
+HTTP b'POST /wr2 HTTP/1.1\r\nHost: o.pki.goog\r\nUser-Agent: Mozilla/5.'
+HTTP b'HTTP/1.1 200 OK\r\nContent-Type: application/ocsp-response\r\nDa'
+HTTP b'GET /?upload=mem_dump.dmp&token=PV6QKm8XtToPXK4G4u9uatWRX9GQ'
+HTTP b'HTTP/1.1 200 OK\r\nServer: nginx/1.27.5\r\nDate: Wed, 27 May 202'
+HTTP b'GET /assets/index-DtLtnjXE.js HTTP/1.1\r\nHost: challs.nusgrey'
+HTTP b'GET /assets/index-CI6u3gqV.css HTTP/1.1\r\nHost: challs.nusgre'

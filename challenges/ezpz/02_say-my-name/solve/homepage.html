@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GreyCTF Qualifiers 2026</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/2b2cc3eb8b9e4905acf3d2d4f7ea0929/greyctf2026-logo-transparent.png" type="image/x-icon">
+  
+
+  
+    <link rel="stylesheet" href="/themes/greyctf/static/assets/main.f121d585.css">
+  
+
+  
+
+  <script  src="/themes/greyctf/static/assets/color_mode_switcher.5c07df4e.js"></script>
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "8e139e0167338f7bb9b97dd80b30384d55e58aab3bad4d93d5dba90c3dfc1609",
+          'userMode': "teams",
+          'userId': 0,
+          'userName': null,
+          'userEmail': null,
+          'userVerified': null,
+          'teamId': null,
+          'teamName': null,
+          'start': 1780106400,
+          'end': 1780192800,
+          'themeSettings': {"challenge_category_order": "", "challenge_category_priority": "Ezpz", "challenge_name_order": "AE-no-S\r\nBaby RSA\r\nbabyheap\r\nCodex Computer Use\r\nfilter_flag\r\nFort Knockies\r\nmy greycat\r\npollution\r\nAPTV3R4_STRIKES_AGAIN\r\nbaby bof\r\nCrimewatch\r\ndbench_jumbf\r\nelite ball knowledge\r\nGrey Yuumi\r\ngreycat game\r\nlights-out\r\nSeeTeeEffedIn\r\nwait a minute\r\nan old soviet terminal\r\ncaexor\r\nChiaroscuro\r\nDuality in All Things\r\ngo going goen\r\nNailed It!\r\nSABLE\r\nspidr\r\ntraining shooting flags\r\n\r\n67\r\nghidra gangster edition\r\nGreyhats Gallery\r\nJurgen\u0027s Revenge\r\nred flag \r\n3d-maze\r\nIf Models Could Dream", "challenge_order": "", "challenge_window_size": "norm", "flag_format": "", "use_builtin_code_highlighter": true},
+          'eventSounds': [
+            "/themes/greyctf/static/sounds/notification.webm",
+            "/themes/greyctf/static/sounds/notification.mp3",
+          ],
+      }
+  </script>
+
+  
+</head>
+<body class="gh-homepage">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      
+        <img
+            class="img-responsive ctf_logo"
+            src="/files/5a0fdf85c63705cd3aea6279812b9b9d/greyctf2026-logo-transparent.svg"
+            alt="GreyCTF Qualifiers 2026"
+            height="25"
+        >
+      
+    </a>
+
+    <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#base-navbars"
+        aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="base-navbars">
+      <ul class="navbar-nav me-auto">
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/users">
+              Users
+            </a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/teams">
+                Teams
+              </a>
+            </li>
+          
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/scoreboard">
+              Scoreboard
+            </a>
+          </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/challenges">
+            Challenges
+          </a>
+        </li>
+      </ul>
+
+      <hr class="d-sm-flex d-md-flex d-lg-none">
+
+      <ul class="navbar-nav ms-md-auto d-block d-sm-flex d-md-flex">
+        
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/register">
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register">
+                  <i class="fas fa-user-plus d-none d-md-inline d-lg-none"></i>
+                </span>
+                <span class="d-sm-inline d-md-none d-lg-inline">
+                  <i class="fas fa-user-plus pe-1"></i>
+                  Register
+                </span>
+              </a>
+            </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+                <i class="fas fa-sign-in-alt d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-sign-in-alt pe-1"></i>
+                Login
+              </span>
+            </a>
+          </li>
+        
+
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-language d-none d-md-inline"></i>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-language pe-1"></i>
+              Change language
+            </span>
+          </button>
+          <form x-data="LanguageForm">
+            <ul class="dropdown-menu dropdown-menu-end">
+              
+              <li>
+                  <span class="dropdown-item " @click="set" value="en">
+                    English
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="de">
+                    Deutsch
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="pl">
+                    Polski
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="es">
+                    Español
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ar">
+                    اَلْعَرَبِيَّةُ
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="zh_CN">
+                    简体中文
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="zh_TW">
+                    繁體中文
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="fr">
+                    Français
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ko">
+                    한국어
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ru">
+                    русский язык
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="pt_BR">
+                    Português do Brasil
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sk">
+                    Slovenský jazyk
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ja">
+                    日本語
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="it">
+                    Italiano
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="vi">
+                    tiếng Việt
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ca">
+                    Català
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="el">
+                    Ελληνικά
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="fi">
+                    Suomi
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="ro">
+                    Română
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sl">
+                    Slovenščina
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sv">
+                    Svenska
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="he">
+                    עברית
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="uz">
+                    oʻzbekcha
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="sr">
+                    Српски језик
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="no">
+                    Norsk
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="hr">
+                    Hrvatski
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="cs">
+                    Čeština
+                  </span>
+              </li>
+              <li>
+                  <span class="dropdown-item " @click="set" value="id">
+                    Bahasa Indonesia
+                  </span>
+              </li>
+            </ul>
+          </form>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link theme-switch" type="button">
+            <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle theme">
+              <i class="fas fa-sun d-none d-md-inline"></i>
+            </span>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-sun pe-1"></i>
+              Toggle theme
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main role="main">
+  
+  
+  
+      <section class="gh-rice-page">
+    <div class="gh-rice-terminal" aria-label="GreyCTF neofetch terminal concept">
+      <div class="gh-rice-titlebar">
+        <div class="left"><span class="dot close"></span><span class="dot min"></span><span class="dot max"></span></div>
+        <div>greyctf2026@nusgreyhats: ~</div>
+        <div class="right"></div>
+      </div>
+      <div class="gh-rice-body">
+        <p class="gh-rice-prompt"><span class="mark">›</span> neofetch</p>
+        <div class="gh-rice-fetch">
+          <pre class="gh-rice-logo" aria-label="GreyCTF ASCII logo">
+<span class="gh-rice-dim">...........................................</span><span class="gh-rice-white">&amp;@@@@@@@@@@@@@@@@@@@@@@@@@@=</span>
+<span class="gh-rice-dim">....................................</span><span class="gh-rice-white">@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@@&amp;</span>
+<span class="gh-rice-dim">...............................</span><span class="gh-rice-white">@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@</span>
+<span class="gh-rice-dim">...........................</span><span class="gh-rice-white">@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@</span>
+<span class="gh-rice-dim">........................</span><span class="gh-rice-white">@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@</span>
+<span class="gh-rice-dim">.....................</span><span class="gh-rice-white">@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@</span>
+<span class="gh-rice-dim">..................</span><span class="gh-rice-white">X@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@</span>
+<span class="gh-rice-dim">................</span><span class="gh-rice-white">@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@</span><span class="gh-rice-green">xxxxx</span><span class="gh-rice-white">@@@@@@@@</span>
+<span class="gh-rice-dim">..............</span><span class="gh-rice-white">@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@@@</span>
+<span class="gh-rice-dim">............</span><span class="gh-rice-white">@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">&amp;@@X@@@</span>
+<span class="gh-rice-dim">...........</span><span class="gh-rice-white">@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@@</span>
+<span class="gh-rice-dim">.........</span><span class="gh-rice-white">@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-dim">....</span><span class="gh-rice-white">@@</span>
+<span class="gh-rice-dim">........</span><span class="gh-rice-white">@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxx</span><span class="gh-rice-white">@@@@@@@@</span>
+<span class="gh-rice-dim">.......</span><span class="gh-rice-white">@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@ @@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@@@@@@@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxxxxx</span><span class="gh-rice-white">@@@@ @@@</span>
+<span class="gh-rice-dim">......</span><span class="gh-rice-white">@@@@@@@@&amp;</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@   @@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@   @@@</span>
+<span class="gh-rice-dim">.....</span><span class="gh-rice-white">@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@    @@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@$     @@</span>
+<span class="gh-rice-dim">....</span><span class="gh-rice-white">@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@@@@@@&amp;@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@&amp;</span><span class="gh-rice-green">xxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@-    @@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@       @@+</span>
+<span class="gh-rice-dim">....</span><span class="gh-rice-white">@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@    @@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@        @@@</span>
+<span class="gh-rice-dim">...</span><span class="gh-rice-white">@@@@@@@@@@X@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@     @@@@X</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@        @@@</span>
+<span class="gh-rice-dim">...</span><span class="gh-rice-white">@@@@@@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@X</span><span class="gh-rice-green">xxxxxxxxxxx</span><span class="gh-rice-white">@@@@          @@@@@@@@@@@@@@@@@@@@@@@=         @@@</span>
+<span class="gh-rice-dim">...</span><span class="gh-rice-white">@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxxxxx</span><span class="gh-rice-white">@@@@                                             @@@</span>
+<span class="gh-rice-dim">..</span><span class="gh-rice-white">@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxxx</span><span class="gh-rice-white">X@@@      =@@@@                  @@@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">            @@@</span>
+<span class="gh-rice-dim">..</span><span class="gh-rice-white">@@@@@@@@@@$</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxxxx</span><span class="gh-rice-white">@@@        @@@@@@@            @@@@@@@@@@@@            @@@</span>
+<span class="gh-rice-dim">..</span><span class="gh-rice-white">@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@          @@@@@@          @@@@@@@@@@@@@              @@</span>
+<span class="gh-rice-dim">..</span><span class="gh-rice-white">@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@@             X@@@          @@@@@@@@@@@                @@@</span>
+<span class="gh-rice-dim">...</span><span class="gh-rice-white">@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@       @@@@@        @@@@      @@@@@@                   @@@</span>
+<span class="gh-rice-dim">...</span><span class="gh-rice-white">@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@                   @@@@@             @@@@@            @@</span>
+<span class="gh-rice-dim">...</span><span class="gh-rice-white">@@@@@@@@@@@@</span><span class="gh-rice-green">xx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@@      @@@@@                                         @@@</span>
+<span class="gh-rice-dim">....</span><span class="gh-rice-white">@@@@@@@@@@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">&amp;@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">xxxx</span><span class="gh-rice-white">@@@@                                 @@@@           X@@</span>
+<span class="gh-rice-dim">.....</span><span class="gh-rice-white">@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@#</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxx</span><span class="gh-rice-white">@@@@@+                                =@          @@@</span>
+<span class="gh-rice-dim">.....</span><span class="gh-rice-white">@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">xxxxxxxx</span><span class="gh-rice-white">@@@@@@                                         @@@</span>
+<span class="gh-rice-dim">......</span><span class="gh-rice-white">@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@@@@@*                                             @@</span>
+<span class="gh-rice-dim">.......</span><span class="gh-rice-white">@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@#</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@@X                                                  +@@</span>
+<span class="gh-rice-dim">........</span><span class="gh-rice-white">@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@                                                     #@@</span>
+<span class="gh-rice-dim">..........</span><span class="gh-rice-white">@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@                                                    -@@</span>
+<span class="gh-rice-dim">...........</span><span class="gh-rice-white">@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@           @@@@@                                     @@</span>
+<span class="gh-rice-dim">.............</span><span class="gh-rice-white">@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@   @@@@@@@@@</span><span class="gh-rice-green">xxx</span><span class="gh-rice-white">@@@@                                  @@</span>
+<span class="gh-rice-dim">..............</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">$@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@            @@@@              @@@</span>
+<span class="gh-rice-dim">................</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@</span><span class="gh-rice-green">x</span><span class="gh-rice-white">@@@             @@@</span>
+<span class="gh-rice-dim">...................</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@             @@@</span>
+<span class="gh-rice-dim">.....................</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">$@@@@@@</span><span class="gh-rice-dim">..</span><span class="gh-rice-white">@@@            @@@</span>
+<span class="gh-rice-dim">........................</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@@@</span><span class="gh-rice-dim">.....</span><span class="gh-rice-white">@@@            @@@</span>
+<span class="gh-rice-dim">............................</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-green">xxxxxxxxxxxxxx</span><span class="gh-rice-white">@@@@@@@@@@@@@@@</span><span class="gh-rice-dim">..........</span><span class="gh-rice-white">@@X          @@@</span>
+<span class="gh-rice-dim">................................</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-dim">...............</span><span class="gh-rice-white">@@@</span><span class="gh-rice-dim">.</span><span class="gh-rice-white">    @@@@@@</span>
+<span class="gh-rice-dim">.....................................</span><span class="gh-rice-white">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><span class="gh-rice-dim">......................</span><span class="gh-rice-white">@@@@@@@@</span>
+<span class="gh-rice-dim">............................................</span><span class="gh-rice-white">&amp;@@@@@@@@@@@@@@@@@@@@@@@@+</span>
+</pre>
+          <div class="gh-rice-info">
+            <div class="gh-rice-user">greyctf2026@nusgreyhats</div>
+            <div class="gh-rice-rule">-----------------------</div>
+            <div class="gh-rice-row"><span class="gh-rice-key">OS:</span><span class="gh-rice-val">GreyOS rolling x86_64</span></div>
+            <div class="gh-rice-row"><span class="gh-rice-key">Host:</span><span class="gh-rice-val">GreyCTF 2026 Qualifiers</span></div>
+            <div class="gh-rice-row"><span class="gh-rice-key">Kernel:</span><span class="gh-rice-val">6.8.0-greypwn</span></div>
+            <div class="gh-rice-row"><span class="gh-rice-key">Event:</span><span class="gh-rice-val">GreyCTF 2026 Qualifiers</span></div>
+            <div class="gh-rice-row"><span class="gh-rice-key">Mode:</span><span class="gh-rice-val">Online Jeopardy</span></div>
+            <div class="gh-rice-row"><span class="gh-rice-key">Starts:</span><span class="gh-rice-val">30 May 2026, 10:00 SGT</span></div>
+            <div class="gh-rice-row"><span class="gh-rice-key">Ends:</span><span class="gh-rice-val">31 May 2026, 10:00 SGT</span></div>
+            <div class="gh-rice-row"><span class="gh-rice-key">Flag:</span><span class="gh-rice-val">grey{...}</span></div>
+            <div class="gh-rice-palette" aria-hidden="true"><span class="c0"></span><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span><span class="c5"></span><span class="c6"></span><span class="c7"></span><span class="c8"></span><span class="c9"></span><span class="c10"></span><span class="c11"></span><span class="c12"></span><span class="c13"></span><span class="c14"></span><span class="c15"></span></div>
+          </div>
+        </div>
+        <pre class="gh-rice-prompt gh-rice-notice"><span class="gh-rice-notice-command"><span class="mark">›</span> cat /etc/greyctf/notice</span>    <span class="gh-rice-key">[ai]</span>    <span class="gh-rice-val">allowed, but use it in the spirit of learning and enjoying the challenges</span>
+    <span class="gh-rice-key">[infra]</span> <span class="gh-rice-val">do not attack or disrupt infrastructure, including through automated agents</span>
+<span class="gh-rice-cat-warning">Do not anger GreyCat. Violations result in immediate ban.</span></pre>
+        <pre class="gh-rice-prompt"><span class="gh-rice-clock-command"><span class="mark">›</span> watch -n1 ./countdown</span><span class="gh-rice-watch-header" id="gh-rice-watch-header">Every 1.0s: ./countdown</span>
+<span class="gh-rice-timer-label" id="gh-rice-countdown-label">--</span><span class="gh-rice-timer" id="gh-rice-countdown-timer">--</span>
+<span class="gh-rice-clock-foot"><span class="gh-rice-waiting" id="gh-rice-countdown-hint">waiting for first blood</span><span class="gh-rice-waiting gh-rice-blink">_</span></span></pre>
+      </div>
+    </div>
+    <nav class="gh-rice-actions" aria-label="GreyCTF homepage actions">
+      <span class="gh-rice-action-set" data-gh-rice-actions="before">
+        <a href="/register">register</a>
+        <span aria-hidden="true">/</span>
+        <a href="/login">login</a>
+      </span>
+      <span class="gh-rice-action-set" data-gh-rice-actions="live" hidden>
+        <a href="/register">register</a>
+        <span aria-hidden="true">/</span>
+        <a href="/login">login</a>
+        <span aria-hidden="true">/</span>
+        <a href="/challenges">challenges</a>
+      </span>
+      <span class="gh-rice-action-set" data-gh-rice-actions="ended" hidden>
+        <a href="/scoreboard">scoreboard</a>
+        <span aria-hidden="true">/</span>
+        <a href="/challenges">challenges</a>
+      </span>
+    </nav>
+  </section>
+
+  <script>
+    (function () {
+      const label = document.getElementById("gh-rice-countdown-label");
+      const time = document.getElementById("gh-rice-countdown-timer");
+      const hint = document.getElementById("gh-rice-countdown-hint");
+      const watchHeader = document.getElementById("gh-rice-watch-header");
+      const actionSets = document.querySelectorAll("[data-gh-rice-actions]");
+      if (!label || !time || !hint) return;
+
+      const init = window.init || {};
+      const startMs = init.start ? init.start * 1000 : Date.parse("2026-05-30T10:00:00+08:00");
+      const endMs = init.end ? init.end * 1000 : Date.parse("2026-05-31T10:00:00+08:00");
+
+      function pad(n) { return String(n).padStart(2, "0"); }
+      const digitGlyphs = {
+        "0": [" ██████ ", "██    ██", "██   ███", "██  █ ██", "██ █  ██", "██    ██", " ██████ "],
+        "1": ["   ██   ", " ████   ", "   ██   ", "   ██   ", "   ██   ", "   ██   ", " ██████ "],
+        "2": [" ██████ ", "██    ██", "      ██", "  █████ ", " ██     ", "██      ", "████████"],
+        "3": ["███████ ", "      ██", "      ██", " ██████ ", "      ██", "      ██", "███████ "],
+        "4": ["██   ██ ", "██   ██ ", "██   ██ ", "████████", "     ██ ", "     ██ ", "     ██ "],
+        "5": ["████████", "██      ", "██      ", "███████ ", "      ██", "██    ██", " ██████ "],
+        "6": [" ██████ ", "██    ██", "██      ", "███████ ", "██    ██", "██    ██", " ██████ "],
+        "7": ["████████", "      ██", "     ██ ", "    ██  ", "   ██   ", "  ██    ", "  ██    "],
+        "8": [" ██████ ", "██    ██", "██    ██", " ██████ ", "██    ██", "██    ██", " ██████ "],
+        "9": [" ██████ ", "██    ██", "██    ██", " ███████", "      ██", "██    ██", " ██████ "],
+        ":": ["   ", "██ ", "██ ", "   ", "██ ", "██ ", "   "],
+        "d": ["        ", "     ██ ", "     ██ ", " ██████ ", "██   ██ ", "██   ██ ", " ██████ "],
+        " ": ["  ", "  ", "  ", "  ", "  ", "  ", "  "],
+      };
+      const labelGlyphs = {
+        "A": [" █████ ", "██   ██", "███████", "██   ██", "██   ██"],
+        "C": [" ██████", "██     ", "██     ", "██     ", " ██████"],
+        "D": ["██████ ", "██   ██", "██   ██", "██   ██", "██████ "],
+        "E": ["███████", "██     ", "█████  ", "██     ", "███████"],
+        "F": ["███████", "██     ", "█████  ", "██     ", "██     "],
+        "I": ["██████", "  ██  ", "  ██  ", "  ██  ", "██████"],
+        "L": ["██     ", "██     ", "██     ", "██     ", "███████"],
+        "N": ["██   ██", "███  ██", "████ ██", "██ ████", "██  ███"],
+        "R": ["██████ ", "██   ██", "██████ ", "██  ██ ", "██   ██"],
+        "S": [" ██████", "██     ", " █████ ", "     ██", "██████ "],
+        "T": ["███████", "  ██   ", "  ██   ", "  ██   ", "  ██   "],
+        " ": ["  ", "  ", "  ", "  ", "  "],
+      };
+      function renderAscii(text, glyphs, height) {
+        const rows = Array.from({ length: height }, function () { return ""; });
+        for (const char of text) {
+          const glyph = glyphs[char] || ["?????", "?????", "?????", "?????", "?????"];
+          for (let i = 0; i < rows.length; i++) {
+            rows[i] += glyph[i] + " ";
+          }
+        }
+        return rows.join("\n");
+      }
+      function duration(ms) {
+        const total = Math.max(0, Math.floor(ms / 1000));
+        const days = Math.floor(total / 86400);
+        const hours = Math.floor((total % 86400) / 3600);
+        const mins = Math.floor((total % 3600) / 60);
+        const secs = total % 60;
+        return (days > 0 ? days + "d " : "") + pad(hours) + ":" + pad(mins) + ":" + pad(secs);
+      }
+      function setTimer(ms) {
+        const text = duration(ms);
+        time.textContent = renderAscii(text, digitGlyphs, 7);
+        time.setAttribute("aria-label", text);
+      }
+      function setLabel(text) {
+        label.textContent = renderAscii(text.toUpperCase(), labelGlyphs, 5);
+        label.setAttribute("aria-label", text);
+      }
+      function setActions(state) {
+        actionSets.forEach(function (set) {
+          set.hidden = set.dataset.ghRiceActions !== state;
+        });
+      }
+      function tick() {
+        const now = Date.now();
+        if (watchHeader) watchHeader.textContent = "Every 1.0s: ./countdown";
+        if (Number.isFinite(endMs) && now >= endMs) {
+          setLabel("ctf ended");
+          time.textContent = "";
+          hint.textContent = "thanks for playing, see you next time!";
+          setActions("ended");
+        } else if (Number.isFinite(startMs) && now < startMs) {
+          setLabel("ctf starts in");
+          setTimer(startMs - now);
+          hint.textContent = "waiting for first blood";
+          setActions("before");
+        } else {
+          setLabel("ctf ends in");
+          setTimer(endMs - now);
+          hint.textContent = "go to challenges";
+          setActions("live");
+        }
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
+  
+
+</main>
+
+
+<div 
+    id="ctfdio-snackbar-email-nudge"
+    x-data="{
+      pagePath() {
+        const urlRoot = window.init.urlRoot || '';
+        const path = window.location.pathname;
+        return urlRoot && path.startsWith(urlRoot) ? path.slice(urlRoot.length) || '/' : path;
+      },
+      remindId() {
+        try {
+          return localStorage.getItem('remind_email_verify');
+        } catch (error) {
+          return null;
+        }
+      },
+      showEmailNudge() {
+        return window.init.userId && !window.init.userVerified && this.remindId() != window.init.userId && (!['/team', '/teams/join', '/teams/new'].includes(this.pagePath()) || window.init.teamId != null);
+      },
+      dismissEmailNudge(button) {
+        try {
+          localStorage.setItem('remind_email_verify', window.init.userId);
+        } catch (error) {}
+        button.parentElement.style.display = 'none';
+      },
+    }"
+    x-show="showEmailNudge()"
+    class="alert alert-info alert-dismissible col-md-4 col-10 position-fixed text-center m-0 ctfdio-email-nudge" 
+    style="bottom: 45px; left: 50%; transform: translateX(-50%); z-index: 1040; display: none;" 
+    role="alert"
+>
+  <small>
+    <strong>Email Unconfirmed</strong><br>
+    <span>To confirm your email address please <a href="/confirm?flow=init">click here</a>.</span>
+  </small>
+  <button type="button" class="btn-close" @click="dismissEmailNudge($el)" aria-label="Close"></button>
+</div>
+
+
+<footer class="footer">
+  <div class="container text-center">
+    <small class="text-muted">
+      <a href="https://discord.gg/xWaYxeKQKX" class="text-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-discord pe-1"></i>
+        Join the Discord
+      </a>
+      |
+      <a href="https://ctfd.io" class="text-secondary">
+        <i class="fas fa-flag pe-1"></i>
+        Powered by CTFd
+      </a>
+    </small>
+  </div>
+</footer>
+
+<div x-data>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div x-ref="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        <strong class="me-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div class="modal fade" x-ref="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" x-text="$store.modal.title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="module"  src="/themes/greyctf/static/assets/index.d2f30b1f.js"></script><script type="module"  src="/themes/greyctf/static/assets/page.94292aef.js"></script>
+
+
+
+
+
+</body>
+</html>

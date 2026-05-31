@@ -1,0 +1,212 @@
+{
+  "/plugins/ctfd-whale/container": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/plugins/ctfd-whale/admin/container": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/shares": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/solutions": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/exports/raw": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/statistics/challenges/solves": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/statistics/scores/distribution": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/scoreboard/top/10": {
+    "s": 200,
+    "ct": "application/json",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "{\"success\":true,\"data\":{}}"
+  },
+  "/api/v1/brackets?type=teams": {
+    "s": 200,
+    "ct": "application/json",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "{\"success\":true,\"data\":[{\"name\":\"Local\",\"id\":3,\"type\":\"teams\",\"description\":\"\"},{\"name\":\"Open\",\"id\":4,\"type\":\"teams\",\"description\":\"\"}]}"
+  },
+  "/api/v1/flags/types": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/topics": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/unlocks": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/confirm?flow=init": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/reset_password": {
+    "s": 200,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/notifications": {
+    "s": 200,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/users": {
+    "s": 200,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/teams": {
+    "s": 200,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/login": {
+    "s": 200,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/register": {
+    "s": 200,
+    "ct": "text/html; charset=utf-8",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/profile": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/settings": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/team": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/challenges/1": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/challenges/1/solves": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/challenges/1/files": {
+    "s": 0,
+    "ct": "",
+    "server": "",
+    "xpb": "",
+    "body": "[]"
+  },
+  "/api/v1/users/1": {
+    "s": 404,
+    "ct": "application/json",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "{\"message\":\"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\"}"
+  },
+  "/api/v1/users/1/solves": {
+    "s": 404,
+    "ct": "application/json",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "{\"message\":\"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\"}"
+  },
+  "/api/v1/teams/1": {
+    "s": 404,
+    "ct": "application/json",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "{\"message\":\"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\"}"
+  },
+  "/api/v1/teams/1/solves": {
+    "s": 404,
+    "ct": "application/json",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "{\"message\":\"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\"}"
+  },
+  "/themes/greyctf/static/sounds/notification.mp3": {
+    "s": 200,
+    "ct": "audio/mpeg",
+    "server": "gunicorn",
+    "xpb": "",
+    "body": "[audio/mpeg]"
+  }
+}

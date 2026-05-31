@@ -1,0 +1,86 @@
+=== 1. fetch login page for CSRF ===
+csrf=5230ddcf00a47013... (len 64)
+=== 2. POST /login ===
+login_http=200 redirect=
+=== 3. identity check /api/v1/users/me ===
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="/login?next=%2Fapi%2Fv1%2Fusers%2Fme%3F">/login?next=%2Fapi%2Fv1%2Fusers%2Fme%3F</a>. If not, click the link.
+
+  http=302
+
+=== 4. authed CSRF from / ===
+csrf2=... (len 0)
+=== 5. challenge 25 detail ===
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="/login?next=%2Fapi%2Fv1%2Fchallenges%2F25%3F">/login?next=%2Fapi%2Fv1%2Fchallenges%2F25%3F</a>. If not, click the link.
+
+  http=302
+
+=== 6. whale GET candidates ===
+--- GET https://ctfd.nusgreyhats.org/api/v1/plugins/ctfd-whale/container?challenge_id=25 ---
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="/login?next=%2Fapi%2Fv1%2Fplugins%2Fctfd-whale%2Fcontainer%3Fchallenge_id%3D25">/login?next=%2Fapi%2Fv1%2Fplugins%2Fctfd-whale%2Fcontainer%3Fchallenge_id%3D25</a>. If not, click the link.
+
+  http=302
+
+--- GET https://ctfd.nusgreyhats.org/plugins/ctfd-whale/container?challenge_id=25 ---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GreyCTF Qualifiers 2026</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/2b2cc3eb8b9e4905acf3d2d4f7ea0929/greyctf2026-logo-transparent.png" type="image/x-icon">
+  
+
+  
+    <link rel="stylesheet" href="/themes/greyctf/static/assets/main.f121d585.css">
+  
+
+  
+
+  <script  src="/themes/greyctf/static/assets/color_mode_switcher.5c07df4e.js"></script>
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "5230ddcf0
+=== 7. whale POST (spawn) candidates ===
+--- POST https://ctfd.nusgreyhats.org/api/v1/plugins/ctfd-whale/container?challenge_id=25 ---
+{"message": "You don't have the permission to access the requested resource. It is either read-protected or not readable by the server."}
+
+  http=403
+
+--- POST https://ctfd.nusgreyhats.org/plugins/ctfd-whale/container?challenge_id=25 ---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GreyCTF Qualifiers 2026</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/2b2cc3eb8b9e4905acf3d2d4f7ea0929/greyctf2026-logo-transparent.png" type="image/x-icon">
+  
+
+  
+    <link rel="stylesheet" href="/themes/greyctf/static/assets/main.f121d585.css">
+  
+
+  
+
+  <script  src="/themes/greyctf/static/assets/color_mode_switcher.5c07df4e.js"></script>
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "5230ddcf0
+=== PROBE_COMPLETE ===
+85 /media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/06_pollution/solve/whale_probe.log

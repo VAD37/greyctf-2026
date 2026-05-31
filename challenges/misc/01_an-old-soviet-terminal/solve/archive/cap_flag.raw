@@ -1,0 +1,24 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║                       TELETYPE OUTPUT                        ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  [TIMEOUT] Program exceeded time allocation.                 ║
+║  Session terminated after 10 seconds.                         ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════╗
+║  AVAILABLE SERVICES                                          ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  [1] Archive            — Classified document storage        ║
+║  [2] Censorship Desk    — Document sanitization & release    ║
+║  [3] Index Clerk        — Document catalog & metadata        ║
+║  [4] Transmission       — Transmission decoding terminal     ║
+║  [5] Maintenance Log    — System maintenance records         ║
+║  [6] Self-Destruct      — Emergency data purge               ║
+║  [7] Exit                                                    ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+>> 

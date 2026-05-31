@@ -1,0 +1,28 @@
+size=51227008 magic=7f454c46020101000000000000000000
+exiftool:
+ExifTool Version Number         : 12.76
+File Name                       : main
+Directory                       : /media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/05_my-greycat/files/extracted/dist-my_greycat
+File Size                       : 51 MB
+File Modification Date/Time     : 2026:05:28 16:27:34+07:00
+File Access Date/Time           : 2026:05:30 09:11:31+07:00
+File Inode Change Date/Time     : 2026:05:30 09:09:41+07:00
+File Permissions                : -rwxrwxrwx
+File Type                       : ELF shared library
+File Type Extension             : so
+MIME Type                       : application/octet-stream
+CPU Architecture                : 64 bit
+CPU Byte Order                  : Little endian
+Object File Type                : Shared object file
+CPU Type                        : AMD x86-64
+
+file: /media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/05_my-greycat/files/extracted/dist-my_greycat/main: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=0ae848eea121220837b6bde104c03d2cfe3484c0, for GNU/Linux 3.2.0, not stripped
+
+binwalk:
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             ELF, 64-bit LSB shared object, AMD x86-64, version 1 (SYSV)
+
+
+FLAG_HITS: []

@@ -1,0 +1,106 @@
+{
+  "/themes/greyctf/static/assets/index.d2f30b1f.js": {
+    "size": 215710,
+    "apiPaths": [
+      "/api/v1/challenges",
+      "/api/v1/challenges/${e}",
+      "/api/v1/challenges/attempt",
+      "/api/v1/hints/${e}",
+      "/api/v1/unlocks",
+      "/api/v1/challenges/${e}/solves",
+      "/api/v1/challenges/${e}/solution",
+      "/api/v1/solutions/${e}",
+      "/api/v1/challenges/${e}/ratings",
+      "/api/v1/scoreboard",
+      "/api/v1/scoreboard/top/${e}",
+      "/api/v1/brackets?type=${e}",
+      "/api/v1/users/me",
+      "/api/v1/tokens",
+      "/api/v1/tokens/${e}",
+      "/api/v1/users/${e}/submissions?challenge_id=${t}",
+      "/api/v1/users/${e}/solves",
+      "/api/v1/users/${e}/fails",
+      "/api/v1/users/${e}/awards",
+      "/api/v1/teams/me/members",
+      "/api/v1/teams/me",
+      "/api/v1/teams/${e}/solves",
+      "/api/v1/teams/${e}/fails",
+      "/api/v1/teams/${e}/awards",
+      "/api/v1/notifications?since_id=${n}"
+    ],
+    "routes": [],
+    "secretsLike": [],
+    "urls": [
+      "https://larsjung.de/lolight/",
+      "https://getbootstrap.com/",
+      "https://github.com/twbs/bootstrap/graphs/contributors",
+      "https://github.com/twbs/bootstrap/blob/main/LICENSE",
+      "https://popper.js.org"
+    ]
+  },
+  "/themes/greyctf/static/assets/page.94292aef.js": {
+    "size": 88,
+    "apiPaths": [],
+    "routes": [],
+    "secretsLike": [],
+    "urls": []
+  },
+  "/themes/greyctf/static/assets/challenges.a0bf3509.js": {
+    "size": 5237,
+    "apiPaths": [
+      "/api/v1/shares"
+    ],
+    "routes": [],
+    "secretsLike": [],
+    "urls": []
+  },
+  "/themes/greyctf/static/assets/setup.bf8dd412.js": {
+    "size": 2907,
+    "apiPaths": [],
+    "routes": [
+      "/setup/integrations"
+    ],
+    "secretsLike": [],
+    "urls": [
+      "https://www.majorleaguecyber.org/events/new?",
+      "https://newsletters.ctfd.io/lists/ot889gr1sa0e1/subscribe/post-json?"
+    ]
+  },
+  "/themes/greyctf/static/assets/settings.e55070f5.js": {
+    "size": 1292,
+    "apiPaths": [],
+    "routes": [],
+    "secretsLike": [],
+    "urls": []
+  },
+  "/themes/greyctf/static/assets/notifications.4654956b.js": {
+    "size": 466,
+    "apiPaths": [
+      "/api/v1/notifications?since_id=${l}"
+    ],
+    "routes": [],
+    "secretsLike": [],
+    "urls": []
+  },
+  "/themes/greyctf/static/assets/teams_private.08656aee.js": {
+    "size": 3159,
+    "apiPaths": [],
+    "routes": [],
+    "secretsLike": [],
+    "urls": []
+  },
+  "/themes/greyctf/static/assets/teams_public.d4a222ab.js": {
+    "size": 1172,
+    "apiPaths": [],
+    "routes": [],
+    "secretsLike": [],
+    "urls": []
+  },
+  "/themes/greyctf/static/assets/scoreboard.fdfb17fd.js": {
+    "size": 1977,
+    "apiPaths": [],
+    "routes": [],
+    "secretsLike": [],
+    "urls": []
+  }
+}

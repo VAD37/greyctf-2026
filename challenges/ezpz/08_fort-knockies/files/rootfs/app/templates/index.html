@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Fort Knockies</title>
+<h1>Fort Knockies File Sealer</h1>
+<p>Rookie test panel for sealing files before handoff.</p>
+{% if error %}<p>{{ error }}</p>{% endif %}
+<form action="/encrypt" method="post" enctype="multipart/form-data">
+  <label>File <input name="file" type="file"></label>
+  <button>Seal</button>
+</form>

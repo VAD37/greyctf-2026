@@ -1,0 +1,2116 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33 (git sha1 2584903a060)
+
+
+-- Executing script file `sat.ys' --
+
+1. Executing Verilog-2005 frontend: main_small.v
+Parsing Verilog input from `main_small.v' to AST representation.
+Generating RTLIL representation for module `\top'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \top
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \top
+Removed 0 unused modules.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$main_small.v:761$68 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:756$65 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:753$64 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:750$63 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:747$62 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:744$61 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:741$60 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:738$59 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:735$58 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:732$57 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:729$56 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:726$55 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:723$54 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:720$53 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:717$52 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:714$51 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:711$50 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:708$49 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:705$48 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:702$47 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:699$46 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:696$45 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:693$44 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:690$43 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:687$42 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:684$41 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:681$40 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:678$39 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:675$38 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:672$37 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:669$36 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:666$35 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:663$34 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:660$33 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:657$32 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:654$31 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:651$30 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:648$29 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:645$28 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:642$27 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:639$26 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:636$25 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:633$24 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:630$23 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:627$22 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:624$21 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:621$20 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:618$19 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:615$18 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:612$17 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:609$16 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:606$15 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:603$14 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:600$13 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:597$12 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:594$11 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:591$10 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:588$9 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:585$8 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:582$7 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:579$6 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:576$5 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:573$4 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:570$3 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:567$2 in module top.
+Marked 1 switch rules as full_case in process $proc$main_small.v:564$1 in module top.
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 65 redundant assignments.
+Promoted 114 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\top.$proc$main_small.v:528$636'.
+  Set init value: \R5C35_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:514$635'.
+  Set init value: \R5C13_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:512$634'.
+  Set init value: \R5C12_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:506$633'.
+  Set init value: \R4C39_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:505$632'.
+  Set init value: \R4C39_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:499$631'.
+  Set init value: \R4C38_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:498$630'.
+  Set init value: \R4C38_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:495$629'.
+  Set init value: \R4C38_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:494$628'.
+  Set init value: \R4C38_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:491$627'.
+  Set init value: \R4C38_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:490$626'.
+  Set init value: \R4C38_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:487$625'.
+  Set init value: \R4C38_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:486$624'.
+  Set init value: \R4C38_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:476$623'.
+  Set init value: \R4C37_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:475$622'.
+  Set init value: \R4C37_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:472$621'.
+  Set init value: \R4C37_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:471$620'.
+  Set init value: \R4C37_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:468$619'.
+  Set init value: \R4C37_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:467$618'.
+  Set init value: \R4C37_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:464$617'.
+  Set init value: \R4C37_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:463$616'.
+  Set init value: \R4C37_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:452$615'.
+  Set init value: \R4C36_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:451$614'.
+  Set init value: \R4C36_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:448$613'.
+  Set init value: \R4C36_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:447$612'.
+  Set init value: \R4C36_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:444$611'.
+  Set init value: \R4C36_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:443$610'.
+  Set init value: \R4C36_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:440$609'.
+  Set init value: \R4C36_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:439$608'.
+  Set init value: \R4C36_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:428$607'.
+  Set init value: \R4C35_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:427$606'.
+  Set init value: \R4C35_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:424$605'.
+  Set init value: \R4C35_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:423$604'.
+  Set init value: \R4C35_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:419$603'.
+  Set init value: \R4C35_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:404$602'.
+  Set init value: \R4C13_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:401$601'.
+  Set init value: \R4C13_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:400$600'.
+  Set init value: \R4C13_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:386$599'.
+  Set init value: \R4C11_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:378$598'.
+  Set init value: \R3C41_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:377$597'.
+  Set init value: \R3C41_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:372$596'.
+  Set init value: \R3C40_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:371$595'.
+  Set init value: \R3C40_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:368$594'.
+  Set init value: \R3C40_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:367$593'.
+  Set init value: \R3C40_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:364$592'.
+  Set init value: \R3C40_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:363$591'.
+  Set init value: \R3C40_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:360$590'.
+  Set init value: \R3C40_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:359$589'.
+  Set init value: \R3C40_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:349$588'.
+  Set init value: \R3C39_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:348$587'.
+  Set init value: \R3C39_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:345$586'.
+  Set init value: \R3C39_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:344$585'.
+  Set init value: \R3C39_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:341$584'.
+  Set init value: \R3C39_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:340$583'.
+  Set init value: \R3C39_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:337$582'.
+  Set init value: \R3C39_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:336$581'.
+  Set init value: \R3C39_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:325$580'.
+  Set init value: \R3C38_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:324$579'.
+  Set init value: \R3C38_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:321$578'.
+  Set init value: \R3C38_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:320$577'.
+  Set init value: \R3C38_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:317$576'.
+  Set init value: \R3C38_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:316$575'.
+  Set init value: \R3C38_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:313$574'.
+  Set init value: \R3C38_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:312$573'.
+  Set init value: \R3C38_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:301$572'.
+  Set init value: \R3C37_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:300$571'.
+  Set init value: \R3C37_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:297$570'.
+  Set init value: \R3C37_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:296$569'.
+  Set init value: \R3C37_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:294$568'.
+  Set init value: \R3C37_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:286$567'.
+  Set init value: \R3C15_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:267$566'.
+  Set init value: \R3C14_PLC2_inst.sliceA_inst.ff_1.Q = 1'1
+Found init rule in `\top.$proc$main_small.v:239$565'.
+  Set init value: \R3C12_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:230$564'.
+  Set init value: \R3C12_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:214$563'.
+  Set init value: \R3C11_PLC2_inst.sliceB_inst.ff_0.Q = 1'1
+Found init rule in `\top.$proc$main_small.v:198$562'.
+  Set init value: \R3C10_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:143$561'.
+  Set init value: \R2C37_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:138$560'.
+  Set init value: \R2C20_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:135$559'.
+  Set init value: \R2C19_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:134$558'.
+  Set init value: \R2C19_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:126$557'.
+  Set init value: \R2C17_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:123$556'.
+  Set init value: \R2C15_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:122$555'.
+  Set init value: \R2C15_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:121$554'.
+  Set init value: \R2C15_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:118$553'.
+  Set init value: \R2C15_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:112$552'.
+  Set init value: \R2C14_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:93$551'.
+  Set init value: \R2C13_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:81$550'.
+  Set init value: \R2C12_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:75$549'.
+  Set init value: \R2C12_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:61$548'.
+  Set init value: \R2C11_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Found init rule in `\top.$proc$main_small.v:18$547'.
+  Set init value: \CIB_R1C39_CIB_JD7 = 1'0
+Found init rule in `\top.$proc$main_small.v:16$546'.
+  Set init value: \CIB_R1C25_CIB_JD7 = 1'0
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~69 debug messages>
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\top.$proc$main_small.v:528$636'.
+Creating decoders for process `\top.$proc$main_small.v:514$635'.
+Creating decoders for process `\top.$proc$main_small.v:512$634'.
+Creating decoders for process `\top.$proc$main_small.v:506$633'.
+Creating decoders for process `\top.$proc$main_small.v:505$632'.
+Creating decoders for process `\top.$proc$main_small.v:499$631'.
+Creating decoders for process `\top.$proc$main_small.v:498$630'.
+Creating decoders for process `\top.$proc$main_small.v:495$629'.
+Creating decoders for process `\top.$proc$main_small.v:494$628'.
+Creating decoders for process `\top.$proc$main_small.v:491$627'.
+Creating decoders for process `\top.$proc$main_small.v:490$626'.
+Creating decoders for process `\top.$proc$main_small.v:487$625'.
+Creating decoders for process `\top.$proc$main_small.v:486$624'.
+Creating decoders for process `\top.$proc$main_small.v:476$623'.
+Creating decoders for process `\top.$proc$main_small.v:475$622'.
+Creating decoders for process `\top.$proc$main_small.v:472$621'.
+Creating decoders for process `\top.$proc$main_small.v:471$620'.
+Creating decoders for process `\top.$proc$main_small.v:468$619'.
+Creating decoders for process `\top.$proc$main_small.v:467$618'.
+Creating decoders for process `\top.$proc$main_small.v:464$617'.
+Creating decoders for process `\top.$proc$main_small.v:463$616'.
+Creating decoders for process `\top.$proc$main_small.v:452$615'.
+Creating decoders for process `\top.$proc$main_small.v:451$614'.
+Creating decoders for process `\top.$proc$main_small.v:448$613'.
+Creating decoders for process `\top.$proc$main_small.v:447$612'.
+Creating decoders for process `\top.$proc$main_small.v:444$611'.
+Creating decoders for process `\top.$proc$main_small.v:443$610'.
+Creating decoders for process `\top.$proc$main_small.v:440$609'.
+Creating decoders for process `\top.$proc$main_small.v:439$608'.
+Creating decoders for process `\top.$proc$main_small.v:428$607'.
+Creating decoders for process `\top.$proc$main_small.v:427$606'.
+Creating decoders for process `\top.$proc$main_small.v:424$605'.
+Creating decoders for process `\top.$proc$main_small.v:423$604'.
+Creating decoders for process `\top.$proc$main_small.v:419$603'.
+Creating decoders for process `\top.$proc$main_small.v:404$602'.
+Creating decoders for process `\top.$proc$main_small.v:401$601'.
+Creating decoders for process `\top.$proc$main_small.v:400$600'.
+Creating decoders for process `\top.$proc$main_small.v:386$599'.
+Creating decoders for process `\top.$proc$main_small.v:378$598'.
+Creating decoders for process `\top.$proc$main_small.v:377$597'.
+Creating decoders for process `\top.$proc$main_small.v:372$596'.
+Creating decoders for process `\top.$proc$main_small.v:371$595'.
+Creating decoders for process `\top.$proc$main_small.v:368$594'.
+Creating decoders for process `\top.$proc$main_small.v:367$593'.
+Creating decoders for process `\top.$proc$main_small.v:364$592'.
+Creating decoders for process `\top.$proc$main_small.v:363$591'.
+Creating decoders for process `\top.$proc$main_small.v:360$590'.
+Creating decoders for process `\top.$proc$main_small.v:359$589'.
+Creating decoders for process `\top.$proc$main_small.v:349$588'.
+Creating decoders for process `\top.$proc$main_small.v:348$587'.
+Creating decoders for process `\top.$proc$main_small.v:345$586'.
+Creating decoders for process `\top.$proc$main_small.v:344$585'.
+Creating decoders for process `\top.$proc$main_small.v:341$584'.
+Creating decoders for process `\top.$proc$main_small.v:340$583'.
+Creating decoders for process `\top.$proc$main_small.v:337$582'.
+Creating decoders for process `\top.$proc$main_small.v:336$581'.
+Creating decoders for process `\top.$proc$main_small.v:325$580'.
+Creating decoders for process `\top.$proc$main_small.v:324$579'.
+Creating decoders for process `\top.$proc$main_small.v:321$578'.
+Creating decoders for process `\top.$proc$main_small.v:320$577'.
+Creating decoders for process `\top.$proc$main_small.v:317$576'.
+Creating decoders for process `\top.$proc$main_small.v:316$575'.
+Creating decoders for process `\top.$proc$main_small.v:313$574'.
+Creating decoders for process `\top.$proc$main_small.v:312$573'.
+Creating decoders for process `\top.$proc$main_small.v:301$572'.
+Creating decoders for process `\top.$proc$main_small.v:300$571'.
+Creating decoders for process `\top.$proc$main_small.v:297$570'.
+Creating decoders for process `\top.$proc$main_small.v:296$569'.
+Creating decoders for process `\top.$proc$main_small.v:294$568'.
+Creating decoders for process `\top.$proc$main_small.v:286$567'.
+Creating decoders for process `\top.$proc$main_small.v:267$566'.
+Creating decoders for process `\top.$proc$main_small.v:239$565'.
+Creating decoders for process `\top.$proc$main_small.v:230$564'.
+Creating decoders for process `\top.$proc$main_small.v:214$563'.
+Creating decoders for process `\top.$proc$main_small.v:198$562'.
+Creating decoders for process `\top.$proc$main_small.v:143$561'.
+Creating decoders for process `\top.$proc$main_small.v:138$560'.
+Creating decoders for process `\top.$proc$main_small.v:135$559'.
+Creating decoders for process `\top.$proc$main_small.v:134$558'.
+Creating decoders for process `\top.$proc$main_small.v:126$557'.
+Creating decoders for process `\top.$proc$main_small.v:123$556'.
+Creating decoders for process `\top.$proc$main_small.v:122$555'.
+Creating decoders for process `\top.$proc$main_small.v:121$554'.
+Creating decoders for process `\top.$proc$main_small.v:118$553'.
+Creating decoders for process `\top.$proc$main_small.v:112$552'.
+Creating decoders for process `\top.$proc$main_small.v:93$551'.
+Creating decoders for process `\top.$proc$main_small.v:81$550'.
+Creating decoders for process `\top.$proc$main_small.v:75$549'.
+Creating decoders for process `\top.$proc$main_small.v:61$548'.
+Creating decoders for process `\top.$proc$main_small.v:18$547'.
+Creating decoders for process `\top.$proc$main_small.v:16$546'.
+Creating decoders for process `\top.$proc$main_small.v:1206$489'.
+Creating decoders for process `\top.$proc$main_small.v:1203$487'.
+Creating decoders for process `\top.$proc$main_small.v:1117$402'.
+Creating decoders for process `\top.$proc$main_small.v:1111$397'.
+Creating decoders for process `\top.$proc$main_small.v:1109$396'.
+Creating decoders for process `\top.$proc$main_small.v:1094$382'.
+Creating decoders for process `\top.$proc$main_small.v:1025$314'.
+Creating decoders for process `\top.$proc$main_small.v:995$285'.
+Creating decoders for process `\top.$proc$main_small.v:968$259'.
+Creating decoders for process `\top.$proc$main_small.v:953$245'.
+Creating decoders for process `\top.$proc$main_small.v:934$227'.
+Creating decoders for process `\top.$proc$main_small.v:915$209'.
+Creating decoders for process `\top.$proc$main_small.v:860$155'.
+Creating decoders for process `\top.$proc$main_small.v:858$154'.
+Creating decoders for process `\top.$proc$main_small.v:848$145'.
+Creating decoders for process `\top.$proc$main_small.v:845$143'.
+Creating decoders for process `\top.$proc$main_small.v:843$142'.
+Creating decoders for process `\top.$proc$main_small.v:838$138'.
+Creating decoders for process `\top.$proc$main_small.v:828$129'.
+Creating decoders for process `\top.$proc$main_small.v:811$113'.
+Creating decoders for process `\top.$proc$main_small.v:800$103'.
+Creating decoders for process `\top.$proc$main_small.v:791$95'.
+Creating decoders for process `\top.$proc$main_small.v:782$87'.
+Creating decoders for process `\top.$proc$main_small.v:764$69'.
+     1/1: $0\CIB_R1C25_CIB_JD7[0:0]
+Creating decoders for process `\top.$proc$main_small.v:761$68'.
+     1/1: $0\R2C20_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:759$66'.
+     1/1: $0\CIB_R1C39_CIB_JD7[0:0]
+Creating decoders for process `\top.$proc$main_small.v:756$65'.
+     1/1: $0\R4C35_PLC2_inst.sliceD_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:753$64'.
+     1/1: $0\R4C35_PLC2_inst.sliceC_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:750$63'.
+     1/1: $0\R4C35_PLC2_inst.sliceB_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:747$62'.
+     1/1: $0\R4C35_PLC2_inst.sliceD_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:744$61'.
+     1/1: $0\R4C35_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:741$60'.
+     1/1: $0\R4C36_PLC2_inst.sliceD_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:738$59'.
+     1/1: $0\R4C36_PLC2_inst.sliceC_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:735$58'.
+     1/1: $0\R4C36_PLC2_inst.sliceB_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:732$57'.
+     1/1: $0\R4C36_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:729$56'.
+     1/1: $0\R4C36_PLC2_inst.sliceD_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:726$55'.
+     1/1: $0\R4C36_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:723$54'.
+     1/1: $0\R4C36_PLC2_inst.sliceB_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:720$53'.
+     1/1: $0\R4C37_PLC2_inst.sliceD_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:717$52'.
+     1/1: $0\R4C37_PLC2_inst.sliceC_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:714$51'.
+     1/1: $0\R4C37_PLC2_inst.sliceB_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:711$50'.
+     1/1: $0\R4C37_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:708$49'.
+     1/1: $0\R4C37_PLC2_inst.sliceB_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:705$48'.
+     1/1: $0\R4C37_PLC2_inst.sliceD_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:702$47'.
+     1/1: $0\R4C37_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:699$46'.
+     1/1: $0\R4C38_PLC2_inst.sliceD_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:696$45'.
+     1/1: $0\R4C38_PLC2_inst.sliceC_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:693$44'.
+     1/1: $0\R4C38_PLC2_inst.sliceB_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:690$43'.
+     1/1: $0\R4C38_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:687$42'.
+     1/1: $0\R4C38_PLC2_inst.sliceD_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:684$41'.
+     1/1: $0\R4C38_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:681$40'.
+     1/1: $0\R4C38_PLC2_inst.sliceB_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:678$39'.
+     1/1: $0\R4C39_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:675$38'.
+     1/1: $0\R5C35_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:672$37'.
+     1/1: $0\R2C17_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:669$36'.
+     1/1: $0\R3C37_PLC2_inst.sliceD_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:666$35'.
+     1/1: $0\R3C37_PLC2_inst.sliceC_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:663$34'.
+     1/1: $0\R3C37_PLC2_inst.sliceB_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:660$33'.
+     1/1: $0\R3C37_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:657$32'.
+     1/1: $0\R3C38_PLC2_inst.sliceD_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:654$31'.
+     1/1: $0\R3C38_PLC2_inst.sliceB_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:651$30'.
+     1/1: $0\R3C38_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:648$29'.
+     1/1: $0\R3C38_PLC2_inst.sliceB_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:645$28'.
+     1/1: $0\R3C38_PLC2_inst.sliceD_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:642$27'.
+     1/1: $0\R3C38_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:639$26'.
+     1/1: $0\R3C39_PLC2_inst.sliceD_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:636$25'.
+     1/1: $0\R3C39_PLC2_inst.sliceC_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:633$24'.
+     1/1: $0\R3C39_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:630$23'.
+     1/1: $0\R3C39_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:627$22'.
+     1/1: $0\R3C39_PLC2_inst.sliceD_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:624$21'.
+     1/1: $0\R3C39_PLC2_inst.sliceB_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:621$20'.
+     1/1: $0\R3C40_PLC2_inst.sliceD_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:618$19'.
+     1/1: $0\R3C40_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:615$18'.
+     1/1: $0\R3C40_PLC2_inst.sliceB_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:612$17'.
+     1/1: $0\R3C40_PLC2_inst.sliceC_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:609$16'.
+     1/1: $0\R3C40_PLC2_inst.sliceD_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:606$15'.
+     1/1: $0\R3C40_PLC2_inst.sliceB_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:603$14'.
+     1/1: $0\R3C41_PLC2_inst.sliceA_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:600$13'.
+     1/1: $0\R4C39_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:597$12'.
+     1/1: $0\R4C38_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:594$11'.
+     1/1: $0\R4C37_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:591$10'.
+     1/1: $0\R4C36_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:588$9'.
+     1/1: $0\R3C39_PLC2_inst.sliceB_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:585$8'.
+     1/1: $0\R3C38_PLC2_inst.sliceC_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:582$7'.
+     1/1: $0\R3C41_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:579$6'.
+     1/1: $0\R3C40_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:576$5'.
+     1/1: $0\R3C39_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:573$4'.
+     1/1: $0\R3C38_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:570$3'.
+     1/1: $0\R3C40_PLC2_inst.sliceC_inst.ff_1.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:567$2'.
+     1/1: $0\R2C37_PLC2_inst.sliceA_inst.ff_0.Q[0:0]
+Creating decoders for process `\top.$proc$main_small.v:564$1'.
+     1/1: $0\R3C37_PLC2_inst.sliceD_inst.ff_0.Q[0:0]
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\top.\R5C13_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:1206$489'.
+  created $dff cell `$procdff$841' with positive edge clock.
+Creating register for signal `\top.\R5C12_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:1203$487'.
+  created $dff cell `$procdff$842' with positive edge clock.
+Creating register for signal `\top.\R4C13_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:1117$402'.
+  created $dff cell `$procdff$843' with positive edge clock.
+Creating register for signal `\top.\R4C13_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:1111$397'.
+  created $dff cell `$procdff$844' with positive edge clock.
+Creating register for signal `\top.\R4C13_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:1109$396'.
+  created $dff cell `$procdff$845' with positive edge clock.
+Creating register for signal `\top.\R4C11_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:1094$382'.
+  created $dff cell `$procdff$846' with positive edge clock.
+Creating register for signal `\top.\R3C15_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:1025$314'.
+  created $dff cell `$procdff$847' with positive edge clock.
+Creating register for signal `\top.\R3C14_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:995$285'.
+  created $dff cell `$procdff$848' with positive edge clock.
+Creating register for signal `\top.\R3C12_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:968$259'.
+  created $dff cell `$procdff$849' with positive edge clock.
+Creating register for signal `\top.\R3C12_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:953$245'.
+  created $dff cell `$procdff$850' with positive edge clock.
+Creating register for signal `\top.\R3C11_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:934$227'.
+  created $dff cell `$procdff$851' with positive edge clock.
+Creating register for signal `\top.\R3C10_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:915$209'.
+  created $dff cell `$procdff$852' with positive edge clock.
+Creating register for signal `\top.\R2C19_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:860$155'.
+  created $dff cell `$procdff$853' with positive edge clock.
+Creating register for signal `\top.\R2C19_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:858$154'.
+  created $dff cell `$procdff$854' with positive edge clock.
+Creating register for signal `\top.\R2C15_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:848$145'.
+  created $dff cell `$procdff$855' with positive edge clock.
+Creating register for signal `\top.\R2C15_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:845$143'.
+  created $dff cell `$procdff$856' with positive edge clock.
+Creating register for signal `\top.\R2C15_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:843$142'.
+  created $dff cell `$procdff$857' with positive edge clock.
+Creating register for signal `\top.\R2C15_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:838$138'.
+  created $dff cell `$procdff$858' with positive edge clock.
+Creating register for signal `\top.\R2C14_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:828$129'.
+  created $dff cell `$procdff$859' with positive edge clock.
+Creating register for signal `\top.\R2C13_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:811$113'.
+  created $dff cell `$procdff$860' with positive edge clock.
+Creating register for signal `\top.\R2C12_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:800$103'.
+  created $dff cell `$procdff$861' with positive edge clock.
+Creating register for signal `\top.\R2C12_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:791$95'.
+  created $dff cell `$procdff$862' with positive edge clock.
+Creating register for signal `\top.\R2C11_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:782$87'.
+  created $dff cell `$procdff$863' with positive edge clock.
+Creating register for signal `\top.\CIB_R1C25_CIB_JD7' using process `\top.$proc$main_small.v:764$69'.
+  created $dff cell `$procdff$864' with positive edge clock.
+Creating register for signal `\top.\R2C20_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:761$68'.
+  created $dff cell `$procdff$865' with positive edge clock.
+Creating register for signal `\top.\CIB_R1C39_CIB_JD7' using process `\top.$proc$main_small.v:759$66'.
+  created $dff cell `$procdff$866' with positive edge clock.
+Creating register for signal `\top.\R4C35_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:756$65'.
+  created $dff cell `$procdff$867' with positive edge clock.
+Creating register for signal `\top.\R4C35_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:753$64'.
+  created $dff cell `$procdff$868' with positive edge clock.
+Creating register for signal `\top.\R4C35_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:750$63'.
+  created $dff cell `$procdff$869' with positive edge clock.
+Creating register for signal `\top.\R4C35_PLC2_inst.sliceD_inst.ff_0.Q' using process `\top.$proc$main_small.v:747$62'.
+  created $dff cell `$procdff$870' with positive edge clock.
+Creating register for signal `\top.\R4C35_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:744$61'.
+  created $dff cell `$procdff$871' with positive edge clock.
+Creating register for signal `\top.\R4C36_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:741$60'.
+  created $dff cell `$procdff$872' with positive edge clock.
+Creating register for signal `\top.\R4C36_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:738$59'.
+  created $dff cell `$procdff$873' with positive edge clock.
+Creating register for signal `\top.\R4C36_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:735$58'.
+  created $dff cell `$procdff$874' with positive edge clock.
+Creating register for signal `\top.\R4C36_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:732$57'.
+  created $dff cell `$procdff$875' with positive edge clock.
+Creating register for signal `\top.\R4C36_PLC2_inst.sliceD_inst.ff_0.Q' using process `\top.$proc$main_small.v:729$56'.
+  created $dff cell `$procdff$876' with positive edge clock.
+Creating register for signal `\top.\R4C36_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:726$55'.
+  created $dff cell `$procdff$877' with positive edge clock.
+Creating register for signal `\top.\R4C36_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:723$54'.
+  created $dff cell `$procdff$878' with positive edge clock.
+Creating register for signal `\top.\R4C37_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:720$53'.
+  created $dff cell `$procdff$879' with positive edge clock.
+Creating register for signal `\top.\R4C37_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:717$52'.
+  created $dff cell `$procdff$880' with positive edge clock.
+Creating register for signal `\top.\R4C37_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:714$51'.
+  created $dff cell `$procdff$881' with positive edge clock.
+Creating register for signal `\top.\R4C37_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:711$50'.
+  created $dff cell `$procdff$882' with positive edge clock.
+Creating register for signal `\top.\R4C37_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:708$49'.
+  created $dff cell `$procdff$883' with positive edge clock.
+Creating register for signal `\top.\R4C37_PLC2_inst.sliceD_inst.ff_0.Q' using process `\top.$proc$main_small.v:705$48'.
+  created $dff cell `$procdff$884' with positive edge clock.
+Creating register for signal `\top.\R4C37_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:702$47'.
+  created $dff cell `$procdff$885' with positive edge clock.
+Creating register for signal `\top.\R4C38_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:699$46'.
+  created $dff cell `$procdff$886' with positive edge clock.
+Creating register for signal `\top.\R4C38_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:696$45'.
+  created $dff cell `$procdff$887' with positive edge clock.
+Creating register for signal `\top.\R4C38_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:693$44'.
+  created $dff cell `$procdff$888' with positive edge clock.
+Creating register for signal `\top.\R4C38_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:690$43'.
+  created $dff cell `$procdff$889' with positive edge clock.
+Creating register for signal `\top.\R4C38_PLC2_inst.sliceD_inst.ff_0.Q' using process `\top.$proc$main_small.v:687$42'.
+  created $dff cell `$procdff$890' with positive edge clock.
+Creating register for signal `\top.\R4C38_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:684$41'.
+  created $dff cell `$procdff$891' with positive edge clock.
+Creating register for signal `\top.\R4C38_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:681$40'.
+  created $dff cell `$procdff$892' with positive edge clock.
+Creating register for signal `\top.\R4C39_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:678$39'.
+  created $dff cell `$procdff$893' with positive edge clock.
+Creating register for signal `\top.\R5C35_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:675$38'.
+  created $dff cell `$procdff$894' with positive edge clock.
+Creating register for signal `\top.\R2C17_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:672$37'.
+  created $dff cell `$procdff$895' with positive edge clock.
+Creating register for signal `\top.\R3C37_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:669$36'.
+  created $dff cell `$procdff$896' with positive edge clock.
+Creating register for signal `\top.\R3C37_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:666$35'.
+  created $dff cell `$procdff$897' with positive edge clock.
+Creating register for signal `\top.\R3C37_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:663$34'.
+  created $dff cell `$procdff$898' with positive edge clock.
+Creating register for signal `\top.\R3C37_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:660$33'.
+  created $dff cell `$procdff$899' with positive edge clock.
+Creating register for signal `\top.\R3C38_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:657$32'.
+  created $dff cell `$procdff$900' with positive edge clock.
+Creating register for signal `\top.\R3C38_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:654$31'.
+  created $dff cell `$procdff$901' with positive edge clock.
+Creating register for signal `\top.\R3C38_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:651$30'.
+  created $dff cell `$procdff$902' with positive edge clock.
+Creating register for signal `\top.\R3C38_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:648$29'.
+  created $dff cell `$procdff$903' with positive edge clock.
+Creating register for signal `\top.\R3C38_PLC2_inst.sliceD_inst.ff_0.Q' using process `\top.$proc$main_small.v:645$28'.
+  created $dff cell `$procdff$904' with positive edge clock.
+Creating register for signal `\top.\R3C38_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:642$27'.
+  created $dff cell `$procdff$905' with positive edge clock.
+Creating register for signal `\top.\R3C39_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:639$26'.
+  created $dff cell `$procdff$906' with positive edge clock.
+Creating register for signal `\top.\R3C39_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:636$25'.
+  created $dff cell `$procdff$907' with positive edge clock.
+Creating register for signal `\top.\R3C39_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:633$24'.
+  created $dff cell `$procdff$908' with positive edge clock.
+Creating register for signal `\top.\R3C39_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:630$23'.
+  created $dff cell `$procdff$909' with positive edge clock.
+Creating register for signal `\top.\R3C39_PLC2_inst.sliceD_inst.ff_0.Q' using process `\top.$proc$main_small.v:627$22'.
+  created $dff cell `$procdff$910' with positive edge clock.
+Creating register for signal `\top.\R3C39_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:624$21'.
+  created $dff cell `$procdff$911' with positive edge clock.
+Creating register for signal `\top.\R3C40_PLC2_inst.sliceD_inst.ff_1.Q' using process `\top.$proc$main_small.v:621$20'.
+  created $dff cell `$procdff$912' with positive edge clock.
+Creating register for signal `\top.\R3C40_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:618$19'.
+  created $dff cell `$procdff$913' with positive edge clock.
+Creating register for signal `\top.\R3C40_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:615$18'.
+  created $dff cell `$procdff$914' with positive edge clock.
+Creating register for signal `\top.\R3C40_PLC2_inst.sliceC_inst.ff_0.Q' using process `\top.$proc$main_small.v:612$17'.
+  created $dff cell `$procdff$915' with positive edge clock.
+Creating register for signal `\top.\R3C40_PLC2_inst.sliceD_inst.ff_0.Q' using process `\top.$proc$main_small.v:609$16'.
+  created $dff cell `$procdff$916' with positive edge clock.
+Creating register for signal `\top.\R3C40_PLC2_inst.sliceB_inst.ff_0.Q' using process `\top.$proc$main_small.v:606$15'.
+  created $dff cell `$procdff$917' with positive edge clock.
+Creating register for signal `\top.\R3C41_PLC2_inst.sliceA_inst.ff_1.Q' using process `\top.$proc$main_small.v:603$14'.
+  created $dff cell `$procdff$918' with positive edge clock.
+Creating register for signal `\top.\R4C39_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:600$13'.
+  created $dff cell `$procdff$919' with positive edge clock.
+Creating register for signal `\top.\R4C38_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:597$12'.
+  created $dff cell `$procdff$920' with positive edge clock.
+Creating register for signal `\top.\R4C37_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:594$11'.
+  created $dff cell `$procdff$921' with positive edge clock.
+Creating register for signal `\top.\R4C36_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:591$10'.
+  created $dff cell `$procdff$922' with positive edge clock.
+Creating register for signal `\top.\R3C39_PLC2_inst.sliceB_inst.ff_1.Q' using process `\top.$proc$main_small.v:588$9'.
+  created $dff cell `$procdff$923' with positive edge clock.
+Creating register for signal `\top.\R3C38_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:585$8'.
+  created $dff cell `$procdff$924' with positive edge clock.
+Creating register for signal `\top.\R3C41_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:582$7'.
+  created $dff cell `$procdff$925' with positive edge clock.
+Creating register for signal `\top.\R3C40_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:579$6'.
+  created $dff cell `$procdff$926' with positive edge clock.
+Creating register for signal `\top.\R3C39_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:576$5'.
+  created $dff cell `$procdff$927' with positive edge clock.
+Creating register for signal `\top.\R3C38_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:573$4'.
+  created $dff cell `$procdff$928' with positive edge clock.
+Creating register for signal `\top.\R3C40_PLC2_inst.sliceC_inst.ff_1.Q' using process `\top.$proc$main_small.v:570$3'.
+  created $dff cell `$procdff$929' with positive edge clock.
+Creating register for signal `\top.\R2C37_PLC2_inst.sliceA_inst.ff_0.Q' using process `\top.$proc$main_small.v:567$2'.
+  created $dff cell `$procdff$930' with positive edge clock.
+Creating register for signal `\top.\R3C37_PLC2_inst.sliceD_inst.ff_0.Q' using process `\top.$proc$main_small.v:564$1'.
+  created $dff cell `$procdff$931' with positive edge clock.
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `top.$proc$main_small.v:528$636'.
+Removing empty process `top.$proc$main_small.v:514$635'.
+Removing empty process `top.$proc$main_small.v:512$634'.
+Removing empty process `top.$proc$main_small.v:506$633'.
+Removing empty process `top.$proc$main_small.v:505$632'.
+Removing empty process `top.$proc$main_small.v:499$631'.
+Removing empty process `top.$proc$main_small.v:498$630'.
+Removing empty process `top.$proc$main_small.v:495$629'.
+Removing empty process `top.$proc$main_small.v:494$628'.
+Removing empty process `top.$proc$main_small.v:491$627'.
+Removing empty process `top.$proc$main_small.v:490$626'.
+Removing empty process `top.$proc$main_small.v:487$625'.
+Removing empty process `top.$proc$main_small.v:486$624'.
+Removing empty process `top.$proc$main_small.v:476$623'.
+Removing empty process `top.$proc$main_small.v:475$622'.
+Removing empty process `top.$proc$main_small.v:472$621'.
+Removing empty process `top.$proc$main_small.v:471$620'.
+Removing empty process `top.$proc$main_small.v:468$619'.
+Removing empty process `top.$proc$main_small.v:467$618'.
+Removing empty process `top.$proc$main_small.v:464$617'.
+Removing empty process `top.$proc$main_small.v:463$616'.
+Removing empty process `top.$proc$main_small.v:452$615'.
+Removing empty process `top.$proc$main_small.v:451$614'.
+Removing empty process `top.$proc$main_small.v:448$613'.
+Removing empty process `top.$proc$main_small.v:447$612'.
+Removing empty process `top.$proc$main_small.v:444$611'.
+Removing empty process `top.$proc$main_small.v:443$610'.
+Removing empty process `top.$proc$main_small.v:440$609'.
+Removing empty process `top.$proc$main_small.v:439$608'.
+Removing empty process `top.$proc$main_small.v:428$607'.
+Removing empty process `top.$proc$main_small.v:427$606'.
+Removing empty process `top.$proc$main_small.v:424$605'.
+Removing empty process `top.$proc$main_small.v:423$604'.
+Removing empty process `top.$proc$main_small.v:419$603'.
+Removing empty process `top.$proc$main_small.v:404$602'.
+Removing empty process `top.$proc$main_small.v:401$601'.
+Removing empty process `top.$proc$main_small.v:400$600'.
+Removing empty process `top.$proc$main_small.v:386$599'.
+Removing empty process `top.$proc$main_small.v:378$598'.
+Removing empty process `top.$proc$main_small.v:377$597'.
+Removing empty process `top.$proc$main_small.v:372$596'.
+Removing empty process `top.$proc$main_small.v:371$595'.
+Removing empty process `top.$proc$main_small.v:368$594'.
+Removing empty process `top.$proc$main_small.v:367$593'.
+Removing empty process `top.$proc$main_small.v:364$592'.
+Removing empty process `top.$proc$main_small.v:363$591'.
+Removing empty process `top.$proc$main_small.v:360$590'.
+Removing empty process `top.$proc$main_small.v:359$589'.
+Removing empty process `top.$proc$main_small.v:349$588'.
+Removing empty process `top.$proc$main_small.v:348$587'.
+Removing empty process `top.$proc$main_small.v:345$586'.
+Removing empty process `top.$proc$main_small.v:344$585'.
+Removing empty process `top.$proc$main_small.v:341$584'.
+Removing empty process `top.$proc$main_small.v:340$583'.
+Removing empty process `top.$proc$main_small.v:337$582'.
+Removing empty process `top.$proc$main_small.v:336$581'.
+Removing empty process `top.$proc$main_small.v:325$580'.
+Removing empty process `top.$proc$main_small.v:324$579'.
+Removing empty process `top.$proc$main_small.v:321$578'.
+Removing empty process `top.$proc$main_small.v:320$577'.
+Removing empty process `top.$proc$main_small.v:317$576'.
+Removing empty process `top.$proc$main_small.v:316$575'.
+Removing empty process `top.$proc$main_small.v:313$574'.
+Removing empty process `top.$proc$main_small.v:312$573'.
+Removing empty process `top.$proc$main_small.v:301$572'.
+Removing empty process `top.$proc$main_small.v:300$571'.
+Removing empty process `top.$proc$main_small.v:297$570'.
+Removing empty process `top.$proc$main_small.v:296$569'.
+Removing empty process `top.$proc$main_small.v:294$568'.
+Removing empty process `top.$proc$main_small.v:286$567'.
+Removing empty process `top.$proc$main_small.v:267$566'.
+Removing empty process `top.$proc$main_small.v:239$565'.
+Removing empty process `top.$proc$main_small.v:230$564'.
+Removing empty process `top.$proc$main_small.v:214$563'.
+Removing empty process `top.$proc$main_small.v:198$562'.
+Removing empty process `top.$proc$main_small.v:143$561'.
+Removing empty process `top.$proc$main_small.v:138$560'.
+Removing empty process `top.$proc$main_small.v:135$559'.
+Removing empty process `top.$proc$main_small.v:134$558'.
+Removing empty process `top.$proc$main_small.v:126$557'.
+Removing empty process `top.$proc$main_small.v:123$556'.
+Removing empty process `top.$proc$main_small.v:122$555'.
+Removing empty process `top.$proc$main_small.v:121$554'.
+Removing empty process `top.$proc$main_small.v:118$553'.
+Removing empty process `top.$proc$main_small.v:112$552'.
+Removing empty process `top.$proc$main_small.v:93$551'.
+Removing empty process `top.$proc$main_small.v:81$550'.
+Removing empty process `top.$proc$main_small.v:75$549'.
+Removing empty process `top.$proc$main_small.v:61$548'.
+Removing empty process `top.$proc$main_small.v:18$547'.
+Removing empty process `top.$proc$main_small.v:16$546'.
+Removing empty process `top.$proc$main_small.v:1206$489'.
+Removing empty process `top.$proc$main_small.v:1203$487'.
+Removing empty process `top.$proc$main_small.v:1117$402'.
+Removing empty process `top.$proc$main_small.v:1111$397'.
+Removing empty process `top.$proc$main_small.v:1109$396'.
+Removing empty process `top.$proc$main_small.v:1094$382'.
+Removing empty process `top.$proc$main_small.v:1025$314'.
+Removing empty process `top.$proc$main_small.v:995$285'.
+Removing empty process `top.$proc$main_small.v:968$259'.
+Removing empty process `top.$proc$main_small.v:953$245'.
+Removing empty process `top.$proc$main_small.v:934$227'.
+Removing empty process `top.$proc$main_small.v:915$209'.
+Removing empty process `top.$proc$main_small.v:860$155'.
+Removing empty process `top.$proc$main_small.v:858$154'.
+Removing empty process `top.$proc$main_small.v:848$145'.
+Removing empty process `top.$proc$main_small.v:845$143'.
+Removing empty process `top.$proc$main_small.v:843$142'.
+Removing empty process `top.$proc$main_small.v:838$138'.
+Removing empty process `top.$proc$main_small.v:828$129'.
+Removing empty process `top.$proc$main_small.v:811$113'.
+Removing empty process `top.$proc$main_small.v:800$103'.
+Removing empty process `top.$proc$main_small.v:791$95'.
+Removing empty process `top.$proc$main_small.v:782$87'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:764$69'.
+Removing empty process `top.$proc$main_small.v:764$69'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:761$68'.
+Removing empty process `top.$proc$main_small.v:761$68'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:759$66'.
+Removing empty process `top.$proc$main_small.v:759$66'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:756$65'.
+Removing empty process `top.$proc$main_small.v:756$65'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:753$64'.
+Removing empty process `top.$proc$main_small.v:753$64'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:750$63'.
+Removing empty process `top.$proc$main_small.v:750$63'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:747$62'.
+Removing empty process `top.$proc$main_small.v:747$62'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:744$61'.
+Removing empty process `top.$proc$main_small.v:744$61'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:741$60'.
+Removing empty process `top.$proc$main_small.v:741$60'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:738$59'.
+Removing empty process `top.$proc$main_small.v:738$59'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:735$58'.
+Removing empty process `top.$proc$main_small.v:735$58'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:732$57'.
+Removing empty process `top.$proc$main_small.v:732$57'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:729$56'.
+Removing empty process `top.$proc$main_small.v:729$56'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:726$55'.
+Removing empty process `top.$proc$main_small.v:726$55'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:723$54'.
+Removing empty process `top.$proc$main_small.v:723$54'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:720$53'.
+Removing empty process `top.$proc$main_small.v:720$53'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:717$52'.
+Removing empty process `top.$proc$main_small.v:717$52'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:714$51'.
+Removing empty process `top.$proc$main_small.v:714$51'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:711$50'.
+Removing empty process `top.$proc$main_small.v:711$50'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:708$49'.
+Removing empty process `top.$proc$main_small.v:708$49'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:705$48'.
+Removing empty process `top.$proc$main_small.v:705$48'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:702$47'.
+Removing empty process `top.$proc$main_small.v:702$47'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:699$46'.
+Removing empty process `top.$proc$main_small.v:699$46'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:696$45'.
+Removing empty process `top.$proc$main_small.v:696$45'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:693$44'.
+Removing empty process `top.$proc$main_small.v:693$44'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:690$43'.
+Removing empty process `top.$proc$main_small.v:690$43'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:687$42'.
+Removing empty process `top.$proc$main_small.v:687$42'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:684$41'.
+Removing empty process `top.$proc$main_small.v:684$41'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:681$40'.
+Removing empty process `top.$proc$main_small.v:681$40'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:678$39'.
+Removing empty process `top.$proc$main_small.v:678$39'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:675$38'.
+Removing empty process `top.$proc$main_small.v:675$38'.
+Found and cleaned up 2 empty switches in `\top.$proc$main_small.v:672$37'.
+Removing empty process `top.$proc$main_small.v:672$37'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:669$36'.
+Removing empty process `top.$proc$main_small.v:669$36'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:666$35'.
+Removing empty process `top.$proc$main_small.v:666$35'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:663$34'.
+Removing empty process `top.$proc$main_small.v:663$34'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:660$33'.
+Removing empty process `top.$proc$main_small.v:660$33'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:657$32'.
+Removing empty process `top.$proc$main_small.v:657$32'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:654$31'.
+Removing empty process `top.$proc$main_small.v:654$31'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:651$30'.
+Removing empty process `top.$proc$main_small.v:651$30'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:648$29'.
+Removing empty process `top.$proc$main_small.v:648$29'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:645$28'.
+Removing empty process `top.$proc$main_small.v:645$28'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:642$27'.
+Removing empty process `top.$proc$main_small.v:642$27'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:639$26'.
+Removing empty process `top.$proc$main_small.v:639$26'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:636$25'.
+Removing empty process `top.$proc$main_small.v:636$25'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:633$24'.
+Removing empty process `top.$proc$main_small.v:633$24'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:630$23'.
+Removing empty process `top.$proc$main_small.v:630$23'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:627$22'.
+Removing empty process `top.$proc$main_small.v:627$22'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:624$21'.
+Removing empty process `top.$proc$main_small.v:624$21'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:621$20'.
+Removing empty process `top.$proc$main_small.v:621$20'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:618$19'.
+Removing empty process `top.$proc$main_small.v:618$19'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:615$18'.
+Removing empty process `top.$proc$main_small.v:615$18'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:612$17'.
+Removing empty process `top.$proc$main_small.v:612$17'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:609$16'.
+Removing empty process `top.$proc$main_small.v:609$16'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:606$15'.
+Removing empty process `top.$proc$main_small.v:606$15'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:603$14'.
+Removing empty process `top.$proc$main_small.v:603$14'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:600$13'.
+Removing empty process `top.$proc$main_small.v:600$13'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:597$12'.
+Removing empty process `top.$proc$main_small.v:597$12'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:594$11'.
+Removing empty process `top.$proc$main_small.v:594$11'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:591$10'.
+Removing empty process `top.$proc$main_small.v:591$10'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:588$9'.
+Removing empty process `top.$proc$main_small.v:588$9'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:585$8'.
+Removing empty process `top.$proc$main_small.v:585$8'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:582$7'.
+Removing empty process `top.$proc$main_small.v:582$7'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:579$6'.
+Removing empty process `top.$proc$main_small.v:579$6'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:576$5'.
+Removing empty process `top.$proc$main_small.v:576$5'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:573$4'.
+Removing empty process `top.$proc$main_small.v:573$4'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:570$3'.
+Removing empty process `top.$proc$main_small.v:570$3'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:567$2'.
+Removing empty process `top.$proc$main_small.v:567$2'.
+Found and cleaned up 1 empty switch in `\top.$proc$main_small.v:564$1'.
+Removing empty process `top.$proc$main_small.v:564$1'.
+Cleaned up 69 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~2 debug messages>
+
+2.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 2 unused cells and 705 unused wires.
+<suppressed ~3 debug messages>
+
+2.5. Executing CHECK pass (checking for obvious problems).
+Checking module top...
+Found and reported 0 problems.
+
+2.6. Executing OPT pass (performing simple optimizations).
+
+2.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~148 debug messages>
+
+2.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.6.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.6.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.6.8. Finished OPT passes. (There is nothing left to do.)
+
+2.7. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from wire top.R2C11_PLC2_inst.sliceB_inst.genblk9.lut4_0.s1.
+Removed top 1 bits (of 2) from wire top.R2C11_PLC2_inst.sliceB_inst.genblk9.lut4_1.s1.
+Removed top 1 bits (of 8) from wire top.R2C11_PLC2_inst.sliceC_inst.genblk9.lut4_0.s3.
+Removed top 1 bits (of 8) from wire top.R2C11_PLC2_inst.sliceC_inst.genblk9.lut4_1.s3.
+Removed top 1 bits (of 2) from wire top.R2C12_PLC2_inst.sliceB_inst.genblk9.lut4_1.s1.
+Removed top 1 bits (of 4) from wire top.R2C12_PLC2_inst.sliceC_inst.genblk9.lut4_0.s2.
+Removed top 1 bits (of 4) from wire top.R2C12_PLC2_inst.sliceC_inst.genblk9.lut4_1.s2.
+Removed top 1 bits (of 4) from wire top.R2C14_PLC2_inst.sliceB_inst.genblk9.lut4_1.s2.
+Removed top 4 bits (of 8) from wire top.R2C14_PLC2_inst.sliceC_inst.genblk9.lut4_0.s3.
+Removed top 3 bits (of 4) from wire top.R2C14_PLC2_inst.sliceD_inst.genblk9.lut4_1.s2.
+Removed top 2 bits (of 4) from wire top.R2C19_PLC2_inst.sliceA_inst.genblk9.lut4_0.s2.
+Removed top 1 bits (of 2) from wire top.R2C37_PLC2_inst.sliceD_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R2C37_PLC2_inst.sliceD_inst.genblk9.lut4_1.s3.
+Removed top 1 bits (of 2) from wire top.R2C38_PLC2_inst.sliceB_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R2C38_PLC2_inst.sliceB_inst.genblk9.lut4_1.s3.
+Removed top 3 bits (of 4) from wire top.R2C38_PLC2_inst.sliceC_inst.genblk9.lut4_1.s2.
+Removed top 1 bits (of 2) from wire top.R2C38_PLC2_inst.sliceD_inst.genblk9.lut4_1.s1.
+Removed top 1 bits (of 2) from wire top.R2C39_PLC2_inst.sliceB_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R2C39_PLC2_inst.sliceB_inst.genblk9.lut4_1.s3.
+Removed top 3 bits (of 4) from wire top.R2C39_PLC2_inst.sliceC_inst.genblk9.lut4_1.s2.
+Removed top 1 bits (of 2) from wire top.R2C40_PLC2_inst.sliceA_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R2C40_PLC2_inst.sliceA_inst.genblk9.lut4_1.s3.
+Removed top 2 bits (of 8) from wire top.R3C10_PLC2_inst.sliceA_inst.genblk9.lut4_0.s3.
+Removed top 1 bits (of 4) from wire top.R3C10_PLC2_inst.sliceB_inst.genblk9.lut4_1.s2.
+Removed top 5 bits (of 8) from wire top.R3C10_PLC2_inst.sliceB_inst.genblk9.lut4_1.s3.
+Removed top 1 bits (of 4) from wire top.R3C12_PLC2_inst.sliceA_inst.genblk9.lut4_0.s2.
+Removed top 2 bits (of 4) from wire top.R3C12_PLC2_inst.sliceA_inst.genblk9.lut4_1.s2.
+Removed top 2 bits (of 8) from wire top.R3C12_PLC2_inst.sliceA_inst.genblk9.lut4_1.s3.
+Removed top 2 bits (of 8) from wire top.R3C12_PLC2_inst.sliceB_inst.genblk9.lut4_1.s3.
+Removed top 1 bits (of 2) from wire top.R3C12_PLC2_inst.sliceD_inst.genblk9.lut4_0.s1.
+Removed top 1 bits (of 2) from wire top.R3C12_PLC2_inst.sliceD_inst.genblk9.lut4_1.s1.
+Removed top 1 bits (of 8) from wire top.R3C13_PLC2_inst.sliceA_inst.genblk9.lut4_1.s3.
+Removed top 1 bits (of 2) from wire top.R3C13_PLC2_inst.sliceC_inst.genblk9.lut4_0.s1.
+Removed top 1 bits (of 8) from wire top.R3C14_PLC2_inst.sliceA_inst.genblk9.lut4_0.s3.
+Removed top 2 bits (of 4) from wire top.R3C14_PLC2_inst.sliceA_inst.genblk9.lut4_1.s2.
+Removed top 2 bits (of 4) from wire top.R3C14_PLC2_inst.sliceB_inst.genblk9.lut4_1.s2.
+Removed top 1 bits (of 2) from wire top.R3C14_PLC2_inst.sliceC_inst.genblk9.lut4_1.s1.
+Removed top 1 bits (of 2) from wire top.R3C41_PLC2_inst.sliceC_inst.genblk9.lut4_0.s1.
+Removed top 7 bits (of 8) from wire top.R3C41_PLC2_inst.sliceC_inst.genblk9.lut4_0.s3.
+Removed top 1 bits (of 4) from wire top.R4C11_PLC2_inst.sliceC_inst.genblk9.lut4_0.s2.
+Removed top 2 bits (of 8) from wire top.R4C13_PLC2_inst.sliceB_inst.genblk9.lut4_0.s3.
+Removed top 1 bits (of 2) from wire top.R4C39_PLC2_inst.sliceC_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R4C39_PLC2_inst.sliceC_inst.genblk9.lut4_1.s3.
+Removed top 2 bits (of 4) from wire top.R5C35_PLC2_inst.sliceA_inst.genblk9.lut4_0.s2.
+Removed top 1 bits (of 2) from wire top.R5C36_PLC2_inst.sliceA_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R5C36_PLC2_inst.sliceA_inst.genblk9.lut4_1.s3.
+Removed top 3 bits (of 4) from wire top.R5C36_PLC2_inst.sliceC_inst.genblk9.lut4_0.s2.
+Removed top 1 bits (of 2) from wire top.R5C37_PLC2_inst.sliceA_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R5C37_PLC2_inst.sliceA_inst.genblk9.lut4_1.s3.
+Removed top 1 bits (of 2) from wire top.R5C37_PLC2_inst.sliceC_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R5C37_PLC2_inst.sliceC_inst.genblk9.lut4_1.s3.
+Removed top 1 bits (of 2) from wire top.R5C38_PLC2_inst.sliceC_inst.genblk9.lut4_0.s1.
+Removed top 1 bits (of 2) from wire top.R5C38_PLC2_inst.sliceD_inst.genblk9.lut4_1.s1.
+Removed top 7 bits (of 8) from wire top.R5C38_PLC2_inst.sliceD_inst.genblk9.lut4_1.s3.
+
+2.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 54 unused wires.
+<suppressed ~1 debug messages>
+
+2.9. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.10. Executing OPT pass (performing simple optimizations).
+
+2.10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+2.10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.10.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+2.10.4. Finished fast OPT passes.
+
+2.11. Printing statistics.
+
+=== top ===
+
+   Number of wires:                615
+   Number of wire bits:            999
+   Number of public wires:         546
+   Number of public wire bits:     930
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                612
+     $and                          110
+     $dff                           91
+     $mux                          289
+     $not                           39
+     $or                            14
+     $xor                           69
+
+2.12. Executing CHECK pass (checking for obvious problems).
+Checking module top...
+Found and reported 0 problems.
+
+3. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+Import set-constraint from init attribute: \CIB_R1C25_CIB_JD7 = 1'0
+Import set-constraint from init attribute: \CIB_R1C39_CIB_JD7 = 1'0
+Import set-constraint from init attribute: \R2C11_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R2C12_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R2C12_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R2C13_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R2C14_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R2C15_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R2C15_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R2C15_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R2C15_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R2C17_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R2C19_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R2C19_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R2C20_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R2C37_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C10_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C11_PLC2_inst.sliceB_inst.ff_0.Q = 1'1
+Import set-constraint from init attribute: \R3C12_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C12_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C14_PLC2_inst.sliceA_inst.ff_1.Q = 1'1
+Import set-constraint from init attribute: \R3C15_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C37_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C37_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C37_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C37_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C37_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C38_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C38_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C38_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C38_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C38_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C38_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C38_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C38_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C39_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C39_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C39_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C39_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C39_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C39_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C39_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C39_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C40_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C40_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C40_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C40_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C40_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C40_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C40_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C40_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R3C41_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R3C41_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C11_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C13_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C13_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C13_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C35_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C35_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C35_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C35_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C35_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C36_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C36_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C36_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C36_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C36_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C36_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C36_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C36_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C37_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C37_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C37_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C37_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C37_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C37_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C37_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C37_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C38_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C38_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C38_PLC2_inst.sliceB_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C38_PLC2_inst.sliceB_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C38_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C38_PLC2_inst.sliceC_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C38_PLC2_inst.sliceD_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C38_PLC2_inst.sliceD_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R4C39_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R4C39_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R5C12_PLC2_inst.sliceA_inst.ff_0.Q = 1'0
+Import set-constraint from init attribute: \R5C13_PLC2_inst.sliceA_inst.ff_1.Q = 1'0
+Import set-constraint from init attribute: \R5C35_PLC2_inst.sliceC_inst.ff_0.Q = 1'0
+Final init constraint equation: { \R5C35_PLC2_inst.sliceC_inst.ff_0.Q \R5C13_PLC2_inst.sliceA_inst.ff_1.Q \R5C12_PLC2_inst.sliceA_inst.ff_0.Q \R4C39_PLC2_inst.sliceA_inst.ff_1.Q \R4C39_PLC2_inst.sliceA_inst.ff_0.Q \R4C38_PLC2_inst.sliceD_inst.ff_1.Q \R4C38_PLC2_inst.sliceD_inst.ff_0.Q \R4C38_PLC2_inst.sliceC_inst.ff_1.Q \R4C38_PLC2_inst.sliceC_inst.ff_0.Q \R4C38_PLC2_inst.sliceB_inst.ff_1.Q \R4C38_PLC2_inst.sliceB_inst.ff_0.Q \R4C38_PLC2_inst.sliceA_inst.ff_1.Q \R4C38_PLC2_inst.sliceA_inst.ff_0.Q \R4C37_PLC2_inst.sliceD_inst.ff_1.Q \R4C37_PLC2_inst.sliceD_inst.ff_0.Q \R4C37_PLC2_inst.sliceC_inst.ff_1.Q \R4C37_PLC2_inst.sliceC_inst.ff_0.Q \R4C37_PLC2_inst.sliceB_inst.ff_1.Q \R4C37_PLC2_inst.sliceB_inst.ff_0.Q \R4C37_PLC2_inst.sliceA_inst.ff_1.Q \R4C37_PLC2_inst.sliceA_inst.ff_0.Q \R4C36_PLC2_inst.sliceD_inst.ff_1.Q \R4C36_PLC2_inst.sliceD_inst.ff_0.Q \R4C36_PLC2_inst.sliceC_inst.ff_1.Q \R4C36_PLC2_inst.sliceC_inst.ff_0.Q \R4C36_PLC2_inst.sliceB_inst.ff_1.Q \R4C36_PLC2_inst.sliceB_inst.ff_0.Q \R4C36_PLC2_inst.sliceA_inst.ff_1.Q \R4C36_PLC2_inst.sliceA_inst.ff_0.Q \R4C35_PLC2_inst.sliceD_inst.ff_1.Q \R4C35_PLC2_inst.sliceD_inst.ff_0.Q \R4C35_PLC2_inst.sliceC_inst.ff_1.Q \R4C35_PLC2_inst.sliceC_inst.ff_0.Q \R4C35_PLC2_inst.sliceB_inst.ff_1.Q \R4C13_PLC2_inst.sliceB_inst.ff_0.Q \R4C13_PLC2_inst.sliceA_inst.ff_1.Q \R4C13_PLC2_inst.sliceA_inst.ff_0.Q \R4C11_PLC2_inst.sliceB_inst.ff_0.Q \R3C41_PLC2_inst.sliceA_inst.ff_1.Q \R3C41_PLC2_inst.sliceA_inst.ff_0.Q \R3C40_PLC2_inst.sliceD_inst.ff_1.Q \R3C40_PLC2_inst.sliceD_inst.ff_0.Q \R3C40_PLC2_inst.sliceC_inst.ff_1.Q \R3C40_PLC2_inst.sliceC_inst.ff_0.Q \R3C40_PLC2_inst.sliceB_inst.ff_1.Q \R3C40_PLC2_inst.sliceB_inst.ff_0.Q \R3C40_PLC2_inst.sliceA_inst.ff_1.Q \R3C40_PLC2_inst.sliceA_inst.ff_0.Q \R3C39_PLC2_inst.sliceD_inst.ff_1.Q \R3C39_PLC2_inst.sliceD_inst.ff_0.Q \R3C39_PLC2_inst.sliceC_inst.ff_1.Q \R3C39_PLC2_inst.sliceC_inst.ff_0.Q \R3C39_PLC2_inst.sliceB_inst.ff_1.Q \R3C39_PLC2_inst.sliceB_inst.ff_0.Q \R3C39_PLC2_inst.sliceA_inst.ff_1.Q \R3C39_PLC2_inst.sliceA_inst.ff_0.Q \R3C38_PLC2_inst.sliceD_inst.ff_1.Q \R3C38_PLC2_inst.sliceD_inst.ff_0.Q \R3C38_PLC2_inst.sliceC_inst.ff_1.Q \R3C38_PLC2_inst.sliceC_inst.ff_0.Q \R3C38_PLC2_inst.sliceB_inst.ff_1.Q \R3C38_PLC2_inst.sliceB_inst.ff_0.Q \R3C38_PLC2_inst.sliceA_inst.ff_1.Q \R3C38_PLC2_inst.sliceA_inst.ff_0.Q \R3C37_PLC2_inst.sliceD_inst.ff_1.Q \R3C37_PLC2_inst.sliceD_inst.ff_0.Q \R3C37_PLC2_inst.sliceC_inst.ff_1.Q \R3C37_PLC2_inst.sliceC_inst.ff_0.Q \R3C37_PLC2_inst.sliceB_inst.ff_1.Q \R3C15_PLC2_inst.sliceD_inst.ff_1.Q \R3C14_PLC2_inst.sliceA_inst.ff_1.Q \R3C12_PLC2_inst.sliceC_inst.ff_0.Q \R3C12_PLC2_inst.sliceA_inst.ff_1.Q \R3C11_PLC2_inst.sliceB_inst.ff_0.Q \R3C10_PLC2_inst.sliceB_inst.ff_1.Q \R2C37_PLC2_inst.sliceA_inst.ff_0.Q \R2C20_PLC2_inst.sliceA_inst.ff_1.Q \R2C19_PLC2_inst.sliceA_inst.ff_1.Q \R2C19_PLC2_inst.sliceA_inst.ff_0.Q \R2C17_PLC2_inst.sliceA_inst.ff_0.Q \R2C15_PLC2_inst.sliceD_inst.ff_1.Q \R2C15_PLC2_inst.sliceC_inst.ff_1.Q \R2C15_PLC2_inst.sliceC_inst.ff_0.Q \R2C15_PLC2_inst.sliceB_inst.ff_0.Q \R2C14_PLC2_inst.sliceC_inst.ff_0.Q \R2C13_PLC2_inst.sliceC_inst.ff_0.Q \R2C12_PLC2_inst.sliceD_inst.ff_1.Q \R2C12_PLC2_inst.sliceC_inst.ff_1.Q \R2C11_PLC2_inst.sliceD_inst.ff_1.Q \CIB_R1C39_CIB_JD7 \CIB_R1C25_CIB_JD7 } = 91'0000000000000000000000000000000000000000000000000000000000000000000000100100000000000000000
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 10:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 11:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 12:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 13:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 14:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 15:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 16:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 17:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 18:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 19:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 20:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 21:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 22:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 23:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 24:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 25:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 26:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 27:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 28:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 29:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 30:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 31:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 32:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 33:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 34:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 35:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 36:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 37:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 38:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 39:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 40:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 41:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 42:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 43:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 44:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 45:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 46:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 47:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 48:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 49:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 50:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 51:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 52:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 53:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 54:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 55:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 56:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 57:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 58:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 59:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 60:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 61:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 62:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 63:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 64:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 65:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 66:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 67:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 68:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 69:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 70:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 71:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 72:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 73:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 74:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 75:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 76:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 77:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 78:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 79:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 80:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 81:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 82:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 83:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 84:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 85:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 86:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 87:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 88:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 89:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 90:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 91:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 92:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 93:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 94:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 95:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 96:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 97:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 98:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 99:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 100:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 101:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 102:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 103:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 104:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 105:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 106:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 107:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 108:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 109:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 110:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 111:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 112:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 113:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 114:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 115:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 116:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 117:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 118:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 119:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 120:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 121:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 122:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 123:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 124:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 125:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 126:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 127:
+Final constraint equation: { } = { }
+Imported 612 cells to SAT database.
+
+Setting up time step 128:
+Import set-constraint for this timestep: \R2C17_PLC2_inst.sliceA_inst.ff_0.Q = 1'1
+Final constraint equation: \R2C17_PLC2_inst.sliceA_inst.ff_0.Q = 1'1
+Imported 612 cells to SAT database.
+Import show expression: \MIB_R0C15_PIOT0_JPADDIB_PIO
+
+Solving problem with 507371 variables and 1342909 clauses..
+SAT solving finished - model found:
+
+  Time Signal Name                                      Dec       Hex           Bin
+  ---- ---------------------------------------- ----------- --------- -------------
+  init \CIB_R1C25_CIB_JD7                                 0         0             0
+  init \CIB_R1C39_CIB_JD7                                 0         0             0
+  init \R2C11_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R2C12_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R2C12_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R2C13_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R2C14_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R2C15_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R2C15_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R2C15_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R2C15_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R2C17_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R2C19_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R2C19_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R2C20_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R2C37_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R3C10_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R3C11_PLC2_inst.sliceB_inst.ff_0.Q                1         1             1
+  init \R3C12_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R3C12_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R3C14_PLC2_inst.sliceA_inst.ff_1.Q                1         1             1
+  init \R3C15_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R3C37_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R3C37_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R3C37_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R3C37_PLC2_inst.sliceD_inst.ff_0.Q                0         0             0
+  init \R3C37_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R3C38_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R3C38_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R3C38_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R3C38_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R3C38_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R3C38_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R3C38_PLC2_inst.sliceD_inst.ff_0.Q                0         0             0
+  init \R3C38_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R3C39_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R3C39_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R3C39_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R3C39_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R3C39_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R3C39_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R3C39_PLC2_inst.sliceD_inst.ff_0.Q                0         0             0
+  init \R3C39_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R3C40_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R3C40_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R3C40_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R3C40_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R3C40_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R3C40_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R3C40_PLC2_inst.sliceD_inst.ff_0.Q                0         0             0
+  init \R3C40_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R3C41_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R3C41_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R4C11_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R4C13_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R4C13_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R4C13_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R4C35_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R4C35_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R4C35_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R4C35_PLC2_inst.sliceD_inst.ff_0.Q                0         0             0
+  init \R4C35_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R4C36_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R4C36_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R4C36_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R4C36_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R4C36_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R4C36_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R4C36_PLC2_inst.sliceD_inst.ff_0.Q                0         0             0
+  init \R4C36_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R4C37_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R4C37_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R4C37_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R4C37_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R4C37_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R4C37_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R4C37_PLC2_inst.sliceD_inst.ff_0.Q                0         0             0
+  init \R4C37_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R4C38_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R4C38_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R4C38_PLC2_inst.sliceB_inst.ff_0.Q                0         0             0
+  init \R4C38_PLC2_inst.sliceB_inst.ff_1.Q                0         0             0
+  init \R4C38_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  init \R4C38_PLC2_inst.sliceC_inst.ff_1.Q                0         0             0
+  init \R4C38_PLC2_inst.sliceD_inst.ff_0.Q                0         0             0
+  init \R4C38_PLC2_inst.sliceD_inst.ff_1.Q                0         0             0
+  init \R4C39_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R4C39_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R5C12_PLC2_inst.sliceA_inst.ff_0.Q                0         0             0
+  init \R5C13_PLC2_inst.sliceA_inst.ff_1.Q                0         0             0
+  init \R5C35_PLC2_inst.sliceC_inst.ff_0.Q                0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+     1 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+     2 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+     3 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+     4 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+     5 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+     6 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+     7 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+     8 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+     9 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    10 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    11 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    12 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    13 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    14 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    15 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    16 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    17 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    18 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    19 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    20 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    21 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    22 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    23 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    24 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    25 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    26 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    27 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    28 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    29 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    30 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    31 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    32 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    33 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    34 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    35 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    36 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    37 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    38 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    39 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    40 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    41 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    42 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    43 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    44 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    45 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    46 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    47 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    48 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    49 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    50 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    51 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    52 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    53 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    54 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    55 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    56 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    57 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    58 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    59 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    60 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    61 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    62 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    63 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    64 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    65 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    66 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    67 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    68 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    69 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    70 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    71 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    72 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    73 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    74 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    75 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    76 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    77 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    78 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    79 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    80 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    81 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    82 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    83 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    84 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    85 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    86 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    87 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    88 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    89 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    90 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    91 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    92 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    93 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    94 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    95 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    96 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+    97 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    98 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+    99 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   100 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   101 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   102 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   103 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   104 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   105 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   106 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   107 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   108 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   109 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   110 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   111 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   112 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   113 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   114 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   115 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   116 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   117 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   118 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   119 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   120 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   121 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   122 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   123 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   124 \MIB_R0C15_PIOT0_JPADDIB_PIO                       0         0             0
+  ---- ---------------------------------------- ----------- --------- -------------
+   125 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   126 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   127 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+  ---- ---------------------------------------- ----------- --------- -------------
+   128 \MIB_R0C15_PIOT0_JPADDIB_PIO                       1         1             1
+
+End of script. Logfile hash: 989d4f0b0b, CPU: user 3.21s system 0.29s, MEM: 382.36 MB peak
+Yosys 0.33 (git sha1 2584903a060)
+Time spent: 94% 1x sat (3 sec), 1% 2x read_verilog (0 sec), ...

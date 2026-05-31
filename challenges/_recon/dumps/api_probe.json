@@ -1,0 +1,197 @@
+{
+  "/api/v1/users/me": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/teams/me": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/configs": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/challenges": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/scoreboard": {
+    "s": 200,
+    "ct": "application/json",
+    "body": "{\"success\":true,\"data\":[]}"
+  },
+  "/api/v1/users": {
+    "s": 200,
+    "ct": "application/json",
+    "body": "{\"meta\":{\"pagination\":{\"page\":1,\"next\":2,\"prev\":null,\"pages\":10,\"per_page\":50,\"total\":464}},\"success\":true,\"data\":[{\"country\":null,\"fields\":[],\"oauth_id\":null,\"name\":\"Kn1ghtFall\",\"bracket_id\":null,\"id\":7,\"team_id\":null,\"affiliation\":null,\"website\":null},{\"country\":null,\"fields\":[],\"oauth_id\":null,\"name\":\"hj235\",\"bracket_id\":null,\"id\":8,\"team_id\":4,\"affiliation\":null,\"website\":null},{\"country\":null"
+  },
+  "/api/v1/teams": {
+    "s": 200,
+    "ct": "application/json",
+    "body": "{\"meta\":{\"pagination\":{\"page\":1,\"next\":2,\"prev\":null,\"pages\":5,\"per_page\":50,\"total\":237}},\"success\":true,\"data\":[{\"captain_id\":null,\"country\":null,\"fields\":[],\"oauth_id\":null,\"name\":\"Hijackedsoul\",\"bracket_id\":null,\"id\":2,\"affiliation\":null,\"website\":null},{\"captain_id\":null,\"country\":null,\"fields\":[],\"oauth_id\":null,\"name\":\"chunks\",\"bracket_id\":null,\"id\":3,\"affiliation\":null,\"website\":null},{\"ca"
+  },
+  "/api/v1/pages": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/notifications": {
+    "s": 200,
+    "ct": "application/json",
+    "body": "{\"success\":true,\"data\":[]}"
+  },
+  "/api/v1/hints": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/files": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/tags": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/flags": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/submissions": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/awards": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/tokens": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/comments": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/brackets": {
+    "s": 200,
+    "ct": "application/json",
+    "body": "{\"success\":true,\"data\":[{\"name\":\"Local\",\"id\":3,\"type\":\"teams\",\"description\":\"\"},{\"name\":\"Open\",\"id\":4,\"type\":\"teams\",\"description\":\"\"}]}"
+  },
+  "/api/v1/statistics/users": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/statistics/teams": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/challenges/types": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/challenges/categories": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/events": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/admin": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/setup": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/plugins": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/robots.txt": {
+    "s": 200,
+    "ct": "text/plain; charset=utf-8",
+    "body": "User-agent: *\nDisallow: /admin\n"
+  },
+  "/sitemap.xml": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/.env": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/.git/config": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/swagger.json": {
+    "s": 200,
+    "ct": "application/json",
+    "body": "{\"swagger\":\"2.0\",\"basePath\":\"/api/v1\",\"paths\":{\"/awards\":{\"post\":{\"responses\":{\"200\":{\"description\":\"Success\",\"schema\":{\"$ref\":\"#/definitions/AwardListSuccessResponse\"}},\"400\":{\"description\":\"An error occured processing the provided or stored data\",\"schema\":{\"$ref\":\"#/definitions/APISimpleErrorResponse\"}}},\"description\":\"Endpoint to create an Award object\",\"operationId\":\"post_award_list\",\"tags\":[\""
+  },
+  "/openapi.json": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/healthz": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/version": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/api/v1/admin/users": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/themes": {
+    "s": 404,
+    "ct": "text/html; charset=utf-8",
+    "body": "<!DOCTYPE html>\n<html>\n<head>\n  <title>GreyCTF Qualifiers 2026</title>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <link rel=\"shortcut icon\" hre"
+  },
+  "/themes/greyctf/static/manifest.json": {
+    "s": 200,
+    "ct": "application/json",
+    "body": "{\"assets/js/index.js\":{\"file\":\"assets/index.d2f30b1f.js\",\"src\":\"assets/js/index.js\",\"isEntry\":true},\"assets/js/page.js\":{\"file\":\"assets/page.94292aef.js\",\"src\":\"assets/js/page.js\",\"isEntry\":true,\"imports\":[\"assets/js/index.js\"]},\"assets/js/setup.js\":{\"file\":\"assets/setup.bf8dd412.js\",\"src\":\"assets/js/setup.js\",\"isEntry\":true,\"imports\":[\"assets/js/index.js\"]},\"assets/js/settings.js\":{\"file\":\"assets"
+  },
+  "/api/v1/configs/ctf_name": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  },
+  "/api/v1/configs/ctf_theme": {
+    "s": 0,
+    "ct": "",
+    "body": ""
+  }
+}

@@ -1,0 +1,127 @@
+0000000000001ed6 <.text+0xc76>:
+    1ed6: mov    ?,WORD PTR [rbx-0x1]
+    1ed9: (bad)
+    1eda: dec    DWORD PTR [rbx-0x3f7c17bb]
+    1ee0: add    DWORD PTR [rax-0x73],ecx
+    1ee3: adc    eax,0x12cc
+    1ee8: mov    esi,0x0
+    1eed: mov    edi,eax
+    1eef: mov    eax,0x0
+    1ef4: call   11e0 <mvprintw@plt>
+    1ef9: movzx  eax,BYTE PTR [rip+0x3113]        # 5013 <endwin@plt+0x3dc3>
+    1f00: movzx  ecx,al
+    1f03: mov    eax,DWORD PTR [rip+0x310b]        # 5014 <endwin@plt+0x3dc4>
+    1f09: mov    edx,DWORD PTR [rbp-0x18]
+    1f0c: lea    edi,[rdx+0x2]
+    1f0f: mov    r8d,ecx
+    1f12: mov    ecx,eax
+    1f14: lea    rax,[rip+0x12a5]        # 31c0 <endwin@plt+0x1f70>
+    1f1b: mov    rdx,rax
+    1f1e: mov    esi,0x0
+    1f23: mov    eax,0x0
+    1f28: call   11e0 <mvprintw@plt>
+    1f2d: mov    rax,QWORD PTR [rip+0x30ec]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1f34: mov    rdi,rax
+    1f37: call   11d0 <wrefresh@plt>
+    1f3c: nop
+    1f3d: leave
+    1f3e: ret
+    1f3f: endbr64
+    1f43: push   rbp
+    1f44: mov    rbp,rsp
+    1f47: call   1d09 <endwin@plt+0xab9>
+    1f4c: mov    rax,QWORD PTR [rip+0x30cd]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1f53: mov    rdi,rax
+    1f56: call   1180 <wgetch@plt>
+    1f5b: sub    eax,0x61
+    1f5e: cmp    eax,0x16
+    1f61: ja     1f47 <endwin@plt+0xcf7>
+    1f63: mov    eax,eax
+    1f65: lea    rdx,[rax*4+0x0]
+    1f6d: lea    rax,[rip+0x1264]        # 31d8 <endwin@plt+0x1f88>
+    1f74: mov    eax,DWORD PTR [rdx+rax*1]
+    1f77: cdqe
+    1f79: lea    rdx,[rip+0x1258]        # 31d8 <endwin@plt+0x1f88>
+    1f80: add    rax,rdx
+    1f83: notrack jmp rax
+    1f86: mov    edx,0x0
+    1f8b: mov    esi,0xffffffff
+    1f90: mov    edi,0x0
+    1f95: call   1b53 <endwin@plt+0x903>
+    1f9a: jmp    2009 <endwin@plt+0xdb9>
+    1f9c: mov    edx,0x0
+    1fa1: mov    esi,0x1
+    1fa6: mov    edi,0x0
+    1fab: call   1b53 <endwin@plt+0x903>
+    1fb0: jmp    2009 <endwin@plt+0xdb9>
+    1fb2: mov    edx,0x0
+    1fb7: mov    esi,0x0
+    1fbc: mov    edi,0xffffffff
+    1fc1: call   1b53 <endwin@plt+0x903>
+    1fc6: jmp    2009 <endwin@plt+0xdb9>
+    1fc8: mov    edx,0x0
+    1fcd: mov    esi,0x0
+    1fd2: mov    edi,0x1
+    1fd7: call   1b53 <endwin@plt+0x903>
+    1fdc: jmp    2009 <endwin@plt+0xdb9>
+    1fde: mov    edx,0xffffffff
+    1fe3: mov    esi,0x0
+    1fe8: mov    edi,0x0
+    1fed: call   1b53 <endwin@plt+0x903>
+    1ff2: jmp    2009 <endwin@plt+0xdb9>
+    1ff4: mov    edx,0x1
+    1ff9: mov    esi,0x0
+    1ffe: mov    edi,0x0
+    2003: call   1b53 <endwin@plt+0x903>
+    2008: nop
+    2009: jmp    1f47 <endwin@plt+0xcf7>
+    200e: nop
+    200f: pop    rbp
+    2010: ret
+    2011: endbr64
+    2015: push   rbp
+    2016: mov    rbp,rsp
+    2019: call   11c0 <initscr@plt>
+    201e: call   11a0 <noecho@plt>
+    2023: call   11f0 <cbreak@plt>
+    2028: mov    edi,0x0
+    202d: call   1160 <curs_set@plt>
+    2032: call   1349 <endwin@plt+0xf9>
+    2037: call   1f3f <endwin@plt+0xcef>
+    203c: mov    rax,QWORD PTR [rip+0x2fdd]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    2043: mov    rdi,rax
+    2046: call   1190 <wclear@plt>
+    204b: mov    eax,DWORD PTR [rip+0x2fc3]        # 5014 <endwin@plt+0x3dc4>
+    2051: mov    ecx,eax
+    2053: lea    rax,[rip+0x11da]        # 3234 <endwin@plt+0x1fe4>
+    205a: mov    rdx,rax
+    205d: mov    esi,0x0
+    2062: mov    edi,0x21
+    2067: mov    eax,0x0
+    206c: call   11e0 <mvprintw@plt>
+    2071: lea    rax,[rip+0x11cc]        # 3244 <endwin@plt+0x1ff4>
+    2078: mov    rdx,rax
+    207b: mov    esi,0x0
+    2080: mov    edi,0x22
+    2085: mov    eax,0x0
+    208a: call   11e0 <mvprintw@plt>
+    208f: mov    rax,QWORD PTR [rip+0x2f8a]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    2096: mov    rdi,rax
+    2099: call   11d0 <wrefresh@plt>
+    209e: call   1cd8 <endwin@plt+0xa88>
+    20a3: mov    rax,QWORD PTR [rip+0x2f76]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    20aa: mov    rdi,rax
+    20ad: call   1180 <wgetch@plt>
+    20b2: cmp    eax,0xa
+    20b5: je     20bc <endwin@plt+0xe6c>
+    20b7: jmp    2037 <endwin@plt+0xde7>
+    20bc: nop
+    20bd: call   1250 <endwin@plt>
+    20c2: mov    eax,0x0
+    20c7: pop    rbp
+    20c8: ret
+00000000000020cc <.fini>:
+    20cc: endbr64
+    20d0: sub    rsp,0x8
+    20d4: add    rsp,0x8
+    20d8: ret

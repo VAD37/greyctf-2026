@@ -1,0 +1,5 @@
+read_verilog main_small.v
+prep -top top
+sat -seq 128 -set-init-zero \
+  -set-at 128 \R2C17_PLC2_inst.sliceA_inst.ff_0.Q 1 \
+  -show MIB_R0C15_PIOT0_JPADDIB_PIO

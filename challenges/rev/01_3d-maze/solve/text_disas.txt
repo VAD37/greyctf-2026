@@ -1,0 +1,870 @@
+Disassembly of section .text:
+
+0000000000001260 <.text>:
+    1260:	endbr64
+    1264:	xor    ebp,ebp
+    1266:	mov    r9,rdx
+    1269:	pop    rsi
+    126a:	mov    rdx,rsp
+    126d:	and    rsp,0xfffffffffffffff0
+    1271:	push   rax
+    1272:	push   rsp
+    1273:	xor    r8d,r8d
+    1276:	xor    ecx,ecx
+    1278:	lea    rdi,[rip+0xd92]        # 2011 <endwin@plt+0xdc1>
+    127f:	call   QWORD PTR [rip+0x3d53]        # 4fd8 <endwin@plt+0x3d88>
+    1285:	hlt
+    1286:	cs nop WORD PTR [rax+rax*1+0x0]
+    1290:	lea    rdi,[rip+0x3d81]        # 5018 <endwin@plt+0x3dc8>
+    1297:	lea    rax,[rip+0x3d7a]        # 5018 <endwin@plt+0x3dc8>
+    129e:	cmp    rax,rdi
+    12a1:	je     12b8 <endwin@plt+0x68>
+    12a3:	mov    rax,QWORD PTR [rip+0x3d36]        # 4fe0 <endwin@plt+0x3d90>
+    12aa:	test   rax,rax
+    12ad:	je     12b8 <endwin@plt+0x68>
+    12af:	jmp    rax
+    12b1:	nop    DWORD PTR [rax+0x0]
+    12b8:	ret
+    12b9:	nop    DWORD PTR [rax+0x0]
+    12c0:	lea    rdi,[rip+0x3d51]        # 5018 <endwin@plt+0x3dc8>
+    12c7:	lea    rsi,[rip+0x3d4a]        # 5018 <endwin@plt+0x3dc8>
+    12ce:	sub    rsi,rdi
+    12d1:	mov    rax,rsi
+    12d4:	shr    rsi,0x3f
+    12d8:	sar    rax,0x3
+    12dc:	add    rsi,rax
+    12df:	sar    rsi,1
+    12e2:	je     12f8 <endwin@plt+0xa8>
+    12e4:	mov    rax,QWORD PTR [rip+0x3d05]        # 4ff0 <endwin@plt+0x3da0>
+    12eb:	test   rax,rax
+    12ee:	je     12f8 <endwin@plt+0xa8>
+    12f0:	jmp    rax
+    12f2:	nop    WORD PTR [rax+rax*1+0x0]
+    12f8:	ret
+    12f9:	nop    DWORD PTR [rax+0x0]
+    1300:	endbr64
+    1304:	cmp    BYTE PTR [rip+0x3d1d],0x0        # 5028 <stdscr@NCURSES6_TINFO_5.0.19991023+0x8>
+    130b:	jne    1338 <endwin@plt+0xe8>
+    130d:	push   rbp
+    130e:	cmp    QWORD PTR [rip+0x3ce2],0x0        # 4ff8 <endwin@plt+0x3da8>
+    1316:	mov    rbp,rsp
+    1319:	je     1327 <endwin@plt+0xd7>
+    131b:	mov    rdi,QWORD PTR [rip+0x3ce6]        # 5008 <endwin@plt+0x3db8>
+    1322:	call   1140 <__cxa_finalize@plt>
+    1327:	call   1290 <endwin@plt+0x40>
+    132c:	mov    BYTE PTR [rip+0x3cf5],0x1        # 5028 <stdscr@NCURSES6_TINFO_5.0.19991023+0x8>
+    1333:	pop    rbp
+    1334:	ret
+    1335:	nop    DWORD PTR [rax]
+    1338:	ret
+    1339:	nop    DWORD PTR [rax+0x0]
+    1340:	endbr64
+    1344:	jmp    12c0 <endwin@plt+0x70>
+    1349:	endbr64
+    134d:	push   rbp
+    134e:	mov    rbp,rsp
+    1351:	sub    rsp,0x10
+    1355:	mov    r9d,0x0
+    135b:	mov    r8d,0xffffffff
+    1361:	mov    ecx,0x22
+    1366:	mov    edx,0x0
+    136b:	mov    esi,0x27000
+    1370:	mov    edi,0x0
+    1375:	call   11b0 <mmap@plt>
+    137a:	mov    QWORD PTR [rbp-0x8],rax
+    137e:	add    QWORD PTR [rbp-0x8],0x1000
+    1386:	mov    esi,0x0
+    138b:	lea    rax,[rip+0x1c72]        # 3004 <endwin@plt+0x1db4>
+    1392:	mov    rdi,rax
+    1395:	mov    eax,0x0
+    139a:	call   1210 <open@plt>
+    139f:	mov    edx,eax
+    13a1:	mov    rax,QWORD PTR [rbp-0x8]
+    13a5:	mov    r9d,0x0
+    13ab:	mov    r8d,edx
+    13ae:	mov    ecx,0x12
+    13b3:	mov    edx,0x1
+    13b8:	mov    esi,0x10000
+    13bd:	mov    rdi,rax
+    13c0:	call   11b0 <mmap@plt>
+    13c5:	mov    rax,QWORD PTR [rbp-0x8]
+    13c9:	mov    QWORD PTR [rip+0x3c60],rax        # 5030 <stdscr@NCURSES6_TINFO_5.0.19991023+0x10>
+    13d0:	add    QWORD PTR [rbp-0x8],0x11000
+    13d8:	mov    esi,0x0
+    13dd:	lea    rax,[rip+0x1c29]        # 300d <endwin@plt+0x1dbd>
+    13e4:	mov    rdi,rax
+    13e7:	mov    eax,0x0
+    13ec:	call   1210 <open@plt>
+    13f1:	mov    edx,eax
+    13f3:	mov    rax,QWORD PTR [rbp-0x8]
+    13f7:	mov    r9d,0x0
+    13fd:	mov    r8d,edx
+    1400:	mov    ecx,0x12
+    1405:	mov    edx,0x1
+    140a:	mov    esi,0x1000
+    140f:	mov    rdi,rax
+    1412:	call   11b0 <mmap@plt>
+    1417:	mov    rax,QWORD PTR [rbp-0x8]
+    141b:	mov    QWORD PTR [rip+0x3c16],rax        # 5038 <stdscr@NCURSES6_TINFO_5.0.19991023+0x18>
+    1422:	add    QWORD PTR [rbp-0x8],0x2000
+    142a:	mov    rax,QWORD PTR [rbp-0x8]
+    142e:	mov    edx,0x3
+    1433:	mov    esi,0x1000
+    1438:	mov    rdi,rax
+    143b:	call   1200 <mprotect@plt>
+    1440:	mov    rax,QWORD PTR [rbp-0x8]
+    1444:	sub    rax,0x1
+    1448:	mov    QWORD PTR [rip+0x3bf1],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    144f:	add    QWORD PTR [rbp-0x8],0x2000
+    1457:	mov    esi,0x0
+    145c:	lea    rax,[rip+0x1bb3]        # 3016 <endwin@plt+0x1dc6>
+    1463:	mov    rdi,rax
+    1466:	mov    eax,0x0
+    146b:	call   1210 <open@plt>
+    1470:	mov    edx,eax
+    1472:	mov    rax,QWORD PTR [rbp-0x8]
+    1476:	mov    r9d,0x0
+    147c:	mov    r8d,edx
+    147f:	mov    ecx,0x12
+    1484:	mov    edx,0x3
+    1489:	mov    esi,0x1000
+    148e:	mov    rdi,rax
+    1491:	call   11b0 <mmap@plt>
+    1496:	mov    rax,QWORD PTR [rbp-0x8]
+    149a:	mov    QWORD PTR [rip+0x3ba7],rax        # 5048 <stdscr@NCURSES6_TINFO_5.0.19991023+0x28>
+    14a1:	mov    rax,QWORD PTR [rip+0x3ba0]        # 5048 <stdscr@NCURSES6_TINFO_5.0.19991023+0x28>
+    14a8:	add    rax,0x98
+    14ae:	mov    QWORD PTR [rip+0x3b9b],rax        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    14b5:	mov    rax,QWORD PTR [rip+0x3b8c]        # 5048 <stdscr@NCURSES6_TINFO_5.0.19991023+0x28>
+    14bc:	add    rax,0x100
+    14c2:	mov    QWORD PTR [rip+0x3b8f],rax        # 5058 <stdscr@NCURSES6_TINFO_5.0.19991023+0x38>
+    14c9:	nop
+    14ca:	leave
+    14cb:	ret
+    14cc:	endbr64
+    14d0:	push   rbp
+    14d1:	mov    rbp,rsp
+    14d4:	sub    rsp,0x10
+    14d8:	call   1250 <endwin@plt>
+    14dd:	lea    rax,[rip+0x1b39]        # 301d <endwin@plt+0x1dcd>
+    14e4:	mov    rdi,rax
+    14e7:	call   1170 <puts@plt>
+    14ec:	mov    rax,QWORD PTR [rip+0x3b5d]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    14f3:	lea    rdx,[rax+0x1]
+    14f7:	mov    QWORD PTR [rip+0x3b52],rdx        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    14fe:	movzx  eax,BYTE PTR [rax]
+    1501:	movzx  eax,al
+    1504:	sub    eax,0x5
+    1507:	cmp    eax,0x62
+    150a:	ja     1aaf <endwin@plt+0x85f>
+    1510:	mov    eax,eax
+    1512:	lea    rdx,[rax*4+0x0]
+    151a:	lea    rax,[rip+0x1b07]        # 3028 <endwin@plt+0x1dd8>
+    1521:	mov    eax,DWORD PTR [rdx+rax*1]
+    1524:	cdqe
+    1526:	lea    rdx,[rip+0x1afb]        # 3028 <endwin@plt+0x1dd8>
+    152d:	add    rax,rdx
+    1530:	notrack jmp rax
+    1533:	mov    rax,QWORD PTR [rip+0x3b06]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    153a:	lea    rdx,[rax-0x1]
+    153e:	mov    QWORD PTR [rip+0x3afb],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1545:	movzx  eax,BYTE PTR [rax]
+    1548:	movzx  eax,al
+    154b:	mov    edi,eax
+    154d:	call   1150 <putchar@plt>
+    1552:	jmp    1ac0 <endwin@plt+0x870>
+    1557:	mov    rax,QWORD PTR [rip+0x3af2]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    155e:	lea    rdx,[rax+0x1]
+    1562:	mov    QWORD PTR [rip+0x3ae7],rdx        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1569:	mov    rdx,QWORD PTR [rip+0x3ad0]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1570:	add    rdx,0x1
+    1574:	mov    QWORD PTR [rip+0x3ac5],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    157b:	mov    rdx,QWORD PTR [rip+0x3abe]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1582:	movzx  eax,BYTE PTR [rax]
+    1585:	mov    BYTE PTR [rdx],al
+    1587:	jmp    1ac0 <endwin@plt+0x870>
+    158c:	mov    rax,QWORD PTR [rip+0x3aad]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1593:	sub    rax,0x1
+    1597:	mov    QWORD PTR [rip+0x3aa2],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    159e:	jmp    1ac0 <endwin@plt+0x870>
+    15a3:	mov    rax,QWORD PTR [rip+0x3a96]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    15aa:	lea    rdx,[rax-0x1]
+    15ae:	mov    QWORD PTR [rip+0x3a8b],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    15b5:	movzx  eax,BYTE PTR [rax]
+    15b8:	mov    BYTE PTR [rbp-0x4],al
+    15bb:	mov    rax,QWORD PTR [rip+0x3a7e]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    15c2:	lea    rdx,[rax-0x1]
+    15c6:	mov    QWORD PTR [rip+0x3a73],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    15cd:	movzx  eax,BYTE PTR [rax]
+    15d0:	mov    BYTE PTR [rbp-0x3],al
+    15d3:	mov    rax,QWORD PTR [rip+0x3a66]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    15da:	add    rax,0x1
+    15de:	mov    QWORD PTR [rip+0x3a5b],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    15e5:	mov    rax,QWORD PTR [rip+0x3a54]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    15ec:	movzx  edx,BYTE PTR [rbp-0x4]
+    15f0:	mov    BYTE PTR [rax],dl
+    15f2:	mov    rax,QWORD PTR [rip+0x3a47]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    15f9:	add    rax,0x1
+    15fd:	mov    QWORD PTR [rip+0x3a3c],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1604:	mov    rax,QWORD PTR [rip+0x3a35]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    160b:	movzx  edx,BYTE PTR [rbp-0x3]
+    160f:	mov    BYTE PTR [rax],dl
+    1611:	jmp    1ac0 <endwin@plt+0x870>
+    1616:	mov    rax,QWORD PTR [rip+0x3a23]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    161d:	lea    rdx,[rax-0x1]
+    1621:	mov    QWORD PTR [rip+0x3a18],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1628:	movzx  eax,BYTE PTR [rax]
+    162b:	mov    BYTE PTR [rbp-0x3],al
+    162e:	mov    rax,QWORD PTR [rip+0x3a0b]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1635:	add    rax,0x1
+    1639:	mov    QWORD PTR [rip+0x3a00],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1640:	mov    rax,QWORD PTR [rip+0x39f9]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1647:	movzx  edx,BYTE PTR [rbp-0x3]
+    164b:	mov    BYTE PTR [rax],dl
+    164d:	mov    rax,QWORD PTR [rip+0x39ec]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1654:	add    rax,0x1
+    1658:	mov    QWORD PTR [rip+0x39e1],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    165f:	mov    rax,QWORD PTR [rip+0x39da]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1666:	movzx  edx,BYTE PTR [rbp-0x3]
+    166a:	mov    BYTE PTR [rax],dl
+    166c:	jmp    1ac0 <endwin@plt+0x870>
+    1671:	mov    rax,QWORD PTR [rip+0x39c8]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1678:	lea    rdx,[rax-0x1]
+    167c:	mov    QWORD PTR [rip+0x39bd],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1683:	movzx  eax,BYTE PTR [rax]
+    1686:	mov    BYTE PTR [rbp-0x2],al
+    1689:	mov    rax,QWORD PTR [rip+0x39b0]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1690:	lea    rdx,[rax-0x1]
+    1694:	mov    QWORD PTR [rip+0x39a5],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    169b:	movzx  eax,BYTE PTR [rax]
+    169e:	mov    BYTE PTR [rbp-0x4],al
+    16a1:	mov    rax,QWORD PTR [rip+0x3998]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16a8:	lea    rdx,[rax-0x1]
+    16ac:	mov    QWORD PTR [rip+0x398d],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16b3:	movzx  eax,BYTE PTR [rax]
+    16b6:	mov    BYTE PTR [rbp-0x3],al
+    16b9:	mov    rax,QWORD PTR [rip+0x3980]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16c0:	add    rax,0x1
+    16c4:	mov    QWORD PTR [rip+0x3975],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16cb:	mov    rax,QWORD PTR [rip+0x396e]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16d2:	movzx  edx,BYTE PTR [rbp-0x4]
+    16d6:	mov    BYTE PTR [rax],dl
+    16d8:	mov    rax,QWORD PTR [rip+0x3961]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16df:	add    rax,0x1
+    16e3:	mov    QWORD PTR [rip+0x3956],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16ea:	mov    rax,QWORD PTR [rip+0x394f]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16f1:	movzx  edx,BYTE PTR [rbp-0x2]
+    16f5:	mov    BYTE PTR [rax],dl
+    16f7:	mov    rax,QWORD PTR [rip+0x3942]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    16fe:	add    rax,0x1
+    1702:	mov    QWORD PTR [rip+0x3937],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1709:	mov    rax,QWORD PTR [rip+0x3930]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1710:	movzx  edx,BYTE PTR [rbp-0x3]
+    1714:	mov    BYTE PTR [rax],dl
+    1716:	jmp    1ac0 <endwin@plt+0x870>
+    171b:	mov    rax,QWORD PTR [rip+0x391e]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1722:	lea    rdx,[rax-0x1]
+    1726:	mov    QWORD PTR [rip+0x3913],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    172d:	movzx  eax,BYTE PTR [rax]
+    1730:	mov    BYTE PTR [rbp-0x3],al
+    1733:	mov    rax,QWORD PTR [rip+0x3906]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    173a:	lea    rdx,[rax-0x1]
+    173e:	mov    QWORD PTR [rip+0x38fb],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1745:	movzx  eax,BYTE PTR [rax]
+    1748:	mov    BYTE PTR [rbp-0x4],al
+    174b:	mov    rdx,QWORD PTR [rip+0x38f6]        # 5048 <stdscr@NCURSES6_TINFO_5.0.19991023+0x28>
+    1752:	movzx  eax,BYTE PTR [rbp-0x3]
+    1756:	shl    eax,0x8
+    1759:	mov    ecx,eax
+    175b:	movzx  eax,BYTE PTR [rbp-0x4]
+    175f:	or     eax,ecx
+    1761:	cdqe
+    1763:	add    rax,rdx
+    1766:	movzx  eax,BYTE PTR [rax]
+    1769:	mov    BYTE PTR [rbp-0x2],al
+    176c:	mov    rax,QWORD PTR [rip+0x38cd]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1773:	add    rax,0x1
+    1777:	mov    QWORD PTR [rip+0x38c2],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    177e:	mov    rax,QWORD PTR [rip+0x38bb]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1785:	movzx  edx,BYTE PTR [rbp-0x2]
+    1789:	mov    BYTE PTR [rax],dl
+    178b:	jmp    1ac0 <endwin@plt+0x870>
+    1790:	mov    rax,QWORD PTR [rip+0x38a9]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1797:	lea    rdx,[rax-0x1]
+    179b:	mov    QWORD PTR [rip+0x389e],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    17a2:	movzx  eax,BYTE PTR [rax]
+    17a5:	mov    BYTE PTR [rbp-0x3],al
+    17a8:	mov    rax,QWORD PTR [rip+0x3891]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    17af:	lea    rdx,[rax-0x1]
+    17b3:	mov    QWORD PTR [rip+0x3886],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    17ba:	movzx  eax,BYTE PTR [rax]
+    17bd:	mov    BYTE PTR [rbp-0x4],al
+    17c0:	mov    rax,QWORD PTR [rip+0x3879]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    17c7:	lea    rdx,[rax-0x1]
+    17cb:	mov    QWORD PTR [rip+0x386e],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    17d2:	movzx  eax,BYTE PTR [rax]
+    17d5:	mov    BYTE PTR [rbp-0x2],al
+    17d8:	mov    rdx,QWORD PTR [rip+0x3869]        # 5048 <stdscr@NCURSES6_TINFO_5.0.19991023+0x28>
+    17df:	movzx  eax,BYTE PTR [rbp-0x3]
+    17e3:	shl    eax,0x8
+    17e6:	mov    ecx,eax
+    17e8:	movzx  eax,BYTE PTR [rbp-0x4]
+    17ec:	or     eax,ecx
+    17ee:	cdqe
+    17f0:	add    rdx,rax
+    17f3:	movzx  eax,BYTE PTR [rbp-0x2]
+    17f7:	mov    BYTE PTR [rdx],al
+    17f9:	jmp    1ac0 <endwin@plt+0x870>
+    17fe:	mov    rax,QWORD PTR [rip+0x383b]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1805:	lea    rdx,[rax-0x1]
+    1809:	mov    QWORD PTR [rip+0x3830],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1810:	movzx  eax,BYTE PTR [rax]
+    1813:	mov    BYTE PTR [rbp-0x4],al
+    1816:	mov    rax,QWORD PTR [rip+0x3823]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    181d:	lea    rdx,[rax-0x1]
+    1821:	mov    QWORD PTR [rip+0x3818],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1828:	movzx  eax,BYTE PTR [rax]
+    182b:	mov    BYTE PTR [rbp-0x3],al
+    182e:	movzx  edx,BYTE PTR [rbp-0x3]
+    1832:	movzx  eax,BYTE PTR [rbp-0x4]
+    1836:	add    eax,edx
+    1838:	mov    BYTE PTR [rbp-0x2],al
+    183b:	mov    rax,QWORD PTR [rip+0x37fe]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1842:	add    rax,0x1
+    1846:	mov    QWORD PTR [rip+0x37f3],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    184d:	mov    rax,QWORD PTR [rip+0x37ec]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1854:	movzx  edx,BYTE PTR [rbp-0x2]
+    1858:	mov    BYTE PTR [rax],dl
+    185a:	jmp    1ac0 <endwin@plt+0x870>
+    185f:	mov    rax,QWORD PTR [rip+0x37da]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1866:	lea    rdx,[rax-0x1]
+    186a:	mov    QWORD PTR [rip+0x37cf],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1871:	movzx  eax,BYTE PTR [rax]
+    1874:	mov    BYTE PTR [rbp-0x4],al
+    1877:	mov    rax,QWORD PTR [rip+0x37c2]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    187e:	lea    rdx,[rax-0x1]
+    1882:	mov    QWORD PTR [rip+0x37b7],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1889:	movzx  eax,BYTE PTR [rax]
+    188c:	mov    BYTE PTR [rbp-0x3],al
+    188f:	movzx  eax,BYTE PTR [rbp-0x3]
+    1893:	sub    al,BYTE PTR [rbp-0x4]
+    1896:	mov    BYTE PTR [rbp-0x2],al
+    1899:	mov    rax,QWORD PTR [rip+0x37a0]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    18a0:	add    rax,0x1
+    18a4:	mov    QWORD PTR [rip+0x3795],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    18ab:	mov    rax,QWORD PTR [rip+0x378e]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    18b2:	movzx  edx,BYTE PTR [rbp-0x2]
+    18b6:	mov    BYTE PTR [rax],dl
+    18b8:	jmp    1ac0 <endwin@plt+0x870>
+    18bd:	mov    rax,QWORD PTR [rip+0x377c]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    18c4:	lea    rdx,[rax-0x1]
+    18c8:	mov    QWORD PTR [rip+0x3771],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    18cf:	movzx  eax,BYTE PTR [rax]
+    18d2:	mov    BYTE PTR [rbp-0x4],al
+    18d5:	mov    rax,QWORD PTR [rip+0x3764]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    18dc:	lea    rdx,[rax-0x1]
+    18e0:	mov    QWORD PTR [rip+0x3759],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    18e7:	movzx  eax,BYTE PTR [rax]
+    18ea:	mov    BYTE PTR [rbp-0x3],al
+    18ed:	movzx  eax,BYTE PTR [rbp-0x3]
+    18f1:	mul    BYTE PTR [rbp-0x4]
+    18f4:	mov    BYTE PTR [rbp-0x2],al
+    18f7:	mov    rax,QWORD PTR [rip+0x3742]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    18fe:	add    rax,0x1
+    1902:	mov    QWORD PTR [rip+0x3737],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1909:	mov    rax,QWORD PTR [rip+0x3730]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1910:	movzx  edx,BYTE PTR [rbp-0x2]
+    1914:	mov    BYTE PTR [rax],dl
+    1916:	jmp    1ac0 <endwin@plt+0x870>
+    191b:	mov    rax,QWORD PTR [rip+0x371e]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1922:	lea    rdx,[rax-0x1]
+    1926:	mov    QWORD PTR [rip+0x3713],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    192d:	movzx  eax,BYTE PTR [rax]
+    1930:	mov    BYTE PTR [rbp-0x4],al
+    1933:	mov    rax,QWORD PTR [rip+0x3706]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    193a:	lea    rdx,[rax-0x1]
+    193e:	mov    QWORD PTR [rip+0x36fb],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1945:	movzx  eax,BYTE PTR [rax]
+    1948:	mov    BYTE PTR [rbp-0x3],al
+    194b:	movzx  eax,BYTE PTR [rbp-0x3]
+    194f:	and    al,BYTE PTR [rbp-0x4]
+    1952:	mov    BYTE PTR [rbp-0x2],al
+    1955:	mov    rax,QWORD PTR [rip+0x36e4]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    195c:	add    rax,0x1
+    1960:	mov    QWORD PTR [rip+0x36d9],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1967:	mov    rax,QWORD PTR [rip+0x36d2]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    196e:	movzx  edx,BYTE PTR [rbp-0x2]
+    1972:	mov    BYTE PTR [rax],dl
+    1974:	jmp    1ac0 <endwin@plt+0x870>
+    1979:	mov    rax,QWORD PTR [rip+0x36c0]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1980:	lea    rdx,[rax-0x1]
+    1984:	mov    QWORD PTR [rip+0x36b5],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    198b:	movzx  eax,BYTE PTR [rax]
+    198e:	mov    BYTE PTR [rbp-0x4],al
+    1991:	mov    rax,QWORD PTR [rip+0x36a8]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1998:	lea    rdx,[rax-0x1]
+    199c:	mov    QWORD PTR [rip+0x369d],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    19a3:	movzx  eax,BYTE PTR [rax]
+    19a6:	mov    BYTE PTR [rbp-0x3],al
+    19a9:	movzx  eax,BYTE PTR [rbp-0x3]
+    19ad:	xor    al,BYTE PTR [rbp-0x4]
+    19b0:	mov    BYTE PTR [rbp-0x2],al
+    19b3:	mov    rax,QWORD PTR [rip+0x3686]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    19ba:	add    rax,0x1
+    19be:	mov    QWORD PTR [rip+0x367b],rax        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    19c5:	mov    rax,QWORD PTR [rip+0x3674]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    19cc:	movzx  edx,BYTE PTR [rbp-0x2]
+    19d0:	mov    BYTE PTR [rax],dl
+    19d2:	jmp    1ac0 <endwin@plt+0x870>
+    19d7:	mov    rax,QWORD PTR [rip+0x3672]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    19de:	lea    rdx,[rax+0x1]
+    19e2:	mov    QWORD PTR [rip+0x3667],rdx        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    19e9:	movzx  eax,BYTE PTR [rax]
+    19ec:	mov    BYTE PTR [rbp-0x1],al
+    19ef:	lea    rax,[rip+0x365a]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    19f6:	movzx  ecx,BYTE PTR [rax]
+    19f9:	lea    rax,[rip+0x3650]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1a00:	movzx  edx,BYTE PTR [rbp-0x1]
+    1a04:	add    edx,ecx
+    1a06:	mov    BYTE PTR [rax],dl
+    1a08:	jmp    1ac0 <endwin@plt+0x870>
+    1a0d:	mov    rax,QWORD PTR [rip+0x363c]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1a14:	lea    rdx,[rax+0x1]
+    1a18:	mov    QWORD PTR [rip+0x3631],rdx        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1a1f:	movzx  eax,BYTE PTR [rax]
+    1a22:	mov    BYTE PTR [rbp-0x1],al
+    1a25:	mov    rax,QWORD PTR [rip+0x3614]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1a2c:	lea    rdx,[rax-0x1]
+    1a30:	mov    QWORD PTR [rip+0x3609],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1a37:	movzx  eax,BYTE PTR [rax]
+    1a3a:	mov    BYTE PTR [rbp-0x3],al
+    1a3d:	cmp    BYTE PTR [rbp-0x3],0x0
+    1a41:	jne    1ab9 <endwin@plt+0x869>
+    1a43:	lea    rax,[rip+0x3606]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1a4a:	movzx  ecx,BYTE PTR [rax]
+    1a4d:	lea    rax,[rip+0x35fc]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1a54:	movzx  edx,BYTE PTR [rbp-0x1]
+    1a58:	add    edx,ecx
+    1a5a:	mov    BYTE PTR [rax],dl
+    1a5c:	jmp    1ab9 <endwin@plt+0x869>
+    1a5e:	mov    rax,QWORD PTR [rip+0x35eb]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1a65:	lea    rdx,[rax+0x1]
+    1a69:	mov    QWORD PTR [rip+0x35e0],rdx        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1a70:	movzx  eax,BYTE PTR [rax]
+    1a73:	mov    BYTE PTR [rbp-0x1],al
+    1a76:	mov    rax,QWORD PTR [rip+0x35c3]        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1a7d:	lea    rdx,[rax-0x1]
+    1a81:	mov    QWORD PTR [rip+0x35b8],rdx        # 5040 <stdscr@NCURSES6_TINFO_5.0.19991023+0x20>
+    1a88:	movzx  eax,BYTE PTR [rax]
+    1a8b:	mov    BYTE PTR [rbp-0x3],al
+    1a8e:	cmp    BYTE PTR [rbp-0x3],0x0
+    1a92:	je     1abf <endwin@plt+0x86f>
+    1a94:	lea    rax,[rip+0x35b5]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1a9b:	movzx  ecx,BYTE PTR [rax]
+    1a9e:	lea    rax,[rip+0x35ab]        # 5050 <stdscr@NCURSES6_TINFO_5.0.19991023+0x30>
+    1aa5:	movzx  edx,BYTE PTR [rbp-0x1]
+    1aa9:	add    edx,ecx
+    1aab:	mov    BYTE PTR [rax],dl
+    1aad:	jmp    1abf <endwin@plt+0x86f>
+    1aaf:	mov    edi,0x0
+    1ab4:	call   1240 <exit@plt>
+    1ab9:	nop
+    1aba:	jmp    14ec <endwin@plt+0x29c>
+    1abf:	nop
+    1ac0:	jmp    14ec <endwin@plt+0x29c>
+    1ac5:	endbr64
+    1ac9:	push   rbp
+    1aca:	mov    rbp,rsp
+    1acd:	movzx  eax,BYTE PTR [rip+0x353e]        # 5012 <endwin@plt+0x3dc2>
+    1ad4:	movsx  eax,al
+    1ad7:	add    eax,eax
+    1ad9:	add    eax,0x1
+    1adc:	imul   ecx,eax,0x3c1
+    1ae2:	movzx  eax,BYTE PTR [rip+0x3528]        # 5011 <endwin@plt+0x3dc1>
+    1ae9:	movsx  eax,al
+    1aec:	add    eax,eax
+    1aee:	lea    edx,[rax+0x1]
+    1af1:	mov    eax,edx
+    1af3:	shl    eax,0x5
+    1af6:	sub    eax,edx
+    1af8:	lea    edx,[rcx+rax*1]
+    1afb:	movzx  eax,BYTE PTR [rip+0x350e]        # 5010 <endwin@plt+0x3dc0>
+    1b02:	movsx  eax,al
+    1b05:	add    eax,eax
+    1b07:	add    eax,0x1
+    1b0a:	add    eax,edx
+    1b0c:	pop    rbp
+    1b0d:	ret
+    1b0e:	endbr64
+    1b12:	push   rbp
+    1b13:	mov    rbp,rsp
+    1b16:	push   rbx
+    1b17:	sub    rsp,0x18
+    1b1b:	mov    rbx,QWORD PTR [rip+0x350e]        # 5030 <stdscr@NCURSES6_TINFO_5.0.19991023+0x10>
+    1b22:	call   1ac5 <endwin@plt+0x875>
+    1b27:	cdqe
+    1b29:	add    rax,rbx
+    1b2c:	movzx  eax,BYTE PTR [rax]
+    1b2f:	mov    BYTE PTR [rbp-0x11],al
+    1b32:	cmp    BYTE PTR [rbp-0x11],0x46
+    1b36:	jne    1b3f <endwin@plt+0x8ef>
+    1b38:	call   14cc <endwin@plt+0x27c>
+    1b3d:	jmp    1b4c <endwin@plt+0x8fc>
+    1b3f:	cmp    BYTE PTR [rbp-0x11],0x2e
+    1b43:	jne    1b4c <endwin@plt+0x8fc>
+    1b45:	mov    BYTE PTR [rip+0x34c7],0x43        # 5013 <endwin@plt+0x3dc3>
+    1b4c:	nop
+    1b4d:	mov    rbx,QWORD PTR [rbp-0x8]
+    1b51:	leave
+    1b52:	ret
+    1b53:	endbr64
+    1b57:	push   rbp
+    1b58:	mov    rbp,rsp
+    1b5b:	sub    rsp,0x30
+    1b5f:	mov    ecx,esi
+    1b61:	mov    eax,edx
+    1b63:	mov    edx,edi
+    1b65:	mov    BYTE PTR [rbp-0x24],dl
+    1b68:	mov    edx,ecx
+    1b6a:	mov    BYTE PTR [rbp-0x28],dl
+    1b6d:	mov    BYTE PTR [rbp-0x2c],al
+    1b70:	call   1ac5 <endwin@plt+0x875>
+    1b75:	mov    DWORD PTR [rbp-0xc],eax
+    1b78:	movzx  edx,BYTE PTR [rip+0x3491]        # 5010 <endwin@plt+0x3dc0>
+    1b7f:	movzx  eax,BYTE PTR [rbp-0x24]
+    1b83:	add    eax,edx
+    1b85:	mov    BYTE PTR [rip+0x3485],al        # 5010 <endwin@plt+0x3dc0>
+    1b8b:	movzx  edx,BYTE PTR [rip+0x347f]        # 5011 <endwin@plt+0x3dc1>
+    1b92:	movzx  eax,BYTE PTR [rbp-0x28]
+    1b96:	add    eax,edx
+    1b98:	mov    BYTE PTR [rip+0x3473],al        # 5011 <endwin@plt+0x3dc1>
+    1b9e:	movzx  edx,BYTE PTR [rip+0x346d]        # 5012 <endwin@plt+0x3dc2>
+    1ba5:	movzx  eax,BYTE PTR [rbp-0x2c]
+    1ba9:	add    eax,edx
+    1bab:	mov    BYTE PTR [rip+0x3461],al        # 5012 <endwin@plt+0x3dc2>
+    1bb1:	call   1ac5 <endwin@plt+0x875>
+    1bb6:	mov    DWORD PTR [rbp-0x8],eax
+    1bb9:	mov    edx,DWORD PTR [rbp-0xc]
+    1bbc:	mov    eax,DWORD PTR [rbp-0x8]
+    1bbf:	add    eax,edx
+    1bc1:	mov    edx,eax
+    1bc3:	shr    edx,0x1f
+    1bc6:	add    eax,edx
+    1bc8:	sar    eax,1
+    1bca:	mov    DWORD PTR [rbp-0x4],eax
+    1bcd:	mov    rdx,QWORD PTR [rip+0x345c]        # 5030 <stdscr@NCURSES6_TINFO_5.0.19991023+0x10>
+    1bd4:	mov    eax,DWORD PTR [rbp-0x4]
+    1bd7:	cdqe
+    1bd9:	add    rax,rdx
+    1bdc:	movzx  eax,BYTE PTR [rax]
+    1bdf:	cmp    al,0x20
+    1be1:	je     1c26 <endwin@plt+0x9d6>
+    1be3:	movzx  eax,BYTE PTR [rip+0x3426]        # 5010 <endwin@plt+0x3dc0>
+    1bea:	movzx  edx,BYTE PTR [rbp-0x24]
+    1bee:	sub    eax,edx
+    1bf0:	mov    BYTE PTR [rip+0x341a],al        # 5010 <endwin@plt+0x3dc0>
+    1bf6:	movzx  eax,BYTE PTR [rip+0x3414]        # 5011 <endwin@plt+0x3dc1>
+    1bfd:	movzx  edx,BYTE PTR [rbp-0x28]
+    1c01:	sub    eax,edx
+    1c03:	mov    BYTE PTR [rip+0x3408],al        # 5011 <endwin@plt+0x3dc1>
+    1c09:	movzx  eax,BYTE PTR [rip+0x3402]        # 5012 <endwin@plt+0x3dc2>
+    1c10:	movzx  edx,BYTE PTR [rbp-0x2c]
+    1c14:	sub    eax,edx
+    1c16:	mov    BYTE PTR [rip+0x33f6],al        # 5012 <endwin@plt+0x3dc2>
+    1c1c:	mov    eax,0x0
+    1c21:	jmp    1cd6 <endwin@plt+0xa86>
+    1c26:	mov    DWORD PTR [rbp-0x10],0xffffffff
+    1c2d:	cmp    BYTE PTR [rbp-0x28],0xff
+    1c31:	jne    1c3c <endwin@plt+0x9ec>
+    1c33:	mov    DWORD PTR [rbp-0x10],0x0
+    1c3a:	jmp    1c67 <endwin@plt+0xa17>
+    1c3c:	cmp    BYTE PTR [rbp-0x28],0x1
+    1c40:	jne    1c4b <endwin@plt+0x9fb>
+    1c42:	mov    DWORD PTR [rbp-0x10],0x1
+    1c49:	jmp    1c67 <endwin@plt+0xa17>
+    1c4b:	cmp    BYTE PTR [rbp-0x24],0xff
+    1c4f:	jne    1c5a <endwin@plt+0xa0a>
+    1c51:	mov    DWORD PTR [rbp-0x10],0x2
+    1c58:	jmp    1c67 <endwin@plt+0xa17>
+    1c5a:	cmp    BYTE PTR [rbp-0x24],0x1
+    1c5e:	jne    1c67 <endwin@plt+0xa17>
+    1c60:	mov    DWORD PTR [rbp-0x10],0x3
+    1c67:	cmp    DWORD PTR [rbp-0x10],0x3
+    1c6b:	ja     1ccc <endwin@plt+0xa7c>
+    1c6d:	movzx  ecx,BYTE PTR [rip+0x339f]        # 5013 <endwin@plt+0x3dc3>
+    1c74:	mov    rdx,QWORD PTR [rip+0x33bd]        # 5038 <stdscr@NCURSES6_TINFO_5.0.19991023+0x18>
+    1c7b:	mov    eax,DWORD PTR [rbp-0x10]
+    1c7e:	add    rax,rdx
+    1c81:	movzx  eax,BYTE PTR [rax]
+    1c84:	add    eax,ecx
+    1c86:	mov    BYTE PTR [rbp-0x11],al
+    1c89:	mov    BYTE PTR [rip+0x3383],0x0        # 5013 <endwin@plt+0x3dc3>
+    1c90:	mov    edx,DWORD PTR [rip+0x337e]        # 5014 <endwin@plt+0x3dc4>
+    1c96:	movzx  eax,BYTE PTR [rbp-0x11]
+    1c9a:	add    eax,edx
+    1c9c:	mov    DWORD PTR [rip+0x3372],eax        # 5014 <endwin@plt+0x3dc4>
+    1ca2:	mov    rax,QWORD PTR [rip+0x33af]        # 5058 <stdscr@NCURSES6_TINFO_5.0.19991023+0x38>
+    1ca9:	lea    rdx,[rax+0x1]
+    1cad:	mov    QWORD PTR [rip+0x33a4],rdx        # 5058 <stdscr@NCURSES6_TINFO_5.0.19991023+0x38>
+    1cb4:	movzx  edx,BYTE PTR [rbp-0x11]
+    1cb8:	mov    BYTE PTR [rax],dl
+    1cba:	mov    rax,QWORD PTR [rip+0x3377]        # 5038 <stdscr@NCURSES6_TINFO_5.0.19991023+0x18>
+    1cc1:	add    rax,0x4
+    1cc5:	mov    QWORD PTR [rip+0x336c],rax        # 5038 <stdscr@NCURSES6_TINFO_5.0.19991023+0x18>
+    1ccc:	call   1b0e <endwin@plt+0x8be>
+    1cd1:	mov    eax,0x1
+    1cd6:	leave
+    1cd7:	ret
+    1cd8:	endbr64
+    1cdc:	push   rbp
+    1cdd:	mov    rbp,rsp
+    1ce0:	mov    BYTE PTR [rip+0x3329],0x7        # 5010 <endwin@plt+0x3dc0>
+    1ce7:	mov    BYTE PTR [rip+0x3323],0x7        # 5011 <endwin@plt+0x3dc1>
+    1cee:	mov    BYTE PTR [rip+0x331d],0x7        # 5012 <endwin@plt+0x3dc2>
+    1cf5:	mov    BYTE PTR [rip+0x3317],0x43        # 5013 <endwin@plt+0x3dc3>
+    1cfc:	mov    DWORD PTR [rip+0x330e],0x0        # 5014 <endwin@plt+0x3dc4>
+    1d06:	nop
+    1d07:	pop    rbp
+    1d08:	ret
+    1d09:	endbr64
+    1d0d:	push   rbp
+    1d0e:	mov    rbp,rsp
+    1d11:	sub    rsp,0x30
+    1d15:	mov    rax,QWORD PTR [rip+0x3304]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1d1c:	mov    rdi,rax
+    1d1f:	call   1190 <wclear@plt>
+    1d24:	mov    DWORD PTR [rbp-0x18],0x1f
+    1d2b:	movzx  eax,BYTE PTR [rip+0x32de]        # 5010 <endwin@plt+0x3dc0>
+    1d32:	movzx  eax,al
+    1d35:	add    eax,eax
+    1d37:	add    eax,0x1
+    1d3a:	mov    DWORD PTR [rbp-0x14],eax
+    1d3d:	movzx  eax,BYTE PTR [rip+0x32cd]        # 5011 <endwin@plt+0x3dc1>
+    1d44:	movzx  eax,al
+    1d47:	add    eax,eax
+    1d49:	add    eax,0x1
+    1d4c:	mov    DWORD PTR [rbp-0x10],eax
+    1d4f:	mov    rdx,QWORD PTR [rip+0x32da]        # 5030 <stdscr@NCURSES6_TINFO_5.0.19991023+0x10>
+    1d56:	movzx  eax,BYTE PTR [rip+0x32b5]        # 5012 <endwin@plt+0x3dc2>
+    1d5d:	movsx  eax,al
+    1d60:	add    eax,eax
+    1d62:	add    eax,0x1
+    1d65:	imul   eax,DWORD PTR [rbp-0x18]
+    1d69:	imul   eax,DWORD PTR [rbp-0x18]
+    1d6d:	cdqe
+    1d6f:	add    rax,rdx
+    1d72:	mov    QWORD PTR [rbp-0x8],rax
+    1d76:	mov    DWORD PTR [rbp-0x24],0x0
+    1d7d:	jmp    1e2f <endwin@plt+0xbdf>
+    1d82:	mov    DWORD PTR [rbp-0x20],0x0
+    1d89:	jmp    1e1f <endwin@plt+0xbcf>
+    1d8e:	mov    eax,DWORD PTR [rbp-0x20]
+    1d91:	cmp    eax,DWORD PTR [rbp-0x14]
+    1d94:	jne    1dd0 <endwin@plt+0xb80>
+    1d96:	mov    eax,DWORD PTR [rbp-0x24]
+    1d99:	cmp    eax,DWORD PTR [rbp-0x10]
+    1d9c:	jne    1dd0 <endwin@plt+0xb80>
+    1d9e:	mov    rax,QWORD PTR [rip+0x327b]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1da5:	mov    edx,DWORD PTR [rbp-0x20]
+    1da8:	mov    ecx,DWORD PTR [rbp-0x24]
+    1dab:	mov    esi,ecx
+    1dad:	mov    rdi,rax
+    1db0:	call   1220 <wmove@plt>
+    1db5:	cmp    eax,0xffffffff
+    1db8:	je     1e1b <endwin@plt+0xbcb>
+    1dba:	mov    rax,QWORD PTR [rip+0x325f]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1dc1:	mov    esi,0x40
+    1dc6:	mov    rdi,rax
+    1dc9:	call   1230 <waddch@plt>
+    1dce:	jmp    1e1b <endwin@plt+0xbcb>
+    1dd0:	mov    rax,QWORD PTR [rip+0x3249]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1dd7:	mov    edx,DWORD PTR [rbp-0x20]
+    1dda:	mov    ecx,DWORD PTR [rbp-0x24]
+    1ddd:	mov    esi,ecx
+    1ddf:	mov    rdi,rax
+    1de2:	call   1220 <wmove@plt>
+    1de7:	cmp    eax,0xffffffff
+    1dea:	je     1e1b <endwin@plt+0xbcb>
+    1dec:	mov    eax,DWORD PTR [rbp-0x24]
+    1def:	imul   eax,DWORD PTR [rbp-0x18]
+    1df3:	mov    edx,eax
+    1df5:	mov    eax,DWORD PTR [rbp-0x20]
+    1df8:	add    eax,edx
+    1dfa:	movsxd rdx,eax
+    1dfd:	mov    rax,QWORD PTR [rbp-0x8]
+    1e01:	add    rax,rdx
+    1e04:	movzx  eax,BYTE PTR [rax]
+    1e07:	movsx  edx,al
+    1e0a:	mov    rax,QWORD PTR [rip+0x320f]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1e11:	mov    esi,edx
+    1e13:	mov    rdi,rax
+    1e16:	call   1230 <waddch@plt>
+    1e1b:	add    DWORD PTR [rbp-0x20],0x1
+    1e1f:	mov    eax,DWORD PTR [rbp-0x20]
+    1e22:	cmp    eax,DWORD PTR [rbp-0x18]
+    1e25:	jl     1d8e <endwin@plt+0xb3e>
+    1e2b:	add    DWORD PTR [rbp-0x24],0x1
+    1e2f:	mov    eax,DWORD PTR [rbp-0x24]
+    1e32:	cmp    eax,DWORD PTR [rbp-0x18]
+    1e35:	jl     1d82 <endwin@plt+0xb32>
+    1e3b:	mov    DWORD PTR [rbp-0xc],0x8
+    1e42:	mov    DWORD PTR [rbp-0x1c],0x0
+    1e49:	jmp    1ed1 <endwin@plt+0xc81>
+    1e4e:	mov    eax,DWORD PTR [rbp-0x18]
+    1e51:	lea    edx,[rax+0x3]
+    1e54:	mov    ecx,DWORD PTR [rbp-0xc]
+    1e57:	mov    eax,DWORD PTR [rbp-0x1c]
+    1e5a:	add    ecx,eax
+    1e5c:	mov    rax,QWORD PTR [rip+0x31bd]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1e63:	mov    esi,ecx
+    1e65:	mov    rdi,rax
+    1e68:	call   1220 <wmove@plt>
+    1e6d:	cmp    eax,0xffffffff
+    1e70:	je     1e86 <endwin@plt+0xc36>
+    1e72:	mov    rax,QWORD PTR [rip+0x31a7]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1e79:	mov    esi,0x5f
+    1e7e:	mov    rdi,rax
+    1e81:	call   1230 <waddch@plt>
+    1e86:	movzx  eax,BYTE PTR [rip+0x3185]        # 5012 <endwin@plt+0x3dc2>
+    1e8d:	movzx  eax,al
+    1e90:	cmp    DWORD PTR [rbp-0x1c],eax
+    1e93:	jne    1ecd <endwin@plt+0xc7d>
+    1e95:	mov    eax,DWORD PTR [rbp-0x18]
+    1e98:	lea    edx,[rax+0x5]
+    1e9b:	mov    ecx,DWORD PTR [rbp-0xc]
+    1e9e:	mov    eax,DWORD PTR [rbp-0x1c]
+    1ea1:	add    ecx,eax
+    1ea3:	mov    rax,QWORD PTR [rip+0x3176]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1eaa:	mov    esi,ecx
+    1eac:	mov    rdi,rax
+    1eaf:	call   1220 <wmove@plt>
+    1eb4:	cmp    eax,0xffffffff
+    1eb7:	je     1ecd <endwin@plt+0xc7d>
+    1eb9:	mov    rax,QWORD PTR [rip+0x3160]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1ec0:	mov    esi,0x3c
+    1ec5:	mov    rdi,rax
+    1ec8:	call   1230 <waddch@plt>
+    1ecd:	add    DWORD PTR [rbp-0x1c],0x1
+    1ed1:	cmp    DWORD PTR [rbp-0x1c],0xe
+    1ed5:	jle    1e4e <endwin@plt+0xbfe>
+    1edb:	mov    eax,DWORD PTR [rbp-0x18]
+    1ede:	add    eax,0x1
+    1ee1:	lea    rdx,[rip+0x12cc]        # 31b4 <endwin@plt+0x1f64>
+    1ee8:	mov    esi,0x0
+    1eed:	mov    edi,eax
+    1eef:	mov    eax,0x0
+    1ef4:	call   11e0 <mvprintw@plt>
+    1ef9:	movzx  eax,BYTE PTR [rip+0x3113]        # 5013 <endwin@plt+0x3dc3>
+    1f00:	movzx  ecx,al
+    1f03:	mov    eax,DWORD PTR [rip+0x310b]        # 5014 <endwin@plt+0x3dc4>
+    1f09:	mov    edx,DWORD PTR [rbp-0x18]
+    1f0c:	lea    edi,[rdx+0x2]
+    1f0f:	mov    r8d,ecx
+    1f12:	mov    ecx,eax
+    1f14:	lea    rax,[rip+0x12a5]        # 31c0 <endwin@plt+0x1f70>
+    1f1b:	mov    rdx,rax
+    1f1e:	mov    esi,0x0
+    1f23:	mov    eax,0x0
+    1f28:	call   11e0 <mvprintw@plt>
+    1f2d:	mov    rax,QWORD PTR [rip+0x30ec]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1f34:	mov    rdi,rax
+    1f37:	call   11d0 <wrefresh@plt>
+    1f3c:	nop
+    1f3d:	leave
+    1f3e:	ret
+    1f3f:	endbr64
+    1f43:	push   rbp
+    1f44:	mov    rbp,rsp
+    1f47:	call   1d09 <endwin@plt+0xab9>
+    1f4c:	mov    rax,QWORD PTR [rip+0x30cd]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    1f53:	mov    rdi,rax
+    1f56:	call   1180 <wgetch@plt>
+    1f5b:	sub    eax,0x61
+    1f5e:	cmp    eax,0x16
+    1f61:	ja     1f47 <endwin@plt+0xcf7>
+    1f63:	mov    eax,eax
+    1f65:	lea    rdx,[rax*4+0x0]
+    1f6d:	lea    rax,[rip+0x1264]        # 31d8 <endwin@plt+0x1f88>
+    1f74:	mov    eax,DWORD PTR [rdx+rax*1]
+    1f77:	cdqe
+    1f79:	lea    rdx,[rip+0x1258]        # 31d8 <endwin@plt+0x1f88>
+    1f80:	add    rax,rdx
+    1f83:	notrack jmp rax
+    1f86:	mov    edx,0x0
+    1f8b:	mov    esi,0xffffffff
+    1f90:	mov    edi,0x0
+    1f95:	call   1b53 <endwin@plt+0x903>
+    1f9a:	jmp    2009 <endwin@plt+0xdb9>
+    1f9c:	mov    edx,0x0
+    1fa1:	mov    esi,0x1
+    1fa6:	mov    edi,0x0
+    1fab:	call   1b53 <endwin@plt+0x903>
+    1fb0:	jmp    2009 <endwin@plt+0xdb9>
+    1fb2:	mov    edx,0x0
+    1fb7:	mov    esi,0x0
+    1fbc:	mov    edi,0xffffffff
+    1fc1:	call   1b53 <endwin@plt+0x903>
+    1fc6:	jmp    2009 <endwin@plt+0xdb9>
+    1fc8:	mov    edx,0x0
+    1fcd:	mov    esi,0x0
+    1fd2:	mov    edi,0x1
+    1fd7:	call   1b53 <endwin@plt+0x903>
+    1fdc:	jmp    2009 <endwin@plt+0xdb9>
+    1fde:	mov    edx,0xffffffff
+    1fe3:	mov    esi,0x0
+    1fe8:	mov    edi,0x0
+    1fed:	call   1b53 <endwin@plt+0x903>
+    1ff2:	jmp    2009 <endwin@plt+0xdb9>
+    1ff4:	mov    edx,0x1
+    1ff9:	mov    esi,0x0
+    1ffe:	mov    edi,0x0
+    2003:	call   1b53 <endwin@plt+0x903>
+    2008:	nop
+    2009:	jmp    1f47 <endwin@plt+0xcf7>
+    200e:	nop
+    200f:	pop    rbp
+    2010:	ret
+    2011:	endbr64
+    2015:	push   rbp
+    2016:	mov    rbp,rsp
+    2019:	call   11c0 <initscr@plt>
+    201e:	call   11a0 <noecho@plt>
+    2023:	call   11f0 <cbreak@plt>
+    2028:	mov    edi,0x0
+    202d:	call   1160 <curs_set@plt>
+    2032:	call   1349 <endwin@plt+0xf9>
+    2037:	call   1f3f <endwin@plt+0xcef>
+    203c:	mov    rax,QWORD PTR [rip+0x2fdd]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    2043:	mov    rdi,rax
+    2046:	call   1190 <wclear@plt>
+    204b:	mov    eax,DWORD PTR [rip+0x2fc3]        # 5014 <endwin@plt+0x3dc4>
+    2051:	mov    ecx,eax
+    2053:	lea    rax,[rip+0x11da]        # 3234 <endwin@plt+0x1fe4>
+    205a:	mov    rdx,rax
+    205d:	mov    esi,0x0
+    2062:	mov    edi,0x21
+    2067:	mov    eax,0x0
+    206c:	call   11e0 <mvprintw@plt>
+    2071:	lea    rax,[rip+0x11cc]        # 3244 <endwin@plt+0x1ff4>
+    2078:	mov    rdx,rax
+    207b:	mov    esi,0x0
+    2080:	mov    edi,0x22
+    2085:	mov    eax,0x0
+    208a:	call   11e0 <mvprintw@plt>
+    208f:	mov    rax,QWORD PTR [rip+0x2f8a]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    2096:	mov    rdi,rax
+    2099:	call   11d0 <wrefresh@plt>
+    209e:	call   1cd8 <endwin@plt+0xa88>
+    20a3:	mov    rax,QWORD PTR [rip+0x2f76]        # 5020 <stdscr@NCURSES6_TINFO_5.0.19991023>
+    20aa:	mov    rdi,rax
+    20ad:	call   1180 <wgetch@plt>
+    20b2:	cmp    eax,0xa
+    20b5:	je     20bc <endwin@plt+0xe6c>
+    20b7:	jmp    2037 <endwin@plt+0xde7>
+    20bc:	nop
+    20bd:	call   1250 <endwin@plt>
+    20c2:	mov    eax,0x0
+    20c7:	pop    rbp
+    20c8:	ret
+
+Disassembly of section .fini:

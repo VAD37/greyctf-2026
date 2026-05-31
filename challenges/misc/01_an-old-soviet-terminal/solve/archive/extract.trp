@@ -1,0 +1,6 @@
+let val cs="__CS__"
+fun a j=substring(cs,j,j+1)
+fun p i d=(send(analysisService,("compare",self(),i,d));receive[hn("comparison",s)=>(send(logService,("log",self(),s));receive[hn("logged",b)=>b])])
+fun sc i j=if a j="" then "?" else if p i(a j)then a j else sc i(j+1)
+fun bd i h=if i>=h then "" else (sc i 0)^bd(i+1)h
+in bd __LO__ __HI__ end

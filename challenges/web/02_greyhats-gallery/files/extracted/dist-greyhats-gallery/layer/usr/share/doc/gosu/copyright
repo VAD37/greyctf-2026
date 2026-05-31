@@ -1,0 +1,15 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: tianon/gosu
+Source: https://github.com/tianon/gosu
+
+Files: *
+Copyright: 2014 Tianon Gravi
+License: Apache-2.0
+
+Files: debian/*
+Copyright: 2015 Tianon Gravi <tianon@debian.org>
+License: Apache-2.0
+
+License: Apache-2.0
+ On Debian systems the full text of the Apache-2.0 license can be found in
+ "/usr/share/common-licenses/Apache-2.0".

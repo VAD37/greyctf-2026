@@ -1,0 +1,21 @@
+[full] html len 394818
+[full] pushes 25
+[full] decoded stream len 283642
+[HUNT full-html] none
+[HUNT full-stream] none
+   ctx[full/grey] ... dark)"}]] 1d:null 22:[["$","title","0",{"children":"Opened GreyCTF 2026 registration page in Chrome - Traces"}],["$","meta","1",{"name":"description","content":"Codex trace by lor...
+   ctx[full/007b] ...cDcMVqRfFf4eOMXGt21lIPvRX260lU+hSYIwI+le5kedf2dObdKNRSVrSV1o007bXXndHDjsF9YUVzuLT6H5/wDie9/abn0W98LeHdF8aeItN1uBrS7g8WWeno8AkwPNhubSZSMd1dSK/SHwfp9zpPhPRtLvV2XFpp9rBKuc4eONVYZHoRWH...
+[dotjson] html len 68662
+[dotjson] pushes 15
+[dotjson] decoded stream len 37802
+[HUNT dotjson-html] none
+[HUNT dotjson-stream] none
+[page] html len 137286
+[page] pushes 16
+[page] decoded stream len 47199
+[HUNT page-html] none
+[HUNT page-stream] none
+   ctx[page/grey] ... dark)"}]] 1f:null 24:[["$","title","0",{"children":"Opened GreyCTF 2026 registration page in Chrome - Traces"}],["$","meta","1",{"name":"description","content":"Codex trace by lor...
+
+==== ALL FLAG HITS ====
+NONE

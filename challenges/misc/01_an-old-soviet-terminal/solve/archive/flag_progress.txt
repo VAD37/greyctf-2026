@@ -1,0 +1,2 @@
+LEN=25
+FOUND=grey{

@@ -1,0 +1,4 @@
+cell hist {' ': 3278, '.': 96, 'F': 1}
+F cells [(14, 14, 7)]
+num dots 96
+start cell (7,7,7)=  

@@ -1,0 +1,244 @@
+{
+  "manifest": {
+    "assets/js/index.js": {
+      "file": "assets/index.d2f30b1f.js",
+      "src": "assets/js/index.js",
+      "isEntry": true
+    },
+    "assets/js/page.js": {
+      "file": "assets/page.94292aef.js",
+      "src": "assets/js/page.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js"
+      ]
+    },
+    "assets/js/setup.js": {
+      "file": "assets/setup.bf8dd412.js",
+      "src": "assets/js/setup.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js"
+      ]
+    },
+    "assets/js/settings.js": {
+      "file": "assets/settings.e55070f5.js",
+      "src": "assets/js/settings.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js",
+        "_clipboard.e41c4267.js"
+      ]
+    },
+    "assets/js/challenges.js": {
+      "file": "assets/challenges.a0bf3509.js",
+      "src": "assets/js/challenges.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js"
+      ]
+    },
+    "assets/js/scoreboard.js": {
+      "file": "assets/scoreboard.fdfb17fd.js",
+      "src": "assets/js/scoreboard.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js",
+        "_index.1cf73b05.js",
+        "_echarts.128204f2.js"
+      ]
+    },
+    "assets/js/notifications.js": {
+      "file": "assets/notifications.4654956b.js",
+      "src": "assets/js/notifications.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js"
+      ]
+    },
+    "assets/js/teams/public.js": {
+      "file": "assets/teams_public.d4a222ab.js",
+      "src": "assets/js/teams/public.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js",
+        "_userscore.0f6d7605.js",
+        "_index.1cf73b05.js",
+        "_echarts.128204f2.js"
+      ]
+    },
+    "assets/js/teams/private.js": {
+      "file": "assets/teams_private.08656aee.js",
+      "src": "assets/js/teams/private.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js",
+        "_clipboard.e41c4267.js",
+        "_userscore.0f6d7605.js",
+        "_index.1cf73b05.js",
+        "_echarts.128204f2.js"
+      ]
+    },
+    "assets/js/teams/list.js": {
+      "file": "assets/teams_list.87951018.js",
+      "src": "assets/js/teams/list.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js"
+      ]
+    },
+    "assets/js/users/public.js": {
+      "file": "assets/users_public.46b83d4c.js",
+      "src": "assets/js/users/public.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js",
+        "_userscore.0f6d7605.js",
+        "_index.1cf73b05.js",
+        "_echarts.128204f2.js"
+      ]
+    },
+    "assets/js/users/private.js": {
+      "file": "assets/users_private.77f31457.js",
+      "src": "assets/js/users/private.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js",
+        "_userscore.0f6d7605.js",
+        "_index.1cf73b05.js",
+        "_echarts.128204f2.js"
+      ]
+    },
+    "assets/js/users/list.js": {
+      "file": "assets/users_list.6cf184b0.js",
+      "src": "assets/js/users/list.js",
+      "isEntry": true,
+      "imports": [
+        "assets/js/index.js"
+      ]
+    },
+    "assets/js/color_mode_switcher.js": {
+      "file": "assets/color_mode_switcher.5c07df4e.js",
+      "src": "assets/js/color_mode_switcher.js",
+      "isEntry": true
+    },
+    "_echarts.128204f2.js": {
+      "file": "assets/echarts.128204f2.js"
+    },
+    "_clipboard.e41c4267.js": {
+      "file": "assets/clipboard.e41c4267.js",
+      "imports": [
+        "assets/js/index.js"
+      ]
+    },
+    "_index.1cf73b05.js": {
+      "file": "assets/index.1cf73b05.js",
+      "imports": [
+        "_echarts.128204f2.js"
+      ]
+    },
+    "_userscore.0f6d7605.js": {
+      "file": "assets/userscore.0f6d7605.js",
+      "imports": [
+        "assets/js/index.js",
+        "_index.1cf73b05.js"
+      ]
+    },
+    "assets/scss/main.scss": {
+      "file": "assets/main.d1b2a4fe.css",
+      "src": "assets/scss/main.scss",
+      "isEntry": true
+    }
+  },
+  "swagger_paths": [
+    "/awards",
+    "/awards/{award_id}",
+    "/brackets",
+    "/brackets/{bracket_id}",
+    "/challenges",
+    "/challenges/attempt",
+    "/challenges/types",
+    "/challenges/{challenge_id}",
+    "/challenges/{challenge_id}/files",
+    "/challenges/{challenge_id}/flags",
+    "/challenges/{challenge_id}/hints",
+    "/challenges/{challenge_id}/ratings",
+    "/challenges/{challenge_id}/requirements",
+    "/challenges/{challenge_id}/solution",
+    "/challenges/{challenge_id}/solves",
+    "/challenges/{challenge_id}/tags",
+    "/challenges/{challenge_id}/topics",
+    "/comments",
+    "/comments/{comment_id}",
+    "/configs",
+    "/configs/fields",
+    "/configs/fields/{field_id}",
+    "/configs/{config_key}",
+    "/exports/raw",
+    "/files",
+    "/files/{file_id}",
+    "/flags",
+    "/flags/types",
+    "/flags/types/{type_name}",
+    "/flags/{flag_id}",
+    "/hints",
+    "/hints/{hint_id}",
+    "/notifications",
+    "/notifications/{notification_id}",
+    "/pages",
+    "/pages/{page_id}",
+    "/plugins/ctfd-whale/admin/container",
+    "/plugins/ctfd-whale/container",
+    "/scoreboard",
+    "/scoreboard/top/{count}",
+    "/shares",
+    "/solutions",
+    "/solutions/{solution_id}",
+    "/statistics/challenges/solves",
+    "/statistics/challenges/solves/percentages",
+    "/statistics/challenges/{column}",
+    "/statistics/progression/matrix",
+    "/statistics/scores/distribution",
+    "/statistics/submissions/{column}",
+    "/statistics/teams",
+    "/statistics/users",
+    "/statistics/users/{column}",
+    "/submissions",
+    "/submissions/{submission_id}",
+    "/tags",
+    "/tags/{tag_id}",
+    "/teams",
+    "/teams/me",
+    "/teams/me/awards",
+    "/teams/me/fails",
+    "/teams/me/members",
+    "/teams/me/solves",
+    "/teams/{team_id}",
+    "/teams/{team_id}/awards",
+    "/teams/{team_id}/fails",
+    "/teams/{team_id}/members",
+    "/teams/{team_id}/solves",
+    "/tokens",
+    "/tokens/{token_id}",
+    "/topics",
+    "/topics/{topic_id}",
+    "/unlocks",
+    "/users",
+    "/users/me",
+    "/users/me/awards",
+    "/users/me/fails",
+    "/users/me/solves",
+    "/users/me/submissions",
+    "/users/{user_id}",
+    "/users/{user_id}/awards",
+    "/users/{user_id}/email",
+    "/users/{user_id}/fails",
+    "/users/{user_id}/solves"
+  ],
+  "swagger_def_count": 37,
+  "swagger_info": {
+    "title": "API",
+    "version": "v1"
+  },
+  "basePath": "/api/v1"
+}

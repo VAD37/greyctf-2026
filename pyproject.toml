@@ -1,0 +1,32 @@
+[project]
+name = "greyctf-2026-solve"
+version = "0.0.0"
+description = "Shared solve environment for GreyCTF 2026 challenges (uv-managed)"
+requires-python = ">=3.12"
+dependencies = [
+    "anvil-parser2>=0.10.6",
+    "beautifulsoup4>=4.14.3",
+    "cysignals>=1.12.6",
+    "ecdsa>=0.19.2",
+    "fpylll>=0.6.4",
+    "gmpy2>=2.3.0",
+    "imageio-ffmpeg>=0.6.0",
+    "librosa>=0.11.0",
+    "matplotlib>=3.10.9",
+    "nbtlib>=2.0.4",
+    "numpy>=2.4.6",
+    "opencv-python-headless>=4.13.0.92",
+    "pillow>=12.2.0",
+    "pwntools>=4.15.0",
+    "pycryptodome>=3.23.0",
+    "pyjwt>=2.13.0",
+    "pysstv>=0.5.8",
+    "requests>=2.34.2",
+    "ropgadget>=7.7",
+    "ropper>=1.13.13",
+    "scapy>=2.7.0",
+    "scipy>=1.17.1",
+    "soundfile>=0.13.1",
+    "sympy>=1.14.0",
+    "z3-solver>=4.16.0.0",
+]

@@ -1,0 +1,5 @@
+/media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/04_babyrsa/AI_TRIAGE_EXPLOIT.md
+/media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/04_babyrsa/README.md
+/media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/04_babyrsa/_filelist.txt
+/media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/04_babyrsa/files/dist-babyRSA.zip
+/media/vad/Work2/hackathon/greyctf-2026/challenges/ezpz/04_babyrsa/files/extracted/dist-babyRSA/challenge.py

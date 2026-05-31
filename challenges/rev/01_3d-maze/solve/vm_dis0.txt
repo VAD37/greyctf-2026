@@ -1,0 +1,16 @@
+000 jne      0x46
+003 cmp      dh, byte ptr [rbx]
+005 sub      dword ptr [rsp + rsi*2 + 0x7f], edi
+009 sub      ch, byte ptr [rcx]
+00b sub      byte ptr [rcx + rbp*2], ah
+00e and      byte ptr [rbp + 0x21], cl
+012 or       al, 0x26
+014 movsxd   ebp, dword ptr [rdi + rdi*2 + 0x3b]
+018 jne      0x69
+01a add      dword ptr [rsi + 0x38], edx
+01d cmp      ch, byte ptr [rdi + riz*2]
+020 outsd    dx, dword ptr [rsi]
+021 xor      byte ptr cs:[rip + 0x63362925], ah
+028 push     0x76383d27
+02d cmp      dword ptr [rdi + 0x27], edi
+; stopped at 30 of 256

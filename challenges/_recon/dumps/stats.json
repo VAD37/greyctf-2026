@@ -1,0 +1,100 @@
+{
+  "teams_total": 237,
+  "users_total": 465,
+  "userTeamed": 46,
+  "userIdRange": {
+    "min": 7,
+    "max": 56
+  },
+  "bracket_counts": {
+    "3": 31,
+    "4": 17,
+    "null": 2
+  },
+  "brackets_resolved": [
+    {
+      "id": 3,
+      "name": "Local"
+    },
+    {
+      "id": 4,
+      "name": "Open"
+    }
+  ],
+  "sse": {
+    "s": 403,
+    "ct": "text/html; charset=utf-8",
+    "cc": null
+  },
+  "root_headers": {
+    "alt-svc": "h3=\":443\"; ma=2592000",
+    "content-length": "40170",
+    "content-type": "text/html; charset=utf-8",
+    "cross-origin-opener-policy": "same-origin-allow-popups",
+    "date": "Tue, 26 May 2026 09:12:35 GMT",
+    "server": "gunicorn",
+    "via": "1.1 Caddy"
+  },
+  "sample_users_first10": [
+    {
+      "id": 7,
+      "name": "Kn1ghtFall",
+      "team_id": null,
+      "bracket_id": null
+    },
+    {
+      "id": 8,
+      "name": "hj235",
+      "team_id": 4,
+      "bracket_id": null
+    },
+    {
+      "id": 9,
+      "name": "notbowen",
+      "team_id": 8,
+      "bracket_id": null
+    },
+    {
+      "id": 10,
+      "name": "flyinduckz",
+      "team_id": 5,
+      "bracket_id": null
+    },
+    {
+      "id": 11,
+      "name": "jellyo",
+      "team_id": 6,
+      "bracket_id": null
+    },
+    {
+      "id": 12,
+      "name": "s4mgoh",
+      "team_id": 7,
+      "bracket_id": null
+    },
+    {
+      "id": 13,
+      "name": "sloptimus prime",
+      "team_id": 8,
+      "bracket_id": null
+    },
+    {
+      "id": 14,
+      "name": "Santhosh2475",
+      "team_id": 9,
+      "bracket_id": null
+    },
+    {
+      "id": 15,
+      "name": "qfactor",
+      "team_id": null,
+      "bracket_id": null
+    },
+    {
+      "id": 16,
+      "name": "kimi",
+      "team_id": 6,
+      "bracket_id": null
+    }
+  ]
+}
