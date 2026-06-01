@@ -119,4 +119,3 @@ the patterns I saw again and again:
   going to run against a real production server, and plans for that up front.
   This is a design-awareness and good-habit gap, not a knowledge gap.
 
-## A note for whoever reads this — please don't lean on the agent
