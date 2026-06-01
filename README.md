@@ -1,6 +1,6 @@
 # GreyCTF 2026 — Competition Archive
 
-This repo is the actual workspace I used during GreyCTF 2026.
+This repo is the actual workspace I used during [GreyCTF 2026](https://ctfd.nusgreyhats.org/).
 I have no background in forensics, so I approach this contest purely with the intention to test AI agent workflow capabilities and how well it can solve without me assisting it.
 
 The only limitation I have is the **Claude Max x5** plan, which gives **10M tokens per week**, with a soft limit of about **1–2M tokens inside each 5-hour window**.
