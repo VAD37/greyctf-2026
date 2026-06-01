@@ -34,7 +34,7 @@ If you want to run this yourself, set it up in this order:
 3. **Install all the tools listed under [`docs/vendor/shop.md`](docs/vendor/shop.md).**
 4. **Read [`.claude/skills/ctf-pipeline/SKILL.md`](.claude/skills/ctf-pipeline/SKILL.md).**
    This is the only instruction I provided for Claude.
-5. **Run the contest with this prompt** (the exact one I used):
+5. **Run the contest with this prompt** (similar to the one I used - there is no need for complex prompt):
 
    > caveman contest is 30 minutes away. make a monitor 1 second interval with 1
    > minute before competition start. Then run workflow pipeline solve all. After
